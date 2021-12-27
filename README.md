@@ -13,6 +13,5 @@
 ```
 
 # Preview of Tokyo Night
-# ![banner](assets/archbtw.png)
-# ![banner](assets/eeee.png)
+# ![banner](assets/setup.png)
 
