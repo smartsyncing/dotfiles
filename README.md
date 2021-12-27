@@ -12,6 +12,6 @@
      ###########################################################
 ```
 
-# Preview of Tokyo Night
+# Preview of One Dark
 # ![banner](assets/setup.PNG)
 
