@@ -12,7 +12,7 @@
      ###########################################################
 ```
 
-# Preview of One Dark
+# Preview
 # ![banner](assets/setup.PNG)
 
 # Prerequisites
