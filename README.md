@@ -14,6 +14,7 @@
 
 # Preview
 # ![banner](assets/setup.PNG)
+# ![banner](assets/raven.png)
 
 # Prerequisites
 ColorLS - https://github.com/ksxrubyapps/colorls
