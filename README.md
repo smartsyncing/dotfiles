@@ -4,8 +4,12 @@
 
 <h2 align=center>🐧 One Dark - Budgie - Arch</h2>
 
-# ![banner](assets/setup.PNG)
-# ![banner](assets/raven.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/smartersyncing/dotfiles/main/assets/setup.PNG" alt="Dotfiles"/>
+</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/smartersyncing/dotfiles/main/assets/raven.png" alt="Dotfiles"/>
+</p>
 
 # Prerequisites
 ColorLS - https://github.com/ksxrubyapps/colorls
