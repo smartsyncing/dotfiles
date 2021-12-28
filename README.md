@@ -11,7 +11,7 @@
   <img src="https://raw.githubusercontent.com/smartersyncing/dotfiles/main/assets/raven.png" alt="Dotfiles"/>
 </p>
 
-# Prerequisites
+## Prerequisites
 ColorLS - https://github.com/ksxrubyapps/colorls
 
 Neofetch - https://github.com/dylanaraps/neofetch
