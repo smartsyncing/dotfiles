@@ -12,7 +12,8 @@
      ###########################################################
 ```
 
-# Preview
+<h1 align=center>🐧 One Dark - Budgie - Arch</h1>
+
 # ![banner](assets/setup.PNG)
 # ![banner](assets/raven.png)
 
