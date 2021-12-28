@@ -28,11 +28,13 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+
 alias fetch="neofetch"
 alias nf="neofetch"
 alias ls="colorls -a"
 alias upd="sudo pacman -Syu"
 alias ins="sudo pacman -S"
+
 
 neofetch
 colorscript -e zwaves
