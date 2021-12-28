@@ -1,4 +1,6 @@
-<h1 align=center>Dotfiles</h1>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/smartersyncing/dotfiles/main/assets/dots.png" alt="Dotfiles"/>
+</p>
 
 <h2 align=center>🐧 One Dark - Budgie - Arch</h2>
 
