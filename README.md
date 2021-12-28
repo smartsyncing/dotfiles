@@ -1,6 +1,6 @@
 <h1 align=center>Dotfiles</h1>
 
-<h1 align=center>🐧 One Dark - Budgie - Arch</h1>
+<h2 align=center>🐧 One Dark - Budgie - Arch</h2>
 
 # ![banner](assets/setup.PNG)
 # ![banner](assets/raven.png)
