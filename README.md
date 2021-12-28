@@ -25,3 +25,9 @@ Neofetch - https://github.com/dylanaraps/neofetch
 Kitty - https://github.com/kovidgoyal/kitty
 
 Vis - https://github.com/dpayne/cli-visualizer
+
+Zsh - https://github.com/zsh-users/zsh
+
+Zsh Syntax Highlighting - https://github.com/zsh-users/zsh-syntax-highlighting
+
+Zsh Autosuggestions - https://github.com/zsh-users/zsh-autosuggestions
