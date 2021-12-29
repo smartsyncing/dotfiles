@@ -1,4 +1,4 @@
-zstyle :compinstall filename '~/.zshrc'
+zstyle :compinstall filename '/home/lewis/.zshrc'
 autoload -Uz compinit
 compinit
 setopt beep extendedglob
@@ -26,15 +26,14 @@ prompt='$NEWLINE%B%F{cyan}%~%f%b$NEWLINE${vcs_info_msg_0_}%F{green}%f%b  '
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
+source /home/lewis/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 alias fetch="neofetch"
 alias nf="neofetch"
 alias ls="colorls -a"
 alias upd="sudo pacman -Syu"
 alias ins="sudo pacman -S"
-
+alias rzsh="source ~/.zshrc"
 
 neofetch
 colorscript -e zwaves
