@@ -27,3 +27,5 @@ Zsh Syntax Highlighting - https://github.com/zsh-users/zsh-syntax-highlighting
 Zsh Autosuggestions - https://github.com/zsh-users/zsh-autosuggestions
 
 Mutter Rounded - https://github.com/yilozt/mutter-rounded
+
+Fira Code - https://github.com/tonsky/FiraCode
