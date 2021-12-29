@@ -6,26 +6,18 @@ unsetopt autocd nomatch notify
 bindkey -v
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' enable git svn
-zstyle ':vcs_info:git*' formats "%B%F{yellow}%b%f "
+zstyle ':vcs_info:git*' formats "%B on %F{magenta} %b%f "
 precmd() {
     vcs_info
 }
 
-
 HISTFILE=~/.histfile
-
 HISTSIZE=1000
-
 SAVEHIST=1000
-
 setopt prompt_subst
-
 NEWLINE=$'\n'
-
-prompt='$NEWLINE%B%F{cyan}%~%f%b$NEWLINE${vcs_info_msg_0_}%F{green}%f%b  '
-
+prompt='$NEWLINE%B%F{cyan}%~%f${vcs_info_msg_0_}%b$NEWLINE%F{green}%f%b  '
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-
 source /home/lewis/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 alias fetch="neofetch"
@@ -34,6 +26,7 @@ alias ls="colorls -a"
 alias upd="sudo pacman -Syu"
 alias ins="sudo pacman -S"
 alias rzsh="source ~/.zshrc"
+alias cat="bat"
 
 neofetch
 colorscript -e zwaves
