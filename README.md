@@ -29,3 +29,5 @@ Zsh Autosuggestions - https://github.com/zsh-users/zsh-autosuggestions
 Mutter Rounded - https://github.com/yilozt/mutter-rounded
 
 Fira Code - https://github.com/tonsky/FiraCode
+
+Bat - https://github.com/sharkdp/bat
