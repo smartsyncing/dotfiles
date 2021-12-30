@@ -16,7 +16,7 @@ HISTSIZE=1000
 SAVEHIST=1000
 setopt prompt_subst
 NEWLINE=$'\n'
-prompt='$NEWLINE%B%F{cyan}%~%f${vcs_info_msg_0_}%b$NEWLINE%F{green}%f%b  '
+prompt='$NEWLINE%B%F{cyan}%~%f${vcs_info_msg_0_}%b$NEWLINE%F{green}%f%b  '
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /home/lewis/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
