@@ -8,8 +8,8 @@ zstyle :compinstall filename '~/.zshrc'
 stty stop undef
 compinit
 bindkey -v
-source ~/.zsh/zsh-plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/.zsh/zsh-plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh/zsh-plugins/zsh-autosuggestions.zsh
+source ~/.zsh/zsh-plugins/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-functions/autols
 
 setopt extendedglob autocd interactive_comments prompt_subst
