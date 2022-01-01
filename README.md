@@ -12,23 +12,23 @@
 </p>
 
 ## Prerequisites
-* [ColorLS](https://github.com/ksxrubyapps/colorls)
+* [ColorLS](https://github.com/ksxrubyapps/colorls) for ZSH (optional)
 
-* [Neofetch](https://github.com/dylanaraps/neofetch)
+* [Neofetch](https://github.com/dylanaraps/neofetch) for ZSH (optional)
 
-* [Kitty](https://github.com/kovidgoyal/kitty)
+* [Kitty](https://github.com/kovidgoyal/kitty) 
 
 * [Vis](https://github.com/dpayne/cli-visualizer)
 
-* [Zsh](https://github.com/zsh-users/zsh)
+* [Zsh](https://github.com/zsh-users/zsh) 
 
 * [Mutter Rounded](https://github.com/yilozt/mutter-rounded)
 
 * [Fira Code](https://github.com/tonsky/FiraCode)
 
-* [Bat](https://github.com/sharkdp/bat)
+* [Bat](https://github.com/sharkdp/bat) for ZSH (optional)
 
-* [Vim](https://www.vim.org/)
+* [Vim](https://www.vim.org/) for ZSH (optional)
 
 ## Installation
 
