@@ -41,15 +41,15 @@ precmd() {
 prompt='%B%F{12}%2~${vcs_info_msg_0_}%f »  %b'
 RPROMPT='%T'
 
-export TERMINAL="kitty"
-export EDITOR="vim"
+#export TERMINAL="kitty"
+#export EDITOR="vim"
 alias ezsh="vim ~/.zshrc"
-alias nf="neofetch"
-alias ls="colorls"
+#alias nf="neofetch"
+#alias ls="colorls"
 alias upd="sudo pacman -Syu"
 alias ins="sudo pacman -S"
 alias rzsh="source ~/.zshrc"
-alias cat="bat"
+#alias cat="bat"
 alias ga="git add"
 alias gps="git push"
 alias gpl="git pull"
@@ -62,5 +62,5 @@ alias gl="git log"
 alias grebase="git rebase"
 alias gmerge="git merge"
 
-neofetch
-colorscript -e zwaves
+#neofetch
+#colorscript -e zwaves
