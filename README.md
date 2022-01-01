@@ -38,7 +38,7 @@
 
 ### Dependencies
 ```
-yay -S --needed vim bat ttf-fira-code mutter-rounded zsh-autosuggestions-git zsh-syntax-highlighting-git zsh kitty cli-visualizer ruby-colorls neofetch
+yay -S --needed vim bat ttf-fira-code mutter-rounded zsh kitty cli-visualizer ruby-colorls neofetch
 ```
 
 ### Cloning the repo
