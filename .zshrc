@@ -34,6 +34,49 @@ alias upd="sudo pacman -Syu"
 alias ins="sudo pacman -S"
 alias rzsh="source ~/.zshrc"
 alias cat="bat"
+alias ga="git add"
+alias gps="git push"
+alias gpl="git pull"
+alias gin="git init"
+alias gcl="git clone"
+alias grv="git remote -v"
+alias gra="git remote add"
+alias gs="git status"
+alias gl="git log"
+alias grebase="git rebase"
+alias gmerge="git merge"
+alias ghelp="echo -n 'Git shortcuts:
+gm    - git commit (optional message)
+gma   - git commit -a
+example: gma add new color options
+output:  git commit -am \"Add new color options\"
+example: gm add stuff ,, origin main
+output:  git commit -m \"Add stuff\" && git push origin main
+
+ga    - git add
+
+gps   - git push
+
+gpl   - git pull
+
+gin   - git init
+
+gcl   - git clone
+
+gra   - git remote add
+
+grv   - git remote -v
+
+gs    - git status
+
+gl    - git log
+
+grebase  -  git rebase
+
+gmerge   -  git merge
+
+ghelp - show this help message
+'"
 
 neofetch
 colorscript -e zwaves
