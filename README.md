@@ -32,6 +32,8 @@
 
 * [Colorscripts](https://gitlab.com/dwt1/shell-color-scripts) - (optional for zsh)
 
+* [ZSH Completions](https://github.com/zsh-users/zsh-completions) - (for zsh)
+
 ## Installation
 
 ### Dependencies
