@@ -1,11 +1,15 @@
 HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=5000
+SAVEHIST=5000
 NEWLINE=$'\n'
-autoload -Uz compinit
 
+zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
+zstyle ':completion:*' list-colors ''
+zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}' 'r:|[._-]=** r:|=**' '+r:|[._-]=** r:|=** l:|=*'
+zstyle ':completion:*' original true
 zstyle :compinstall filename '~/.zshrc'
 stty stop undef
+autoload -Uz compinit
 compinit
 bindkey -v
 source ~/.zsh/zsh-plugins/zsh-autosuggestions.zsh
@@ -24,10 +28,11 @@ precmd() {
 }
 
 prompt='$NEWLINE%B%F{cyan}%~%f${vcs_info_msg_0_}%b$NEWLINE%F{green}%f%b  '
+RPROMPT='%T'
 
 export TERMINAL="kitty"
 export EDITOR="vim"
-alias fetch="neofetch"
+alias ezsh="vim ~/.zshrc"
 alias nf="neofetch"
 alias ls="colorls"
 alias upd="sudo pacman -Syu"
@@ -45,38 +50,6 @@ alias gs="git status"
 alias gl="git log"
 alias grebase="git rebase"
 alias gmerge="git merge"
-alias ghelp="echo -n 'Git shortcuts:
-gm    - git commit (optional message)
-gma   - git commit -a
-example: gma add new color options
-output:  git commit -am \"Add new color options\"
-example: gm add stuff ,, origin main
-output:  git commit -m \"Add stuff\" && git push origin main
-
-ga    - git add
-
-gps   - git push
-
-gpl   - git pull
-
-gin   - git init
-
-gcl   - git clone
-
-gra   - git remote add
-
-grv   - git remote -v
-
-gs    - git status
-
-gl    - git log
-
-grebase  -  git rebase
-
-gmerge   -  git merge
-
-ghelp - show this help message
-'"
 
 neofetch
 colorscript -e zwaves
