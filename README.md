@@ -33,3 +33,24 @@ Fira Code - https://github.com/tonsky/FiraCode
 Bat - https://github.com/sharkdp/bat
 
 Vim - https://www.vim.org/
+
+## Installation
+
+### Dependencies
+```
+yay -S --needed vim bat ttf-fira-code mutter-rounded zsh-autosuggestions-git zsh-syntax-highlighting-git zsh kitty cli-visualizer ruby-colorls neofetch
+```
+
+### Cloning the repo
+```
+git clone https://github.com/smartsyncing/dotfiles.git && cd dotfiles
+```
+
+### Moving the files 
+```
+mv -f .zsh ~/
+mv -f .zshrc ~/
+mv -f vis ~/.config
+mv -f neofetch ~/.config
+mv -f kitty ~/.config
+```
