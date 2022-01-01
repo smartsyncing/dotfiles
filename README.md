@@ -30,6 +30,8 @@
 
 * [Vim](https://www.vim.org/) - (optional for zsh)
 
+* [Colorscripts](https://gitlab.com/dwt1/shell-color-scripts) - (optional for zsh)
+
 ## Installation
 
 ### Dependencies
