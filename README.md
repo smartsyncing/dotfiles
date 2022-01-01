@@ -12,27 +12,27 @@
 </p>
 
 ## Prerequisites
-ColorLS - https://github.com/ksxrubyapps/colorls
+* [ColorLS](https://github.com/ksxrubyapps/colorls)
 
-Neofetch - https://github.com/dylanaraps/neofetch
+* [Neofetch](https://github.com/dylanaraps/neofetch)
 
-Kitty - https://github.com/kovidgoyal/kitty
+* [Kitty](https://github.com/kovidgoyal/kitty)
 
-Vis - https://github.com/dpayne/cli-visualizer
+* [Vis](https://github.com/dpayne/cli-visualizer)
 
-Zsh - https://github.com/zsh-users/zsh
+* [Zsh](https://github.com/zsh-users/zsh)
 
-Zsh Syntax Highlighting - https://github.com/zsh-users/zsh-syntax-highlighting
+* [Zsh Syntax Highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 
-Zsh Autosuggestions - https://github.com/zsh-users/zsh-autosuggestions
+* [Zsh Autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 
-Mutter Rounded - https://github.com/yilozt/mutter-rounded
+* [Mutter Rounded](https://github.com/yilozt/mutter-rounded)
 
-Fira Code - https://github.com/tonsky/FiraCode
+* [Fira Code](https://github.com/tonsky/FiraCode)
 
-Bat - https://github.com/sharkdp/bat
+* [Bat](https://github.com/sharkdp/bat)
 
-Vim - https://www.vim.org/
+* [Vim](https://www.vim.org/)
 
 ## Installation
 
