@@ -53,4 +53,5 @@ mv -f .zshrc ~/
 mv -f vis ~/.config
 mv -f neofetch ~/.config
 mv -f kitty ~/.config
+rm -rf ~/dotfiles
 ```
