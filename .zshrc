@@ -1,14 +1,15 @@
 HISTFILE=~/.zsh_history
 HISTSIZE=50000
 SAVEHIST=50000
-NEWLINE=$'\n'
 
 zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
 zstyle ':completion:*' list-colors ''
 zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}' 'r:|[._-]=** r:|=**' '+r:|[._-]=** r:|=** l:|=*'
 zstyle ':completion:*' original true
 zstyle :compinstall filename '~/.zshrc'
+
 stty stop undef
+
 autoload -U up-line-or-beginning-search
 autoload -U down-line-or-beginning-search
 zle -N up-line-or-beginning-search
@@ -21,13 +22,13 @@ bindkey '^P' autosuggest-accept
 autoload -Uz compinit
 compinit
 bindkey -v
+
 source ~/.zsh/zsh-plugins/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-plugins/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-functions/autols
 
 setopt extendedglob autocd interactive_comments prompt_subst
 unsetopt nomatch notify beep
-bindkey -v
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' enable git svn
 zstyle ':vcs_info:git*' formats "%B on %F{magenta} %b%u%f"
