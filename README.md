@@ -12,9 +12,9 @@
 </p>
 
 ## Prerequisites
-* [ColorLS](https://github.com/ksxrubyapps/colorls) for ZSH (optional)
+* [ColorLS](https://github.com/ksxrubyapps/colorls)      - for ZSH (optional)
 
-* [Neofetch](https://github.com/dylanaraps/neofetch) for ZSH (optional)
+* [Neofetch](https://github.com/dylanaraps/neofetch)      - for ZSH (optional)
 
 * [Kitty](https://github.com/kovidgoyal/kitty) 
 
@@ -26,9 +26,9 @@
 
 * [Fira Code](https://github.com/tonsky/FiraCode)
 
-* [Bat](https://github.com/sharkdp/bat) for ZSH (optional)
+* [Bat](https://github.com/sharkdp/bat)      - for ZSH (optional)
 
-* [Vim](https://www.vim.org/) for ZSH (optional)
+* [Vim](https://www.vim.org/)      - for ZSH (optional)
 
 ## Installation
 
