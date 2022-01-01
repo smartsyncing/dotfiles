@@ -1,4 +1,5 @@
 # Commented things are commented because they require extra dependencies, these are listed in Prerequisites in the README.
+# Zsh-completions is recommended.
 
 HISTFILE=~/.zsh_history
 HISTSIZE=50000
