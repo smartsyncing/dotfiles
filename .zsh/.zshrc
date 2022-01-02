@@ -1,4 +1,4 @@
-# Commented things are commented because they require extra dependencies, these are listed in Prerequisites in the README.
+# My custom zsh config
 # Zsh-completions is recommended.
 
 HISTFILE=~/.zsh_history
@@ -26,9 +26,9 @@ autoload -Uz compinit
 compinit
 bindkey -v
 
-source ~/.zsh/zsh-plugins/zsh-autosuggestions.zsh
-source ~/.zsh/zsh-plugins/zsh-syntax-highlighting.zsh
-source ~/.zsh/zsh-functions/autols
+source $XDG_CONFIG_HOME/.zsh/zsh-plugins/zsh-autosuggestions.zsh
+source $XDG_CONFIG_HOME/.zsh/zsh-plugins/zsh-syntax-highlighting.zsh
+source $XDG_CONFIG_HOME/.zsh/zsh-functions/autols
 
 setopt extendedglob autocd interactive_comments prompt_subst
 unsetopt nomatch notify beep
