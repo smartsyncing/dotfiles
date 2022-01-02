@@ -5,7 +5,6 @@ HISTFILE=~/.zsh_history
 HISTSIZE=50000
 SAVEHIST=50000
 
-export XDG_CONFIG_HOME=~/.config
 zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
 zstyle ':completion:*' list-colors ''
 zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}' 'r:|[._-]=** r:|=**' '+r:|[._-]=** r:|=** l:|=*'
