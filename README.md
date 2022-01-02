@@ -14,7 +14,7 @@
 ## Prerequisites
 * [ColorLS](https://github.com/ksxrubyapps/colorls) - (optional for zsh)
 
-* [Neofetch](https://github.com/dylanaraps/neofetch) - (optional for zsh)
+* [Neofetch](https://github.com/dylanaraps/neofetch)
 
 * [Kitty](https://github.com/kovidgoyal/kitty) 
 
@@ -28,9 +28,7 @@
 
 * [Bat](https://github.com/sharkdp/bat)  - (optional for zsh)
 
-* [Vim](https://www.vim.org/) - (optional for zsh)
-
-* [Colorscripts](https://gitlab.com/dwt1/shell-color-scripts) - (optional for zsh)
+* [Colorscripts](https://gitlab.com/dwt1/shell-color-scripts)
 
 * [ZSH Completions](https://github.com/zsh-users/zsh-completions) - (for zsh)
 
