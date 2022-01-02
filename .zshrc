@@ -45,20 +45,7 @@ precmd() {
 prompt='%B%F{12}%2~${vcs_info_msg_0_}%f »  %b'
 RPROMPT='%T'
 
-if command_exists vim; then
-    export VISUAL=vim
-elif command_exists nano; then
-    export VISUAL=nano
-elif command_exists vi; then
-    export VISUAL=vi
-fi
-if [ -z ${VISUAL+x} ]; then
-    echo '$VISUAL is not set'
-else
-    export EDITOR=$VISUAL
-fi
-
-alias ezsh="$EDITOR ~/.zshrc"
+alias ezsh="vim ~/.zshrc"
 alias lc="colorls"
 alias update="sudo pacman -Syu"
 alias install="sudo pacman -S"
