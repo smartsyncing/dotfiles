@@ -9,6 +9,7 @@ zstyle ':completion:*' completer _expand _complete _ignored _correct _approximat
 zstyle ':completion:*' list-colors ''
 zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}' 'r:|[._-]=** r:|=**' '+r:|[._-]=** r:|=** l:|=*'
 zstyle ':completion:*' original true
+zstyle ':completion:*' menu select
 
 zstyle :compinstall filename '~/.zshrc'
 
