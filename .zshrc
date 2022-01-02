@@ -25,17 +25,24 @@ bindkey -M vicmd 'k' up-line-or-beginning-search
 bindkey -M vicmd 'j' down-line-or-beginning-search
 bindkey '^P' autosuggest-accept
 autoload -Uz compinit
+[ -f /usr/share/fzf/completion.zsh ] && source /usr/share/fzf/completion.zsh
+[ -f /usr/share/fzf/key-bindings.zsh ] && source /usr/share/fzf/key-bindings.zsh
+[ -f /usr/share/doc/fzf/examples/completion.zsh ] && source /usr/share/doc/fzf/examples/completion.zsh
+[ -f /usr/share/doc/fzf/examples/key-bindings.zsh ] && source /usr/share/doc/fzf/examples/key-bindings.zsh
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f $ZDOTDIR/completion/_fnm ] && fpath+="$ZDOTDIR/completion/"
 compinit
-bindkey -v
 
+bindkey -v
 source ~/.config/.zsh/zsh-plugins/zsh-autosuggestions.zsh
 source ~/.config/.zsh/zsh-plugins/zsh-syntax-highlighting.zsh
 source ~/.config/.zsh/zsh-functions/autols
+source ~/.config/.zsh/zsh-plugins/fzf-tab/fzf-tab.plugin.zsh
 
 setopt extendedglob autocd interactive_comments prompt_subst
 unsetopt nomatch notify beep
 autoload -Uz vcs_info
-zstyle ':vcs_info:*' enable git svn
+zstyle ':vcs_info:*' enable git svn	
 zstyle ':vcs_info:git*' formats "%B on %F{magenta} %b%u%f"
 zstyle ':vcs_info:*' unstagedstr '*'
 zstyle ':vcs_info:*' check-for-changes true
@@ -48,7 +55,7 @@ prompt='%B%F{12}%2~${vcs_info_msg_0_}%f »  %b'
 RPROMPT='%T'
 
 alias ezsh="vim ~/.zshrc"
-alias lc="colorls"
+alias ls="colorls"
 alias update="sudo pacman -Syu"
 alias install="sudo pacman -S"
 alias rzsh="source ~/.zshrc"
@@ -63,3 +70,4 @@ alias gs="git status"
 alias gl="git log"
 alias grebase="git rebase"
 alias gmerge="git merge"
+
