@@ -41,8 +41,8 @@ yay -S --needed vim bat ttf-fira-code mutter-rounded zsh kitty cli-visualizer ru
 
 ### Cloning the repo
 ```
-git clone https://github.com/smartsyncing/dotfiles.git && cd dotfiles
 git clone https://github.com/Aloxaf/fzf-tab
+git clone https://github.com/smartsyncing/dotfiles.git && cd dotfiles
 ```
 
 ### Moving the files 
