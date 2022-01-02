@@ -59,7 +59,7 @@ else
 fi
 
 alias ezsh="$EDITOR ~/.zshrc"
-#alias lc="colorls"
+alias lc="colorls"
 alias update="sudo pacman -Syu"
 alias install="sudo pacman -S"
 alias rzsh="source ~/.zshrc"
