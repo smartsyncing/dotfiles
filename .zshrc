@@ -26,9 +26,9 @@ autoload -Uz compinit
 compinit
 bindkey -v
 
-source $XDG_CONFIG_HOME/.zsh/zsh-plugins/zsh-autosuggestions.zsh
-source $XDG_CONFIG_HOME/.zsh/zsh-plugins/zsh-syntax-highlighting.zsh
-source $XDG_CONFIG_HOME/.zsh/zsh-functions/autols
+source ~/.config/.zsh/zsh-plugins/zsh-autosuggestions.zsh
+source ~/.config/.zsh/zsh-plugins/zsh-syntax-highlighting.zsh
+source ~/.config/.zsh/zsh-functions/autols
 
 setopt extendedglob autocd interactive_comments prompt_subst
 unsetopt nomatch notify beep
