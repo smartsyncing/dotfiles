@@ -59,12 +59,10 @@ else
 fi
 
 alias ezsh="$EDITOR ~/.zshrc"
-#alias nf="neofetch"
-#alias ls="colorls"
+#alias lc="colorls"
 alias update="sudo pacman -Syu"
 alias install="sudo pacman -S"
 alias rzsh="source ~/.zshrc"
-#alias cat="bat"
 alias ga="git add"
 alias gps="git push"
 alias gpl="git pull"
@@ -76,6 +74,3 @@ alias gs="git status"
 alias gl="git log"
 alias grebase="git rebase"
 alias gmerge="git merge"
-
-#neofetch
-#colorscript -e zwaves
