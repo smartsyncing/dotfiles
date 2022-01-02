@@ -34,10 +34,10 @@ autoload -Uz compinit
 compinit
 
 bindkey -v
+source ~/.config/.zsh/zsh-plugins/fzf-tab/fzf-tab.plugin.zsh
 source ~/.config/.zsh/zsh-plugins/zsh-autosuggestions.zsh
 source ~/.config/.zsh/zsh-plugins/zsh-syntax-highlighting.zsh
 source ~/.config/.zsh/zsh-functions/autols
-source ~/.config/.zsh/zsh-plugins/fzf-tab/fzf-tab.plugin.zsh
 
 setopt extendedglob autocd interactive_comments prompt_subst
 unsetopt nomatch notify beep
@@ -70,4 +70,3 @@ alias gs="git status"
 alias gl="git log"
 alias grebase="git rebase"
 alias gmerge="git merge"
-
