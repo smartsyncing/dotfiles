@@ -46,7 +46,8 @@ git clone https://github.com/smartsyncing/dotfiles.git && cd dotfiles
 
 ### Moving the files 
 ```
-mv -f .zsh ~/
+mv -f .zsh ~/.config
+mv -f zshenv /etc/zsh/
 mv -f vis ~/.config
 mv -f neofetch ~/.config
 mv -f kitty ~/.config
