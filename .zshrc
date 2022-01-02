@@ -55,7 +55,7 @@ prompt='%B%F{12}%2~${vcs_info_msg_0_}%f »  %b'
 RPROMPT='%T'
 
 alias ezsh="vim ~/.zshrc"
-alias ls="colorls"
+alias lc="colorls"
 alias update="sudo pacman -Syu"
 alias install="sudo pacman -S"
 alias rzsh="source ~/.zshrc"
