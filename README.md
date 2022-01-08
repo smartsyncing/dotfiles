@@ -41,15 +41,13 @@ yay -S --needed vim bat ttf-fira-code mutter-rounded zsh kitty cli-visualizer ru
 
 ### Cloning the repo
 ```
-git clone https://github.com/Aloxaf/fzf-tab
 git clone https://github.com/smartsyncing/dotfiles.git && cd dotfiles
 ```
 
 ### Moving the files 
 ```
-mv -f .zsh ~/.config
+mv -f zsh ~/.config
 mv -f .zshrc ~/
-mv ~/fzf-tab ~/.config/.zsh/zsh-plugins/
 mv -f vis ~/.config
 mv -f neofetch ~/.config
 mv -f kitty ~/.config
