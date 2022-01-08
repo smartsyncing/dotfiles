@@ -76,6 +76,6 @@ alias grebase="git rebase"
 alias gmerge="git merge"
 
 echo " "
-date +"%A %d %n %B %Y"
+date +"%A %d %n%B %Y"
 echo " "
 source ~/.config/zsh/zsh-plugins/fzf-tab/fzf-tab.plugin.zsh
