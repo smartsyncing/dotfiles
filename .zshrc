@@ -54,6 +54,8 @@ precmd() {
 prompt='%B%F{12}%2~${vcs_info_msg_0_}%f »  %b'
 RPROMPT='%T'
 
+export FZF_DEFAULT_OPTS='--layout=reverse --height=40% --border --info=inline --padding=1'
+export FZF_CTRL_T_OPTS="--preview 'file {}' --preview-window up,1,border"
 alias ezsh="vim ~/.zshrc"
 alias lc="colorls"
 alias update="sudo pacman -Syu"
