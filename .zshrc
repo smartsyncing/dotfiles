@@ -56,6 +56,7 @@ RPROMPT='%T'
 
 export FZF_DEFAULT_OPTS='--layout=reverse --height=40% --border --info=inline --padding=1'
 export FZF_CTRL_T_OPTS="--preview 'file {}' --preview-window up,1,border"
+export FZF_ALT_C_OPTS="--preview 'file {}' --preview-window up,1,border"
 alias ezsh="vim ~/.zshrc"
 alias lc="colorls"
 alias update="sudo pacman -Syu"
