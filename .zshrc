@@ -54,7 +54,9 @@ precmd() {
 prompt='%B%F{12}%2~${vcs_info_msg_0_}%f »  %b'
 RPROMPT='%T'
 
-export FZF_DEFAULT_OPTS='--layout=reverse --height=40% --border --info=inline --padding=1'
+export FZF_DEFAULT_OPTS='--layout=reverse --height=60% --border --info=inline --padding=3>
+--color=fg:-1,bg:-1,hl:#c678dd,fg+:#ffffff,bg+:#4b5263,hl+:#d858fe
+--color=info:#98c379,prompt:#61afef,pointer:#e5c07b,marker:#e5c07b,spinner:#61afef,header>
 export FZF_CTRL_T_OPTS="--preview 'file {}' --preview-window up,1,border"
 export FZF_ALT_C_OPTS="--preview 'file {}' --preview-window up,1,border"
 alias ezsh="vim ~/.zshrc"
