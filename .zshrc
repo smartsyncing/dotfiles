@@ -53,12 +53,11 @@ precmd() {
 
 prompt='%B%F{12}%2~${vcs_info_msg_0_}%f »  %b'
 RPROMPT='%T'
-
-export FZF_DEFAULT_OPTS='--layout=reverse --height=60% --border --info=hidden --padding=3 --color=dark
+export FZF_DEFAULT_OPTS='--layout=default --height=60% --border --info=hidden --padding=3 --color=dark
 --color=fg:-1,bg:-1,hl:#c678dd,fg+:#ffffff,bg+:#282c34,hl+:#d858fe
 --color=info:#98c379,prompt:#61afef,pointer:#e5c07b,marker:#e5c07b,spinner:#61afef,header:#61afef,gutter:#282c34 --margin=18% --prompt="» " --pointer="▶" --marker="▶"'
-export FZF_CTRL_T_OPTS="--preview 'file {}' --preview-window up,1,border"
-export FZF_ALT_C_OPTS="--preview 'file {}' --preview-window up,1,border"
+export FZF_CTRL_T_OPTS="--preview 'file {}' --preview-window up,1,border --layout=reverse"
+export FZF_ALT_C_OPTS="--preview 'file {}' --preview-window up,1,border --layout=reverse"
 alias ezsh="vim ~/.zshrc"
 alias lc="colorls"
 alias update="sudo pacman -Syu"
