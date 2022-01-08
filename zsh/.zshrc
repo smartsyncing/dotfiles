@@ -55,6 +55,18 @@ prompt='%B%F{12}%2~${vcs_info_msg_0_}%f »  %b'
 RPROMPT='%T'
 
 echo " "
+echo "Welcome to ZSH"
+echo " "
+echo "$(whoami)@$(hostname)"
+echo " "
 date +"%A %d %n%B %Y"
+echo " "
+if [ -f /etc/os-release ]; then
+    # freedesktop.org and systemd
+    . /etc/os-release
+    OS=$PRETTY_NAME
+    VER=$VERSION_ID
+fi
+echo "I use $OS btw"
 echo " "
 source ~/.config/zsh/zsh-plugins/fzf-tab/fzf-tab.plugin.zsh
