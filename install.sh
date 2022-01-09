@@ -1,6 +1,6 @@
 #!/bin/bash
 
-
+# Be sure to have dialog installed.
 
 HEIGHT=15
 WIDTH=40
