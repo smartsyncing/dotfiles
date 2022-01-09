@@ -1,13 +1,19 @@
 #!/bin/bash
-zsh_dir=$HOME/.zshrc
+zshrc_file=$HOME/.zshrc
+zsh_dir=$HOME/.config/zsh
+
 
 if [ -d "$zsh_dir" ]; then
+  printf "\n\033[33mExisting ZSH config detected! Replacing...\033[0m...\n \n"
   sudo rm -rf ~/.config/zsh && sudo rm -rf ~/.zshrc 
+elif command -v 'uninstall_oh_my_zsh' >'/dev/null' 2>&1; then
+  printf "\n\033[33mExisting ZSH config detected! Replacing...\033[0m...\n \n" 
+  uninstall_oh_my_zsh
+elif [ -d "$zshrc_file" ]; then
+  printf "\n\033[33mExisting ZSH config detected! Replacing...\033[0m...\n \n" 
+  sudo rm -rf ~/.zshrc
 fi
 
-if command -v 'uninstall_oh_my_zsh' >'/dev/null' 2>&1; then
-  uninstall_oh_my_zsh
-fi
 
 printf "\n\033[33mInstalling needed dependencies\033[0m...\n \n"
 
