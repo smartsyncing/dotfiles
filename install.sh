@@ -38,3 +38,5 @@ mv -f zsh ~/.config/zsh
 mv -f .zshrc ~/
 cd .. 
 rm -rf dotfiles/
+
+printf "Finished installing."
