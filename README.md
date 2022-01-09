@@ -33,6 +33,8 @@
 * [ZSH Completions](https://github.com/zsh-users/zsh-completions) - (for zsh)
 
 ## Installation
-```git clone https://github.com/smartsyncing/dotfiles.git && cd dotfiles
+```
+git clone https://github.com/smartsyncing/dotfiles.git && cd dotfiles
 chmod +x install.sh
-./install.sh```
+./install.sh
+```
