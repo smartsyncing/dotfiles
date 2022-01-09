@@ -36,6 +36,9 @@ git clone https://github.com/smartsyncing/dotfiles && cd dotfiles
 printf "\n\033[33mMoving files...\033[0m...\n \n"
 mv -f zsh ~/.config/zsh
 mv -f .zshrc ~/
+mv -f vis ~/.config
+mv -f neofetch ~/.config
+mv -f kitty ~/.config
 cd .. 
 rm -rf dotfiles/
 
