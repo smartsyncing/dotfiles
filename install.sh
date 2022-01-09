@@ -1,3 +1,14 @@
+#!/bin/bash
+zsh_dir=$HOME/.zshrc
+
+if [ -d "$zsh_dir" ]; then
+  sudo rm -rf ~/.config/zsh && sudo rm -rf ~/.zshrc 
+fi
+
+if command -v 'uninstall_oh_my_zsh' >'/dev/null' 2>&1; then
+  uninstall_oh_my_zsh
+fi
+
 printf "\n\033[33mInstalling needed dependencies\033[0m...\n \n"
 
 if command -v 'yay' >'/dev/null' 2>&1; then
