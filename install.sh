@@ -5,7 +5,7 @@
 HEIGHT=15
 WIDTH=40
 CHOICE_HEIGHT=4
-BACKTITLE="ZSH Options"
+BACKTITLE="Dotfiles"
 TITLE="What do you want to install?"
 MENU="Choose one of the following options:"
 
