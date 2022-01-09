@@ -1,5 +1,4 @@
-
-#alias ls="colorls -A"
+alias ls="lsd"
 
 auto_ls(){
     if [[ $(git rev-parse --is-inside-work-tree 2> /dev/null) == true ]]; then

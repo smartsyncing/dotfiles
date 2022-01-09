@@ -54,42 +54,5 @@ precmd() {
 prompt='%B%F{12}%2~${vcs_info_msg_0_}%f »  %b'
 RPROMPT='%T'
 
-echo " "
-echo "Welcome to ZSH"
-echo " "
-echo "$(whoami)@$(hostname)"
-echo " "
-date +"%A %d %n%B %Y"
-echo " "
-if [ -f /etc/os-release ]; then
-    # freedesktop.org and systemd
-    . /etc/os-release
-    OS=$PRETTY_NAME
-    VER=$VERSION_ID
-elif type lsb_release >/dev/null 2>&1; then
-    # linuxbase.org
-    OS=$(lsb_release -si)
-    VER=$(lsb_release -sr)
-elif [ -f /etc/lsb-release ]; then
-    # For some versions of Debian/Ubuntu without lsb_release command
-    . /etc/lsb-release
-    OS=$DISTRIB_ID
-    VER=$DISTRIB_RELEASE
-elif [ -f /etc/debian_version ]; then
-    # Older Debian/Ubuntu/etc.
-    OS=Debian
-    VER=$(cat /etc/debian_version)
-elif [ -f /etc/SuSe-release ]; then
-    # Older SuSE/etc.
-    ...
-elif [ -f /etc/redhat-release ]; then
-    # Older Red Hat, CentOS, etc.
-    ...
-else
-    # Fall back to uname, e.g. "Linux <version>", also works for BSD, etc.
-    OS=$(uname -s)
-    VER=$(uname -r)
-fi
-echo "I use $OS btw"
-echo " "
+source ~/.config/zsh/autostart
 source ~/.config/zsh/zsh-plugins/fzf-tab/fzf-tab.plugin.zsh
