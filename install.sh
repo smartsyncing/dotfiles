@@ -86,9 +86,6 @@ case $CHOICE in
               printf "\033[33mExisting Kitty config detected! Backing up...\033[0m\n"
               mv ~/.config/kitty ~/.config/kitty.old
             fi
-            if [ -d ~/dotfiles ]; then
-              rm -rf ~/dotfiles
-            fi
             git clone https://github.com/smartsyncing/dotfiles && cd dotfiles
             printf "\n\033[33mMoving files...\033[0m\n \n"
             mv -f kitty ~/.config
@@ -136,9 +133,6 @@ case $CHOICE in
 			  printf "\033[33mExisting ZSH config detected! Backing up...\033[0m\n" 
 			  mv ~/.zshrc ~/.zshrc.backup
 			fi
-			if [ -d ~/dotfiles ]; then
-			  rm -rf ~/dotfiles
-			fi
 			git clone https://github.com/smartsyncing/dotfiles && cd dotfiles
 			printf "\n\033[33mMoving files...\033[0m\n \n"
 			mv -f zsh ~/.config/zsh
@@ -166,9 +160,6 @@ case $CHOICE in
             if [ -d ~/.config/neofetch ]; then
               printf "\033[33mExisting Neofetch config detected! Backing up...\033[0m\n"
               mv ~/.config/neofetch ~/.config/neofetch.old
-            fi
-            if [ -d ~/dotfiles ]; then
-              rm -rf ~/dotfiles
             fi
             git clone https://github.com/smartsyncing/dotfiles && cd dotfiles
             printf "\n\033[33mMoving files...\033[0m\n \n"
@@ -201,9 +192,6 @@ case $CHOICE in
             if [ -d ~/.config/vis ]; then
               printf "\033[33mExisting Vis config detected! Backing up...\033[0m\n"
               mv ~/.config/vis ~/.config/vis.old
-            fi
-            if [ -d ~/dotfiles ]; then
-              rm -rf ~/dotfiles
             fi
             git clone https://github.com/smartsyncing/dotfiles && cd dotfiles
             printf "\n\033[33mMoving files...\033[0m\n \n"
@@ -271,9 +259,6 @@ case $CHOICE in
 			if [ -d ~/.config/vis ]; then
 			  printf "\033[33mExisting Vis config detected! Backing up...\033[0m\n"
 			  mv ~/.config/vis ~/.config/vis.old
-			fi
-			if [ -d ~/dotfiles ]; then
-			  rm -rf ~/dotfiles
 			fi
 			git clone https://github.com/smartsyncing/dotfiles && cd dotfiles
 			printf "\n\033[33mMoving files...\033[0m\n \n"
