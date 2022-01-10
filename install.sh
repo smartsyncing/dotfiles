@@ -2,6 +2,10 @@
 
 # Be sure to have dialog installed.
 
+if [ -d ~/.config/*.old ]; then
+  rm -rf ~/.config/*.old
+fi
+
 echo 'aspect = 0
 separate_widget = ""
 tab_len = 0
@@ -86,12 +90,22 @@ case $CHOICE in
               printf "\033[33mExisting Kitty config detected! Backing up...\033[0m\n"
               mv ~/.config/kitty ~/.config/kitty.old
             fi
-            git clone https://github.com/smartsyncing/dotfiles && cd dotfiles
-            printf "\n\033[33mMoving files...\033[0m\n \n"
-            mv -f kitty ~/.config
-            cd .. 
-            rm -rf dotfiles/
-            echo "Finished installing."
+			if [ -d ~/dotfiles ]; then
+			  cd ~/dotfiles
+			  printf " \n\033[33mMoving files...\033[0m\n \n"
+              mv -f kitty ~/.config
+              cd ..
+              rm -rf dotfiles/
+              echo "Finished installing."
+			else
+			  printf "\n\033[33mCloning the repo...\033[0m\n \n"
+			  git clone https://github.com/smartsyncing/dotfiles && cd dotfiles
+			  printf " \n\033[33mMoving files...\033[0m\n \n"
+			  mv -f kitty ~/.config
+			  cd .. 
+			  rm -rf dotfiles/
+			  echo "Finished installing."
+			fi
             ;;
         2)	
 			printf "\n\033[33mInstalling needed dependencies\033[0m...\n \n"
@@ -133,13 +147,24 @@ case $CHOICE in
 			  printf "\033[33mExisting ZSH config detected! Backing up...\033[0m\n" 
 			  mv ~/.zshrc ~/.zshrc.backup
 			fi
-			git clone https://github.com/smartsyncing/dotfiles && cd dotfiles
-			printf "\n\033[33mMoving files...\033[0m\n \n"
-			mv -f zsh ~/.config
-			mv -f .zshrc ~/
-			cd .. 
-			rm -rf dotfiles/
-			echo "Finished installing."
+			if [ -d ~/dotfiles ]; then
+			  cd ~/dotfiles
+			  printf " \n\033[33mMoving files...\033[0m\n \n"
+              mv -f zsh ~/.config
+              mv -f .zshrc ~/
+              cd ..
+              rm -rf dotfiles/
+              echo "Finished installing."
+			else
+			  printf "\n\033[33mCloning the repo...\033[0m\n \n"
+			  git clone https://github.com/smartsyncing/dotfiles && cd dotfiles
+			  printf " \n\033[33mMoving files...\033[0m\n \n"
+			  mv -f zsh ~/.config
+			  mv -f .zshrc ~/
+			  cd .. 
+			  rm -rf dotfiles/
+			  echo "Finished installing."
+			fi
             ;;
         3)
             printf "\n\033[33mInstalling needed dependencies\033[0m...\n \n"
@@ -161,12 +186,22 @@ case $CHOICE in
               printf "\033[33mExisting Neofetch config detected! Backing up...\033[0m\n"
               mv ~/.config/neofetch ~/.config/neofetch.old
             fi
-            git clone https://github.com/smartsyncing/dotfiles && cd dotfiles
-            printf "\n\033[33mMoving files...\033[0m\n \n"
-            mv -f neofetch ~/.config
-            cd .. 
-            rm -rf dotfiles/
-            echo "Finished installing."
+			if [ -d ~/dotfiles ]; then
+			  cd ~/dotfiles
+			  printf " \n\033[33mMoving files...\033[0m\n \n"
+              mv -f neofetch ~/.config
+              cd ..
+              rm -rf dotfiles/
+              echo "Finished installing."
+			else
+			  printf "\n\033[33mCloning the repo...\033[0m\n \n"
+			  git clone https://github.com/smartsyncing/dotfiles && cd dotfiles
+			  printf " \n\033[33mMoving files...\033[0m\n \n"
+			  mv -f neofetch ~/.config
+			  cd .. 
+			  rm -rf dotfiles/
+			  echo "Finished installing."
+			fi
             ;;
         4)   
             printf "\n\033[33mInstalling needed dependencies\033[0m...\n \n"
@@ -188,17 +223,26 @@ case $CHOICE in
               ./install.sh
             fi
             
-            printf "\n\033[33mCloning the repo...\033[0m\n \n"
             if [ -d ~/.config/vis ]; then
               printf "\033[33mExisting Vis config detected! Backing up...\033[0m\n"
               mv ~/.config/vis ~/.config/vis.old
             fi
-            git clone https://github.com/smartsyncing/dotfiles && cd dotfiles
-            printf "\n\033[33mMoving files...\033[0m\n \n"
-            mv -f vis ~/.config
-            cd .. 
-            rm -rf dotfiles/
-            echo "Finished installing."
+			if [ -d ~/dotfiles ]; then
+			  cd ~/dotfiles
+			  printf " \n\033[33mMoving files...\033[0m\n \n"
+              mv -f vis ~/.config
+              cd ..
+              rm -rf dotfiles/
+              echo "Finished installing."
+			else
+			  printf "\n\033[33mCloning the repo...\033[0m\n \n"
+			  git clone https://github.com/smartsyncing/dotfiles && cd dotfiles
+			  printf " \n\033[33mMoving files...\033[0m\n \n"
+			  mv -f vis ~/.config
+			  cd .. 
+			  rm -rf dotfiles/
+			  echo "Finished installing."
+			fi
             ;;
 	    5)
 			printf "\n\033[33mInstalling needed dependencies\033[0m...\n \n"
@@ -235,21 +279,21 @@ case $CHOICE in
 			fi
 			
 			chsh -s /usr/bin/zsh
-			printf " \n\033[33mCloning the repo...\033[0m\n \n"
+			printf "\n\033[33mCloning the repo...\033[0m\n \n"
 			if [ -d ~/.config/kitty ]; then
-			  printf " \033[33mExisting Kitty config detected! Backing up...\033[0m"
+			  printf "\033[33mExisting Kitty config detected! Backing up...\033[0m"
 			  mv ~/.config/kitty ~/.config/kitty.old
 			fi
 			if [ -d ~/.config/zsh ]; then
-			  printf " \n\033[33mExisting ZSH config detected! Backing up...\033[0m\n "
+			  printf "\n\033[33mExisting ZSH config detected! Backing up...\033[0m\n "
 			  mv ~/.config/zsh ~/.config/zsh.old && mv ~/.zshrc ~/.zshrc.backup
 			fi
 			if command -v 'uninstall_oh_my_zsh' >'/dev/null' 2>&1; then
-			  printf " \033[33mExisting ZSH config detected! Removing...\033[0m\n" 
+			  printf "\033[33mExisting ZSH config detected! Removing...\033[0m\n" 
 			  uninstall_oh_my_zsh
 			fi
 			if [ -d ~/.zshrc ]; then
-			  printf " \033[33mExisting ZSH config detected! Backing up...\033[0m\n" 
+			  printf "\033[33mExisting ZSH config detected! Backing up...\033[0m\n" 
 			  mv ~/.zshrc ~/.zshrc.backup
 			fi
 			if [ -d ~/.config/neofetch ]; then
@@ -257,19 +301,32 @@ case $CHOICE in
 			  mv ~/.config/neofetch ~/.config/neofetch.old
 			fi
 			if [ -d ~/.config/vis ]; then
-			  printf " \033[33mExisting Vis config detected! Backing up...\033[0m\n"
+			  printf "\033[33mExisting Vis config detected! Backing up...\033[0m\n"
 			  mv ~/.config/vis ~/.config/vis.old
 			fi
-			git clone https://github.com/smartsyncing/dotfiles && cd dotfiles
-			printf " \n\033[33mMoving files...\033[0m\n \n"
-			mv -f zsh ~/.config
-			mv -f .zshrc ~/
-			mv -f vis ~/.config
-			mv -f neofetch ~/.config
-			mv -f kitty ~/.config
-			cd .. 
-			rm -rf dotfiles/
-			echo "Finished installing."
+			if [ -d ~/dotfiles ]; then
+			  cd ~/dotfiles
+			  printf " \n\033[33mMoving files...\033[0m\n \n"
+              mv -f zsh ~/.config
+              mv -f .zshrc ~/
+              mv -f vis ~/.config
+              mv -f neofetch ~/.config
+              mv -f kitty ~/.config
+              cd ..
+              rm -rf dotfiles/
+              echo "Finished installing."
+			else
+			  printf "\n\033[33mCloning the repo...\033[0m\n \n"
+			  git clone https://github.com/smartsyncing/dotfiles && cd dotfiles
+			  printf " \n\033[33mMoving files...\033[0m\n \n"
+			  mv -f zsh ~/.config
+			  mv -f .zshrc ~/
+			  mv -f vis ~/.config
+			  mv -f neofetch ~/.config
+			  mv -f kitty ~/.config
+			  cd .. 
+			  rm -rf dotfiles/
+			  echo "Finished installing."
+			fi
             ;;
 esac
-
