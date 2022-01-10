@@ -135,7 +135,7 @@ case $CHOICE in
 			fi
 			git clone https://github.com/smartsyncing/dotfiles && cd dotfiles
 			printf "\n\033[33mMoving files...\033[0m\n \n"
-			mv -f zsh ~/.config/zsh
+			mv -f zsh ~/.config
 			mv -f .zshrc ~/
 			cd .. 
 			rm -rf dotfiles/
@@ -235,21 +235,21 @@ case $CHOICE in
 			fi
 			
 			chsh -s /usr/bin/zsh
-			printf "\n\033[33mCloning the repo...\033[0m\n \n"
+			printf " \n\033[33mCloning the repo...\033[0m\n \n"
 			if [ -d ~/.config/kitty ]; then
-			  printf "\033[33mExisting Kitty config detected! Backing up...\033[0m\n"
+			  printf " \033[33mExisting Kitty config detected! Backing up...\033[0m"
 			  mv ~/.config/kitty ~/.config/kitty.old
 			fi
 			if [ -d ~/.config/zsh ]; then
-			  printf "\n\033[33mExisting ZSH config detected! Backing up...\033[0m\n "
+			  printf " \n\033[33mExisting ZSH config detected! Backing up...\033[0m\n "
 			  mv ~/.config/zsh ~/.config/zsh.old && mv ~/.zshrc ~/.zshrc.backup
 			fi
 			if command -v 'uninstall_oh_my_zsh' >'/dev/null' 2>&1; then
-			  printf "\033[33mExisting ZSH config detected! Removing...\033[0m\n" 
+			  printf " \033[33mExisting ZSH config detected! Removing...\033[0m\n" 
 			  uninstall_oh_my_zsh
 			fi
 			if [ -d ~/.zshrc ]; then
-			  printf "\033[33mExisting ZSH config detected! Backing up...\033[0m\n" 
+			  printf " \033[33mExisting ZSH config detected! Backing up...\033[0m\n" 
 			  mv ~/.zshrc ~/.zshrc.backup
 			fi
 			if [ -d ~/.config/neofetch ]; then
@@ -257,12 +257,12 @@ case $CHOICE in
 			  mv ~/.config/neofetch ~/.config/neofetch.old
 			fi
 			if [ -d ~/.config/vis ]; then
-			  printf "\033[33mExisting Vis config detected! Backing up...\033[0m\n"
+			  printf " \033[33mExisting Vis config detected! Backing up...\033[0m\n"
 			  mv ~/.config/vis ~/.config/vis.old
 			fi
 			git clone https://github.com/smartsyncing/dotfiles && cd dotfiles
-			printf "\n\033[33mMoving files...\033[0m\n \n"
-			mv -f zsh ~/.config/zsh
+			printf " \n\033[33mMoving files...\033[0m\n \n"
+			mv -f zsh ~/.config
 			mv -f .zshrc ~/
 			mv -f vis ~/.config
 			mv -f neofetch ~/.config
