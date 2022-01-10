@@ -2,6 +2,46 @@
 
 # Be sure to have dialog installed.
 
+echo 'aspect = 0
+separate_widget = ""
+tab_len = 0
+visit_items = OFF
+use_shadow = OFF
+use_colors = OFF
+screen_color = (WHITE,DEFAULT,OFF)
+shadow_color = (WHITE,WHITE,OFF)
+dialog_color = (WHITE,BLACK,OFF)
+title_color = (GREEN,BLACK,OFF)
+border_color = (WHITE,BLACK,OFF)
+button_active_color = (BLACK,YELLOW,OFF)
+button_inactive_color = (WHITE,BLACK,OFF)
+button_key_active_color = (BLACK,GREEN,OFF)
+button_key_inactive_color = (RED,BLACK,OFF)
+button_label_active_color = (BLACK,YELLOW,OFF)
+button_label_inactive_color = (WHITE,BLACK,OFF)
+inputbox_color = (WHITE,BLACK,OFF)
+inputbox_border_color = (BLACK,BLACK,OFF)
+searchbox_color = (WHITE,BLACK,OFF)
+searchbox_title_color = (GREEN,BLACK,OFF)
+searchbox_border_color = (WHITE,BLACK,OFF)
+position_indicator_color = (GREEN,BLACK,OFF)
+menubox_color = (BLACK,BLACK,OFF)
+menubox_border_color = (BLACK,BLACK,OFF)
+item_color = (WHITE,BLACK,OFF)
+item_selected_color = (BLACK,GREEN,OFF)
+tag_color = (BLUE,BLACK,OFF)
+tag_selected_color = (BLACK,GREEN,OFF)
+tag_key_color = (YELLOW,BLACK,OFF)
+tag_key_selected_color = (BLACK,GREEN,OFF)
+check_color = (WHITE,BLACK,OFF)
+check_selected_color = (BLACK,GREEN,OFF)
+uarrow_color = (GREEN,BLACK,OFF)
+darrow_color = (GREEN,BLACK,OFF)
+itemhelp_color = (BLACK,WHITE,OFF)
+form_active_text_color = (BLACK,BLUE,OFF)
+form_text_color = (WHITE,BLACK,OFF)
+form_item_readonly_color = (BLACK,WHITE,OFF)
+' >> ~/.dialogrc
 HEIGHT=15
 WIDTH=40
 CHOICE_HEIGHT=4
@@ -26,11 +66,8 @@ CHOICE=$(dialog --clear \
 clear
 case $CHOICE in
         1)
-            kitty_dir=$HOME/.config/kitty
-            if [ -d "$kitty_dir" ]; then
-              printf "\033[33mExisting Kitty config detected! Replacing...\033[0m\n"
-              rm -rf ~/.config/kitty
-            fi
+        	printf "\n\033[33mInstalling needed dependencies\033[0m...\n \n"
+        	
             if command -v 'yay' >'/dev/null' 2>&1; then
               yay -S --needed kitty ttf-fira-code 
             elif command -v 'paru' >'/dev/null' 2>&1; then
@@ -45,6 +82,13 @@ case $CHOICE in
               sudo zypper install kitty fira-code-fonts
             fi
             printf "\n\033[33mCloning the repo...\033[0m\n \n"
+            if [ -d ~/.config/kitty ]; then
+              printf "\033[33mExisting Kitty config detected! Backing up...\033[0m\n"
+              mv ~/.config/kitty ~/.config/kitty.old
+            fi
+            if [ -d ~/dotfiles ]; then
+              rm -rf ~/dotfiles
+            fi
             git clone https://github.com/smartsyncing/dotfiles && cd dotfiles
             printf "\n\033[33mMoving files...\033[0m\n \n"
             mv -f kitty ~/.config
@@ -52,23 +96,7 @@ case $CHOICE in
             rm -rf dotfiles/
             echo "Finished installing."
             ;;
-        2)
-			zshrc_file=$HOME/.zshrc
-			zsh_dir=$HOME/.config/zsh
-			
-			if [ -d "$zsh_dir" ]; then
-			  printf "\n\033[33mExisting ZSH config detected! Replacing...\033[0m\n "
-			  rm -rf ~/.config/zsh && rm -rf ~/.zshrc 
-			fi
-			if command -v 'uninstall_oh_my_zsh' >'/dev/null' 2>&1; then
-			  printf "\033[33mExisting ZSH config detected! Replacing...\033[0m\n" 
-			  uninstall_oh_my_zsh
-			fi
-			if [ -d "$zshrc_file" ]; then
-			  printf "\033[33mExisting ZSH config detected! Replacing...\033[0m\n" 
-			  rm -rf ~/.zshrc
-			fi
-			
+        2)	
 			printf "\n\033[33mInstalling needed dependencies\033[0m...\n \n"
 			
 			if command -v 'yay' >'/dev/null' 2>&1; then
@@ -96,6 +124,21 @@ case $CHOICE in
 
 			chsh -s /usr/bin/zsh
 			printf "\n\033[33mCloning the repo...\033[0m\n \n"
+			if [ -d ~/.config/zsh ]; then
+			  printf "\n\033[33mExisting ZSH config detected! Backing up...\033[0m\n "
+			  mv ~/.config/zsh ~/.config/zsh.old && mv ~/.zshrc ~/.zshrc.backup
+			fi
+			if command -v 'uninstall_oh_my_zsh' >'/dev/null' 2>&1; then
+			  printf "\033[33mExisting ZSH config detected! Removing...\033[0m\n" 
+			  uninstall_oh_my_zsh
+			fi
+			if [ -d ~/.zshrc ]; then
+			  printf "\033[33mExisting ZSH config detected! Backing up...\033[0m\n" 
+			  mv ~/.zshrc ~/.zshrc.backup
+			fi
+			if [ -d ~/dotfiles ]; then
+			  rm -rf ~/dotfiles
+			fi
 			git clone https://github.com/smartsyncing/dotfiles && cd dotfiles
 			printf "\n\033[33mMoving files...\033[0m\n \n"
 			mv -f zsh ~/.config/zsh
@@ -105,13 +148,6 @@ case $CHOICE in
 			echo "Finished installing."
             ;;
         3)
-            neofetch_dir=$HOME/.config/neofetch
-            
-            if [ -d "$neofetch_dir" ]; then
-              printf "\033[33mExisting Neofetch config detected! Replacing...\033[0m\n"
-              rm -rf ~/.config/neofetch
-            fi
-            
             printf "\n\033[33mInstalling needed dependencies\033[0m...\n \n"
             
             if command -v 'yay' >'/dev/null' 2>&1; then
@@ -127,6 +163,13 @@ case $CHOICE in
             fi
             
             printf "\n\033[33mCloning the repo...\033[0m\n \n"
+            if [ -d ~/.config/neofetch ]; then
+              printf "\033[33mExisting Neofetch config detected! Backing up...\033[0m\n"
+              mv ~/.config/neofetch ~/.config/neofetch.old
+            fi
+            if [ -d ~/dotfiles ]; then
+              rm -rf ~/dotfiles
+            fi
             git clone https://github.com/smartsyncing/dotfiles && cd dotfiles
             printf "\n\033[33mMoving files...\033[0m\n \n"
             mv -f neofetch ~/.config
@@ -134,38 +177,7 @@ case $CHOICE in
             rm -rf dotfiles/
             echo "Finished installing."
             ;;
-        4)
-            zshrc_file=$HOME/.zshrc
-            zsh_dir=$HOME/.config/zsh
-            neofetch_dir=$HOME/.config/neofetch
-            kitty_dir=$HOME/.config/kitty
-            vis_dir=$HOME/.config/vis
-            
-            if [ -d "$zsh_dir" ]; then
-              printf "\n\033[33mExisting ZSH config detected! Replacing...\033[0m\n "
-              rm -rf ~/.config/zsh && rm -rf ~/.zshrc 
-            fi
-            if command -v 'uninstall_oh_my_zsh' >'/dev/null' 2>&1; then
-              printf "\033[33mExisting ZSH config detected! Replacing...\033[0m\n" 
-              uninstall_oh_my_zsh
-            fi
-            if [ -d "$zshrc_file" ]; then
-              printf "\033[33mExisting ZSH config detected! Replacing...\033[0m\n" 
-              rm -rf ~/.zshrc
-            fi
-            if [ -d "$kitty_dir" ]; then
-              printf "\033[33mExisting Kitty config detected! Replacing...\033[0m\n"
-              rm -rf ~/.config/kitty
-            fi
-            if [ -d "$vis_dir" ]; then
-              printf "\033[33mExisting Vis config detected! Replacing...\033[0m\n"
-              rm -rf ~/.config/vis
-            fi
-            if [ -d "$neofetch_dir" ]; then
-              printf "\033[33mExisting Neofetch config detected! Replacing...\033[0m\n"
-              rm -rf ~/.config/neofetch
-            fi
-            
+        4)   
             printf "\n\033[33mInstalling needed dependencies\033[0m...\n \n"
             
             if command -v 'yay' >'/dev/null' 2>&1; then
@@ -186,6 +198,13 @@ case $CHOICE in
             fi
             
             printf "\n\033[33mCloning the repo...\033[0m\n \n"
+            if [ -d ~/.config/vis ]; then
+              printf "\033[33mExisting Vis config detected! Backing up...\033[0m\n"
+              mv ~/.config/vis ~/.config/vis.old
+            fi
+            if [ -d ~/dotfiles ]; then
+              rm -rf ~/dotfiles
+            fi
             git clone https://github.com/smartsyncing/dotfiles && cd dotfiles
             printf "\n\033[33mMoving files...\033[0m\n \n"
             mv -f vis ~/.config
@@ -194,37 +213,6 @@ case $CHOICE in
             echo "Finished installing."
             ;;
 	    5)
-			zshrc_file=$HOME/.zshrc
-			zsh_dir=$HOME/.config/zsh
-			neofetch_dir=$HOME/.config/neofetch
-			kitty_dir=$HOME/.config/kitty
-			vis_dir=$HOME/.config/vis
-			
-			if [ -d "$zsh_dir" ]; then
-			  printf "\n\033[33mExisting ZSH config detected! Replacing...\033[0m\n "
-			  rm -rf ~/.config/zsh && rm -rf ~/.zshrc 
-			fi
-			if command -v 'uninstall_oh_my_zsh' >'/dev/null' 2>&1; then
-			  printf "\033[33mExisting ZSH config detected! Replacing...\033[0m\n" 
-			  uninstall_oh_my_zsh
-			fi
-			if [ -d "$zshrc_file" ]; then
-			  printf "\033[33mExisting ZSH config detected! Replacing...\033[0m\n" 
-			  rm -rf ~/.zshrc
-			fi
-			if [ -d "$kitty_dir" ]; then
-			  printf "\033[33mExisting Kitty config detected! Replacing...\033[0m\n"
-			  rm -rf ~/.config/kitty
-			fi
-			if [ -d "$vis_dir" ]; then
-			  printf "\033[33mExisting Vis config detected! Replacing...\033[0m\n"
-			  rm -rf ~/.config/vis
-			fi
-			if [ -d "$neofetch_dir" ]; then
-			  printf "\033[33mExisting Neofetch config detected! Replacing...\033[0m\n"
-			  rm -rf ~/.config/neofetch
-			fi
-			
 			printf "\n\033[33mInstalling needed dependencies\033[0m...\n \n"
 			
 			if command -v 'yay' >'/dev/null' 2>&1; then
@@ -260,6 +248,33 @@ case $CHOICE in
 			
 			chsh -s /usr/bin/zsh
 			printf "\n\033[33mCloning the repo...\033[0m\n \n"
+			if [ -d ~/.config/kitty ]; then
+			  printf "\033[33mExisting Kitty config detected! Backing up...\033[0m\n"
+			  mv ~/.config/kitty ~/.config/kitty.old
+			fi
+			if [ -d ~/.config/zsh ]; then
+			  printf "\n\033[33mExisting ZSH config detected! Backing up...\033[0m\n "
+			  mv ~/.config/zsh ~/.config/zsh.old && mv ~/.zshrc ~/.zshrc.backup
+			fi
+			if command -v 'uninstall_oh_my_zsh' >'/dev/null' 2>&1; then
+			  printf "\033[33mExisting ZSH config detected! Removing...\033[0m\n" 
+			  uninstall_oh_my_zsh
+			fi
+			if [ -d ~/.zshrc ]; then
+			  printf "\033[33mExisting ZSH config detected! Backing up...\033[0m\n" 
+			  mv ~/.zshrc ~/.zshrc.backup
+			fi
+			if [ -d ~/.config/neofetch ]; then
+			  printf "\033[33mExisting Neofetch config detected! Backing up...\033[0m\n"
+			  mv ~/.config/neofetch ~/.config/neofetch.old
+			fi
+			if [ -d ~/.config/vis ]; then
+			  printf "\033[33mExisting Vis config detected! Backing up...\033[0m\n"
+			  mv ~/.config/vis ~/.config/vis.old
+			fi
+			if [ -d ~/dotfiles ]; then
+			  rm -rf ~/dotfiles
+			fi
 			git clone https://github.com/smartsyncing/dotfiles && cd dotfiles
 			printf "\n\033[33mMoving files...\033[0m\n \n"
 			mv -f zsh ~/.config/zsh
@@ -272,3 +287,4 @@ case $CHOICE in
 			echo "Finished installing."
             ;;
 esac
+
