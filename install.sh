@@ -145,7 +145,19 @@ case $CHOICE in
 	    cd ~/.local/share/fonts
 	    unzip JetBrainsMono.zip
 	    sudo fc-cache -fv
+			echo "icons:
+			  # When to use icons.
+			  # When "classic" is set, this is set to "never".
+			  # Possible values: always, auto, never
+			  when: auto
+			  # Which icon theme to use.
+			  # Possible values: fancy, unicode
+			  theme: fancy
+			  # Separator between icon and the name
+			  # Default to 1 space
+			  separator: "  "
 			
+			" >> ~/.config/lsd/config.yaml
 			chsh -s /usr/bin/zsh
 			printf "\n\033[33mCloning the repo...\033[0m\n \n"
 			if [ -d ~/.config/zsh ]; then
@@ -272,7 +284,20 @@ case $CHOICE in
 			  zypper refresh
 			  zypper install zsh-completions
 			fi
+
+			echo "icons:
+			  # When to use icons.
+			  # When "classic" is set, this is set to "never".
+			  # Possible values: always, auto, never
+			  when: auto
+			  # Which icon theme to use.
+			  # Possible values: fancy, unicode
+			  theme: fancy
+			  # Separator between icon and the name
+			  # Default to 1 space
+			  separator: "  "
 			
+			" >> ~/.config/lsd/config.yaml
 			chsh -s /usr/bin/zsh
 			printf "\n\033[33mCloning the repo...\033[0m\n \n"
 			if [ -d ~/.config/kitty ]; then
