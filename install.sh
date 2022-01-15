@@ -280,7 +280,7 @@ case $CHOICE in
 			  zypper refresh
 			  zypper install zsh-completions
 			fi
-                        wget https://github.com/ryanoasis/nerd-fonts/rel>
+                        wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Iosevka.zip
             if [ -d ~/.local/share/fonts ]; then
               rm -rf ~/.local/share/fonts
               mkdir ~/.local/share/fonts
