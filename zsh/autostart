@@ -30,7 +30,7 @@ fi
 if [ $OS = "Arch Linux" ]; then
     OS=arch
 fi
-if [ $OS = "Fedora Linux" ]; then
+if [ $OS = "Fedora Linux 35 (Workstation Edition)" ]; then
     OS=fedora
 fi
 if [ $OS = "Ubuntu" ]; then
