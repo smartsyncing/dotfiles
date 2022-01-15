@@ -82,16 +82,16 @@ case $CHOICE in
             elif command -v 'zypper' >'/dev/null' 2>&1; then
               sudo zypper install kitty wget unzip	
             fi
-            wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip
+            wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Iosevka.zip
 	    if [ -d ~/.local/share/fonts ]; then
  	      rm -rf ~/.local/share/fonts
               mkdir ~/.local/share/fonts
 	    else
 	      mkdir ~/.local/share/fonts
 	    fi
-	    mv JetBrainsMono.zip ~/.local/share/fonts
+	    mv Iosevka.zip ~/.local/share/fonts
 	    cd ~/.local/share/fonts
-	    unzip JetBrainsMono.zip
+	    unzip Iosevka.zip
 	    sudo fc-cache -fv
             printf "\n\033[33mCloning the repo...\033[0m\n \n"
             if [ -d ~/.config/kitty ]; then
@@ -134,31 +134,27 @@ case $CHOICE in
 			  zypper refresh
 			  zypper install zsh-completions
 			fi
-			wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip
+			wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Iosevka.zip
 	    if [ -d ~/.local/share/fonts ]; then
  	      rm -rf ~/.local/share/fonts
               mkdir ~/.local/share/fonts
 	    else
 	      mkdir ~/.local/share/fonts
 	    fi
-	    mv JetBrainsMono.zip ~/.local/share/fonts
+	    mv Iosevka.zip ~/.local/share/fonts
 	    cd ~/.local/share/fonts
-	    unzip JetBrainsMono.zip
+	    unzip Iosevka.zip
 	    sudo fc-cache -fv
-			echo "icons:
-			  # When to use icons.
-			  # When "classic" is set, this is set to "never".
-			  # Possible values: always, auto, never
-			  when: auto
-			  # Which icon theme to use.
-			  # Possible values: fancy, unicode
-			  theme: fancy
-			  # Separator between icon and the name
-			  # Default to 1 space
-			  separator: "  "
-			
-			" >> ~/.config/lsd/config.yaml
-			chsh -s /usr/bin/zsh
+                        if [ -d ~/.config/lsd ]; then
+                          rm -rf ~/.config/lsd
+                          mkdir ~/.config/lsd
+                        fi
+                        echo 'icons:
+   when: auto
+   theme: fancy
+   separator: "  "
+
+                        ' >> ~/.config/lsd/config.yaml			chsh -s /usr/bin/zsh
 			printf "\n\033[33mCloning the repo...\033[0m\n \n"
 			if [ -d ~/.config/zsh ]; then
 			  printf "\n\033[33mExisting ZSH config detected! Backing up...\033[0m\n "
@@ -284,20 +280,27 @@ case $CHOICE in
 			  zypper refresh
 			  zypper install zsh-completions
 			fi
+                        wget https://github.com/ryanoasis/nerd-fonts/rel>
+            if [ -d ~/.local/share/fonts ]; then
+              rm -rf ~/.local/share/fonts
+              mkdir ~/.local/share/fonts
+            else
+              mkdir ~/.local/share/fonts
+            fi
+            mv Iosevka.zip ~/.local/share/fonts
+            cd ~/.local/share/fonts
+            unzip Iosevka.zip
+            sudo fc-cache -fv
+			if [ -d ~/.config/lsd ]; then
+			  rm -rf ~/.config/lsd
+			  mkdir ~/.config/lsd
+			fi
+			echo 'icons:
+   when: auto
+   theme: fancy
+   separator: "  "
 
-			echo "icons:
-			  # When to use icons.
-			  # When "classic" is set, this is set to "never".
-			  # Possible values: always, auto, never
-			  when: auto
-			  # Which icon theme to use.
-			  # Possible values: fancy, unicode
-			  theme: fancy
-			  # Separator between icon and the name
-			  # Default to 1 space
-			  separator: "  "
-			
-			" >> ~/.config/lsd/config.yaml
+                        ' >> ~/.config/lsd/config.yaml
 			chsh -s /usr/bin/zsh
 			printf "\n\033[33mCloning the repo...\033[0m\n \n"
 			if [ -d ~/.config/kitty ]; then
