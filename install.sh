@@ -71,20 +71,28 @@ clear
 case $CHOICE in
         1)
         	printf "\n\033[33mInstalling needed dependencies\033[0m...\n \n"
-        	
             if command -v 'yay' >'/dev/null' 2>&1; then
-              yay -S --needed kitty ttf-fira-code 
+              yay -S --needed kitty wget unzip 
             elif command -v 'paru' >'/dev/null' 2>&1; then
-              paru -S --needed kitty ttf-fira-code 
+              paru -S --needed kitty wget unzip 
             elif command -v 'dnf' >'/dev/null' 2>&1; then
-              sudo dnf install kitty fira-code-fonts
+              sudo dnf install kitty wget unzip 
             elif command -v 'apt' >'/dev/null' 2>&1; then
-              sudo apt install kitty 
-              sudo add-apt-repository universe
-  			  sudo apt install fonts-firacode
+              sudo apt install kitty wget unzip
             elif command -v 'zypper' >'/dev/null' 2>&1; then
-              sudo zypper install kitty fira-code-fonts
+              sudo zypper install kitty wget unzip	
             fi
+            wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip
+	    if [ -d ~/.local/share/fonts ]; then
+ 	      rm -rf ~/.local/share/fonts
+              mkdir ~/.local/share/fonts
+	    else
+	      mkdir ~/.local/share/fonts
+	    fi
+	    mv JetBrainsMono.zip ~/.local/share/fonts
+	    cd ~/.local/share/fonts
+	    unzip JetBrainsMono.zip
+	    sudo fc-cache -fv
             printf "\n\033[33mCloning the repo...\033[0m\n \n"
             if [ -d ~/.config/kitty ]; then
               printf "\033[33mExisting Kitty config detected! Backing up...\033[0m\n"
@@ -94,26 +102,20 @@ case $CHOICE in
 			  cd ~/dotfiles
 			  printf " \n\033[33mMoving files...\033[0m\n \n"
               mv -f kitty ~/.config
-              cd ..
-              rm -rf dotfiles/
-              echo "Finished installing."
 			else
 			  printf "\n\033[33mCloning the repo...\033[0m\n \n"
 			  git clone https://github.com/smartsyncing/dotfiles && cd dotfiles
 			  printf " \n\033[33mMoving files...\033[0m\n \n"
 			  mv -f kitty ~/.config
-			  cd .. 
-			  rm -rf dotfiles/
-			  echo "Finished installing."
 			fi
             ;;
         2)	
 			printf "\n\033[33mInstalling needed dependencies\033[0m...\n \n"
 			
 			if command -v 'yay' >'/dev/null' 2>&1; then
-			  yay -S --needed vim bat zsh lsd fzf zsh-completions
+			  yay -S --needed vim bat zsh lsd fzf zsh-completions figlet inetutils
 			elif command -v 'paru' >'/dev/null' 2>&1; then
-			  paru -S --needed vim bat zsh lsd fzf zsh-completions
+			  paru -S --needed vim bat zsh lsd fzf zsh-completions figlet inetutils
 			elif command -v 'dnf' >'/dev/null' 2>&1; then
 			  sudo dnf install vim bat zsh lsd fzf
 			  sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/shells:zsh-users:zsh-completions/Fedora_33/shells:zsh-users:zsh-completions.repo
@@ -132,7 +134,18 @@ case $CHOICE in
 			  zypper refresh
 			  zypper install zsh-completions
 			fi
-
+			wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip
+	    if [ -d ~/.local/share/fonts ]; then
+ 	      rm -rf ~/.local/share/fonts
+              mkdir ~/.local/share/fonts
+	    else
+	      mkdir ~/.local/share/fonts
+	    fi
+	    mv JetBrainsMono.zip ~/.local/share/fonts
+	    cd ~/.local/share/fonts
+	    unzip JetBrainsMono.zip
+	    sudo fc-cache -fv
+			
 			chsh -s /usr/bin/zsh
 			printf "\n\033[33mCloning the repo...\033[0m\n \n"
 			if [ -d ~/.config/zsh ]; then
@@ -152,18 +165,12 @@ case $CHOICE in
 			  printf " \n\033[33mMoving files...\033[0m\n \n"
               mv -f zsh ~/.config
               mv -f .zshrc ~/
-              cd ..
-              rm -rf dotfiles/
-              echo "Finished installing."
 			else
 			  printf "\n\033[33mCloning the repo...\033[0m\n \n"
 			  git clone https://github.com/smartsyncing/dotfiles && cd dotfiles
 			  printf " \n\033[33mMoving files...\033[0m\n \n"
 			  mv -f zsh ~/.config
 			  mv -f .zshrc ~/
-			  cd .. 
-			  rm -rf dotfiles/
-			  echo "Finished installing."
 			fi
             ;;
         3)
@@ -190,17 +197,11 @@ case $CHOICE in
 			  cd ~/dotfiles
 			  printf " \n\033[33mMoving files...\033[0m\n \n"
               mv -f neofetch ~/.config
-              cd ..
-              rm -rf dotfiles/
-              echo "Finished installing."
 			else
 			  printf "\n\033[33mCloning the repo...\033[0m\n \n"
 			  git clone https://github.com/smartsyncing/dotfiles && cd dotfiles
 			  printf " \n\033[33mMoving files...\033[0m\n \n"
 			  mv -f neofetch ~/.config
-			  cd .. 
-			  rm -rf dotfiles/
-			  echo "Finished installing."
 			fi
             ;;
         4)   
@@ -231,17 +232,11 @@ case $CHOICE in
 			  cd ~/dotfiles
 			  printf " \n\033[33mMoving files...\033[0m\n \n"
               mv -f vis ~/.config
-              cd ..
-              rm -rf dotfiles/
-              echo "Finished installing."
 			else
 			  printf "\n\033[33mCloning the repo...\033[0m\n \n"
 			  git clone https://github.com/smartsyncing/dotfiles && cd dotfiles
 			  printf " \n\033[33mMoving files...\033[0m\n \n"
 			  mv -f vis ~/.config
-			  cd .. 
-			  rm -rf dotfiles/
-			  echo "Finished installing."
 			fi
             ;;
 	    5)
@@ -312,9 +307,6 @@ case $CHOICE in
               mv -f vis ~/.config
               mv -f neofetch ~/.config
               mv -f kitty ~/.config
-              cd ..
-              rm -rf dotfiles/
-              echo "Finished installing."
 			else
 			  printf "\n\033[33mCloning the repo...\033[0m\n \n"
 			  git clone https://github.com/smartsyncing/dotfiles && cd dotfiles
@@ -324,9 +316,9 @@ case $CHOICE in
 			  mv -f vis ~/.config
 			  mv -f neofetch ~/.config
 			  mv -f kitty ~/.config
-			  cd .. 
-			  rm -rf dotfiles/
-			  echo "Finished installing."
 			fi
             ;;
 esac
+cd .. 
+rm -rf dotfiles/
+echo "Finished installing."

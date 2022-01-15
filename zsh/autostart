@@ -1,7 +1,3 @@
-
-echo "\nWelcome to ZSH\n"
-echo "$(whoami)@$(hostname)\n"
-echo "$(date +'%A %d,    %n%B %Y')\n"
 if [ -f /etc/os-release ]; then
     # freedesktop.org and systemd
     . /etc/os-release
@@ -31,4 +27,20 @@ else
     OS=$(uname -s)
     VER=$(uname -r)
 fi
-echo "I use $OS btw\n"
+if [ $OS = "Arch Linux" ]; then
+    OS=arch
+fi
+if [ $OS = "Fedora Linux" ]; then
+    OS=fedora
+fi
+if [ $OS = "Ubuntu" ]; then
+    OS=ubuntu
+fi
+if [ $OS = "Debian" ]; then
+    OS=debian
+fi
+if [ $OS = "OpenSUSE Tumbleweed" ]; then
+    OS=opensuse
+fi
+
+echo " Welcome to ZSH\n\n $(whoami)@$(hostname)\n\n $(date +'%A %d,    %n %B %Y')\n $(figlet -w 200 "$OS")"
