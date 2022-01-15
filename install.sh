@@ -117,18 +117,18 @@ case $CHOICE in
 			elif command -v 'paru' >'/dev/null' 2>&1; then
 			  paru -S --needed vim bat zsh lsd fzf zsh-completions figlet inetutils
 			elif command -v 'dnf' >'/dev/null' 2>&1; then
-			  sudo dnf install vim bat zsh lsd fzf
+			  sudo dnf install vim bat zsh lsd fzf figlet
 			  sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/shells:zsh-users:zsh-completions/Fedora_33/shells:zsh-users:zsh-completions.repo
 			  sudo dnf install zsh-completions
 			elif command -v 'apt' >'/dev/null' 2>&1; then
-			  sudo apt install zsh vim bat rust fzf
+			  sudo apt install zsh vim bat rust fzf figlet
 			  cargo install lsd
 			  echo 'deb http://download.opensuse.org/repositories/shells:/zsh-users:/zsh-completions/xUbuntu_21.10/ /' | sudo tee /etc/apt/sources.list.d/shells:zsh-users:zsh-completions.list
 			  curl -fsSL https://download.opensuse.org/repositories/shells:zsh-users:zsh-completions/xUbuntu_21.10/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/shells_zsh-users_zsh-completions.gpg > /dev/null
 			  sudo apt update
 			  sudo apt install zsh-completions
 			elif command -v 'zypper' >'/dev/null' 2>&1; then
-			  sudo zypper install vim zsh bat rust fzf 
+			  sudo zypper install vim zsh bat rust fzf figlet
 			  cargo install lsd 
 			  zypper addrepo https://download.opensuse.org/repositories/shells:zsh-users:zsh-completions/openSUSE_Tumbleweed/shells:zsh-users:zsh-completions.repo
 			  zypper refresh
@@ -251,17 +251,17 @@ case $CHOICE in
 			printf "\n\033[33mInstalling needed dependencies\033[0m...\n \n"
 			
 			if command -v 'yay' >'/dev/null' 2>&1; then
-			  yay -S --needed vim bat ttf-fira-code zsh kitty cli-visualizer lsd neofetch fzf zsh-completions
+			  yay -S --needed vim bat ttf-fira-code zsh kitty cli-visualizer lsd neofetch fzf zsh-completions figlet inetutils
 			elif command -v 'paru' >'/dev/null' 2>&1; then
-			  paru -S --needed vim bat ttf-fira-code zsh kitty cli-visualizer lsd neofetch fzf zsh-completions
+			  paru -S --needed vim bat ttf-fira-code zsh kitty cli-visualizer lsd neofetch fzf zsh-completions figlet inetutils
 			elif command -v 'dnf' >'/dev/null' 2>&1; then
-			  sudo dnf install vim bat zsh fira-code-fonts kitty lsd neofetch fzf
+			  sudo dnf install vim bat zsh fira-code-fonts kitty lsd neofetch fzf figlet
 			  git clone https://github.com/dpayne/cli-visualizer && cd cli-visualizer
 			  ./install.sh
 			  sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/shells:zsh-users:zsh-completions/Fedora_33/shells:zsh-users:zsh-completions.repo
 			  sudo dnf install zsh-completions
 			elif command -v 'apt' >'/dev/null' 2>&1; then
-			  sudo apt install zsh vim bat rust neofetch fzf kitty 
+			  sudo apt install zsh vim bat rust neofetch fzf kitty figlet
 			  cargo install lsd
 			  git clone https://github.com/dpayne/cli-visualizer && cd cli-visualizer
 			  ./install.sh
@@ -272,7 +272,7 @@ case $CHOICE in
 			  sudo apt update
 			  sudo apt install zsh-completions
 			elif command -v 'zypper' >'/dev/null' 2>&1; then
-			  sudo zypper install vim zsh bat kitty rust neofetch fzf fira-code-fonts
+			  sudo zypper install vim zsh bat kitty rust neofetch fzf fira-code-fonts figlet
 			  cargo install lsd 
 			  git clone https://github.com/dpayne/cli-visualizer && cd cli-visualizer
 			  ./install.sh
