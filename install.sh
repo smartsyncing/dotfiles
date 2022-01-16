@@ -226,6 +226,7 @@ case $CHOICE in
               rm -rf ~/.config/lsd
               mkdir ~/.config/lsd
             fi
+	    touch ~/.config/lsd/config.yaml
             echo '  icons:
    when: auto
    theme: fancy
