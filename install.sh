@@ -225,6 +225,8 @@ case $CHOICE in
             if [ -d ~/.config/lsd ]; then
               rm -rf ~/.config/lsd
               mkdir ~/.config/lsd
+	    else
+	      mkdir ~/.config/lsd
             fi
 	    touch ~/.config/lsd/config.yaml
             echo '  icons:
@@ -298,7 +300,10 @@ case $CHOICE in
 	    if [ -d ~/.config/lsd ]; then
 	      rm -rf ~/.config/lsd
 	      mkdir ~/.config/lsd
-	    fi
+	    else
+	      mkdir ~/.config/lsd
+            fi
+	    touch ~/.config/lsd/config.yaml
 	    echo 'icons:
    when: auto
    theme: fancy
