@@ -33,27 +33,27 @@ else
     OS=$(uname -s)
     VER=$(uname -r)
 fi
-if [ $OS = "Arch Linux" ]; then
+if [[ $OS = *"Arch"* ]]; then
     OS=arch
     COLOR=$BLUE
 fi
-if [ $OS = "Fedora Linux 35 (Workstation Edition)" ]; then
+if [[ $OS = *"Fedora"* ]]; then
     OS=fedora
     COLOR=$BLUE
 fi
-if [ $OS = "Ubuntu" ]; then
+if [[ $OS = *"Ubuntu"* ]]; then
     OS=ubuntu
     COLOR=$ORANGE
 fi
-if [ $OS = "Debian" ]; then
+if [[ $OS = *"Debian"* ]]; then
     OS=debian
     COLOR=$RED
 fi
-if [ $OS = "OpenSUSE Tumbleweed" ]; then
+if [[ $OS = *"OpenSUSE"* ]]; then
     OS=opensuse
     COLOR=$GREEN
 fi
-if [ $OS = "Void Linux" ]; then
+if [[ $OS = *"Void"* ]]; then
     OS=void
     COLOR=$GREEN
 fi
