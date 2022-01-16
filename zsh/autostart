@@ -1,3 +1,9 @@
+ORANGE="\e[33m"
+RED="\e[31m"
+BLUE="\e[94m"
+GREEN="\e[92m"
+STOP="\e[0m"
+
 if [ -f /etc/os-release ]; then
     # freedesktop.org and systemd
     . /etc/os-release
@@ -29,21 +35,27 @@ else
 fi
 if [ $OS = "Arch Linux" ]; then
     OS=arch
-fi
-if [ $OS = "Void Linux" ]; then
-    OS=void
+    COLOR=$BLUE
 fi
 if [ $OS = "Fedora Linux 35 (Workstation Edition)" ]; then
     OS=fedora
+    COLOR=$BLUE
 fi
 if [ $OS = "Ubuntu" ]; then
     OS=ubuntu
+    COLOR=$ORANGE
 fi
 if [ $OS = "Debian" ]; then
     OS=debian
+    COLOR=$RED
 fi
 if [ $OS = "OpenSUSE Tumbleweed" ]; then
     OS=opensuse
+    COLOR=$GREEN
+fi
+if [ $OS = "Void Linux" ]; then
+    OS=void
+    COLOR=$GREEN
 fi
 
-echo " Welcome to ZSH\n\n $(whoami)@$(hostname)\n\n $(date +'%A %d,    %n %B %Y')\n $(figlet -w 200 -f small "$OS")"
+echo " Welcome to ZSH\n\n $(whoami)@$(hostname)\n\n $(date +'%A %d,    %n %B %Y')\n $(printf $COLOR)$(figlet -w 200 -f small $OS)$(printf $STOP) \nLife is to you a dashing and bold adventure.\n"
