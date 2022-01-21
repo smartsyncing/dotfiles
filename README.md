@@ -5,10 +5,13 @@
 <h2 align=center>🐧 One Dark - Budgie - Arch</h2>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/smartersyncing/dotfiles/main/assets/setup.PNG" alt="Dotfiles"/>
+  <img src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/cleanrice.png" alt="Dotfiles"/>
 </p>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/smartersyncing/dotfiles/main/assets/raven.png" alt="Dotfiles"/>
+  <img src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/rice1.png" alt="Dotfiles"/>
+</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/emacs.png" alt="Dotfiles"/>
 </p>
 
 ## Prerequisites
