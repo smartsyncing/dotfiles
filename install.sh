@@ -10,6 +10,8 @@ command_exists () {
     type "$1" &> /dev/null ;
 }
 
+echo "This installer is deprecated and won't work fully."
+
 install_deps(){
 	printf "\n\033[33mInstalling needed dependencies\033[0m...\n \n"
 	if [ $CHOICE = "1" ]; then
