@@ -5,13 +5,13 @@
 <h2 align=center>🐧 One Dark - Budgie - Arch</h2>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/nfndojodew.png" alt="Dotfiles"/>
+  <img src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/cleasdasdsad.png" alt="Dotfiles"/>
 </p>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/ricenew.png" alt="Dotfiles"/>
+  <img src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/imamamamamamaa.png" alt="Dotfiles"/>
 </p>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/emacs2.png" alt="Dotfiles"/>
+  <img src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/emacs.png" alt="Dotfiles"/>
 </p>
 
 ## Installation
