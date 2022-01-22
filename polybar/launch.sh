@@ -58,7 +58,7 @@ elif [[ "$1" == "--colorblocks" ]]; then
 	launch_bar
 
 elif [[ "$1" == "--forest" ]]; then
-	style="bar"
+	style="forest"
 	launch_bar
 
 elif [[ "$1" == "--pwidgets" ]]; then
