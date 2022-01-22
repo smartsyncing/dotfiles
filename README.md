@@ -14,7 +14,18 @@
   <img src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/rice2.png" alt="Dotfiles"/>
 </p>
 
-## Installation
+## Details 
+
+```
+GTK Theme: Qogir Dark
+Icons: Tela Dark
+Font: Iosevka Term
+Terminal: Kitty
+Shell: ZSH
+Bar: Polybar
+```
+
+## Installation (Deprecated)
 ```
 git clone https://github.com/smartsyncing/dotfiles.git && cd dotfiles
 chmod +x install.sh
