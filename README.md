@@ -21,11 +21,13 @@
 
 ```
 GTK Theme: Qogir Dark
+Openbox Theme: Qogir-Dark-Openbox
 Icons: Tela Dark
 Font: Iosevka Term
 Terminal: Kitty
 Shell: ZSH
 Bar: Polybar
+Launcher: Rofi
 ```
 
 ## Installation (Deprecated)
