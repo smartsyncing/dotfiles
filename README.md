@@ -8,10 +8,10 @@
   <img src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/cleasdasdsad.png" alt="Dotfiles"/>
 </p>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/imamamamamamaa.png" alt="Dotfiles"/>
+  <img src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/ss2.png" alt="Dotfiles"/>
 </p>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/emacs.png" alt="Dotfiles"/>
+  <img src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/ss1.png" alt="Dotfiles"/>
 </p>
 
 ## Installation
