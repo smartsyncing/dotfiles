@@ -357,7 +357,7 @@
     </keybind>
     <keybind key="W-r">
       <action name="Execute">
-        <command>bash -c '~/.config/polybar/forest/scripts/rofi/launcher.rasi'</command>
+        <command>bash -c '~/.config/polybar/forest/scripts/launcher.sh'</command>
       </action>
     </keybind>
     <keybind key="W-Return">
@@ -367,7 +367,7 @@
     </keybind>
     <keybind key="W-S-e">
       <action name="Execute">
-        <command>bash -c '~/.config/polybar/forest/scripts/powermenu.rasi'</command>
+        <command>bash -c 'systemctl restart lightdm'</command>
       </action>
     </keybind>
     <keybind key="W-S-space">
@@ -383,97 +383,47 @@
     </keybind>
     <keybind key="W-Print">
       <action name="Execute">
-        <command>bash -c '~/.config/rofi/scripts/screenshot.sh'</command>
+        <command>flameshot gui</command>
       </action>
     </keybind>
     <keybind key="Print">
       <action name="Execute">
-        <command>bash -c '~/.scripts/shot-now'</command>
+        <command>flameshot launcher</command>
       </action>
     </keybind>
     <keybind key="W-F12">
       <action name="Execute">
-        <command>networkmanager_dmenu</command>
+        <command>poweroff</command>
       </action>
     </keybind>
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
-        <command>bash -c '~/.scripts/notify/change-volume up'</command>
+        <command>bash -c '~/.local/bin/volume up'</command>
       </action>
     </keybind>
     <keybind key="XF86AudioLowerVolume">
       <action name="Execute">
-        <command>bash -c '~/.scripts/notify/change-volume down'</command>
+        <command>bash -c '~/.local/bin/volume down'</command>
       </action>
     </keybind>
     <keybind key="XF86AudioMute">
       <action name="Execute">
-        <command>bash -c '~/.scripts/notify/change-volume mute'</command>
+        <command>bash -c '~/.local/bin/volume mute'</command>
       </action>
     </keybind>
     <keybind key="C-A-Right">
       <action name="Execute">
-        <command>bash -c '~/.scripts/notify/change-volume up'</command>
+        <command>bash -c '~/.local/bin/volume up'</command>
       </action>
     </keybind>
     <keybind key="C-A-Left">
       <action name="Execute">
-        <command>bash -c '~/.scripts/notify/change-volume down'</command>
-      </action>
-    </keybind>
-    <keybind key="C-A-Up">
-      <action name="Execute">
-        <command>bash -c '~/.scripts/notify/change-brightness up'</command>
-      </action>
-    </keybind>
-    <keybind key="C-A-Down">
-      <action name="Execute">
-        <command>bash -c '~/.scripts/notify/change-brightness down'</command>
-      </action>
-    </keybind>
-    <keybind key="XF86MonBrightnessUp">
-      <action name="Execute">
-        <command>bash -c '~/.scripts/notify/change-brightness up'</command>
-      </action>
-    </keybind>
-    <keybind key="XF86MonBrightnessDown">
-      <action name="Execute">
-        <command>bash -c '~/.scripts/notify/change-brightness down'</command>
-      </action>
-    </keybind>
-    <keybind key="W-l">
-      <action name="Execute">
-        <command>bash -c 'source $HOME/.aether-corevar &amp;&amp; $LOCK'</command>
-      </action>
-    </keybind>
-    <keybind key="XF86AudioPlay">
-      <action name="Execute">
-        <command>bash -c 'playerctl play-pause &amp;&amp; ~/.scripts/notify/short-notify "media-playpause.png" 1000 "Play / Pause" "Media Control"'</command>
-      </action>
-    </keybind>
-    <keybind key="XF86AudioNext">
-      <action name="Execute">
-        <command>bash -c 'playerctl next &amp;&amp; ~/.scripts/notify/short-notify "media-next.png" 1000 "Next" "Media Control"'</command>
-      </action>
-    </keybind>
-    <keybind key="XF86AudioPrev">
-      <action name="Execute">
-        <command>bash -c 'playerctl previous &amp;&amp; ~/.scripts/notify/short-notify "media-previous.png" 1000 "Previous" "Media Control"'</command>
+        <command>bash -c '~/.local/bin/volume down'</command>
       </action>
     </keybind>
     <keybind key="XF86PowerOff">
       <action name="Execute">
-        <command>bash -c '~/.config/rofi/scripts/powermenu.sh'</command>
-      </action>
-    </keybind>
-    <keybind key="Pause">
-      <action name="Execute">
-        <command>bash -c 'playerctl play-pause &amp;&amp; ~/.scripts/notify/short-notify "media-playpause.png" 1000 "Play / Pause" "Media Control"'</command>
-      </action>
-    </keybind>
-    <keybind key="W-P">
-      <action name="Execute">
-        <command>bash -c '~/.config/rofi/scripts/runcommand.sh'</command>
+        <command>poweroff</command>
       </action>
     </keybind>
     <keybind key="W-Left">

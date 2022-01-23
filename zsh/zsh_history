@@ -1,0 +1,2079 @@
+fzf
+git clone https://github.com/smartsyncing/dotfiles
+cd dotfiles/
+nano install.sh
+sudo pacman -S vivaldi-ffmpeg-codecs
+ pull
+cd
+git clone https://github.com/smartsyncing/dotfiles
+rm dotfiles/
+rm -rf dotfiles/
+git clone https://github.com/smartsyncing/dotfiles
+cd dotfiles
+chmod +x install.sh
+./install.sh
+nano install.sh
+cd
+nano hi.sh
+chmod +x hi.sh
+./hi.sh
+rm -rf hi.sh
+rm -rf *.sh
+sudo pacman -Syu
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+sudo pacman -S base-devel
+makepkg -si
+cd
+git clone https://github.com/smartsyncing/dotfiles
+cd dotfiles
+chmod +x install.sh
+./install.sh
+cd
+rm -rf *.zip
+rm -rf yay
+git clone https://github.com/smartsyncing/dotfiles
+cd dotfiles
+chmod +x install.sh
+./install.sh
+cd
+rm -rf Iosevka.zip.1
+cd /usr/share/fonts
+rm -rf Iosevka*
+sudo rm -rf Iosevka*
+cd
+wget https://raw.githubusercontent.com/smartsyncing/dotfiles/main/install.sh
+chmod +x install.sh
+./install.sh
+ls .config/lsd
+rm -rf install.sh
+wget https://raw.githubusercontent.com/smartsyncing/dotfiles/main/install.sh & chmod +x install.sh & ./install.sh
+wget https://raw.githubusercontent.com/smartsyncing/dotfiles/main/install.sh && chmod +x install.sh && ./install.sh
+./install.sh
+git clone https://github.com/vinceliuice/Qogir-theme
+cd Qogir-theme
+./install.sh
+cd
+rm -rf Iosevka* install* wget-log Qogir-theme/
+ls
+exir
+exit
+cd Downloads/
+ls
+ls
+cd
+gsettings set org.gnome.desktop.background picture-uri file:///home/lewis/Downloads/inaki-andonegi-castle-in-the-sky.jpg
+gsettings set org.gnome.desktop.background picture-uri file:///home/lewis/Downloads/inaki-andonegi-castle-in-the-sky.jpg
+wget https://raw.githubusercontent.com/smartsyncing/dotfiles/main/install.sh && nano install.sh
+            if [ -d ~/.config/lsd ]; then\
+              rm -rf ~/.config/lsd\
+              mkdir ~/.config/lsd\
+            else\
+              mkdir ~/.config/lsd\
+            fi\
+            touch ~/.config/lsd/config.yaml\
+            echo '  icons:\
+   when: auto\
+   theme: fancy\
+   separator: "  "\
+            ' >> ~/.config/lsd/config.yaml
+ls
+ls
+ls
+rm -rf install.sh
+ls
+exit
+poweroff
+git clone https://aur.archlinux.org/mutter-rounded.git
+cd mutter-rounded
+makepkg -si --nocheck 
+xvfb run
+cd
+rm -rf mutter-rounded/
+yay -S --nocheck mutter-rounded
+git clone https://aur.archlinux.org/mutter-rounded.git
+cd mutter-rounded
+makepkg -si --nocheck 
+sudo pacman -S xvidcore xorg-server-xvfb
+sudo pacman -S xorg-server-xvfb
+makepkg -si --nocheck 
+mutter_settings
+cd
+mutter_settings
+rm -rf mutter-rounded/
+mutter
+mutter --replace
+mutter --replace
+mutter &
+gsettings set org.gnome.desktop.background picture-uri file:///home/lewis/Downloads/inaki-andonegi-castle-in-the-sky.jpg
+gsettings set org.gnome.mutter round-corners-radius 9
+gsettings set org.gnome.mutter round-corners-radius 8
+gsettings set org.gnome.mutter round-corners-radius 10
+poweroff
+ls
+exit
+cava
+exit
+yay -S cava
+cava
+cava
+exut
+exit
+cava
+yay -Rns cava
+yay -S cava
+cava
+cava
+yay -Rns cava
+yay -Rns cava-git
+git clone https://github.com/karlstav/cava
+cd cava
+./autogen.sh
+./configure
+make
+sudo pacman -S fftw iniparser libevent openmpi
+./configure
+make
+cava
+cava
+make INSTALL=
+make install
+sudo make install
+cava
+sudo pacman -Rns sysprog
+sudo pacman -Rns sysprof
+c
+cd
+nano .config/cava/config
+sudo pacman -S pipewire-pulse
+cava
+cd
+cava
+cd
+rm -rf cava/
+cava
+nano .config/cava/config
+sudo pacman -S pipewire-alsa
+cava
+sudo pacman -S pipewire-pulse
+cava
+sudo pacman -S cava
+sudo pacman -S vis
+vis
+sudo pacman -Rns vis
+yay -S cava
+cava
+alsa
+pacman -S base-devel fftw ncurses alsa-lib iniparser pulseaudio
+pacman -S --needed base-devel fftw ncurses alsa-lib iniparser pulseaudio
+sudo pacman -S --needed base-devel fftw ncurses alsa-lib iniparser pulseaudio
+sudo pacman -S --needed base-devel fftw ncurses alsa-lib iniparse
+sudo pacman -S --needed base-devel fftw ncurses alsa-lib iniparser
+sudo pacman -S --needed base-devel fftw ncurses alsa-lib iniparser
+cava
+yay -Ss cli-vis
+nano .config/cava/config
+rm -rf /usr/local/bin/cava
+sudo rm -rf /usr/local/bin/cava
+ls
+exit
+git clone https://github.com/dpayne/cli-visualizer#arch-linux
+git clone https://github.com/dpayne/cli-visualizer
+cd cli-visualizer
+./install.sh
+sudo pacman -S cmake
+sudo pacman -S cmake
+./install.sh
+vis
+exit
+vis
+exit
+rm -rf cli-visualizer
+vis
+nano .config/vis/config
+rm -rf .config/cava/
+nano .config/vis/config
+vis
+vis
+nano .config/vis/config
+vis
+exit
+vis
+exit
+vis
+sudo pacman -S alacritty
+exit
+vis
+vis
+vis
+vis
+vis
+vis
+vis
+vis
+vis
+vis
+vis
+vis
+vis
+vis
+export TERM=rxvt-256color
+vis
+vis
+vis
+nano .config/vis/colors/basic_colors
+vis
+nano .config/vis/config
+vis
+nano .config/vis/config
+vis
+nano .config/vis/config
+visd
+vis
+nano .config/vis/config
+vis
+nano .config/vis/config
+vis
+nano .config/vis/config
+vis
+vis
+nano .config/vis/colors/basic_colors
+vis
+vis Downloads/inaki-andonegi-castle-in-the-sky.jpg
+vis -help
+vis --help
+vis -c ~/.config/vis/config
+nano .config/vis/colors/onedark_colors
+vis
+vis -c ~/.config/vis/config
+nano .config/vis/config
+vis
+nano .config/vis/config
+export TERM=rxvt-256color
+vis
+nano .config/vis/config
+~/.config/vis/vis.log
+cat ~/.config/vis/vis.log
+nano .config/vis/colors/blackblue
+nano .config/vis/config
+vis
+export MICRO_TRUECOLOR=1
+micro .config/vis/config
+export TRUECOLOR=1
+nano .config/vis/colors/basic_colors
+micro .config/vis/config
+yay -S cli-visualizer-git
+vis
+nano .config/vis/colors/basic_colors
+sudo pacman -S ncurses fftw cmake
+colors.override.terminal=false
+vis colors.override.terminal=true
+vis colors.override.terminal=false
+vis --verbose
+vis --help
+vis --helpvisualizer.lorenz.character=" "\
+visualizer.ellipse.character=" "
+nano .config/vis/config
+vis --help
+vis --verbose
+nano .config/vis/config
+vis
+nano .config/vis/config
+vis
+nano .config/vis/config
+vis
+nano .config/vis/config
+nano .config/vis/config
+vis
+nano .config/vis/config
+vis
+nano .config/vis/config
+vis
+nano .config/vis/config
+vis
+vis
+exit
+vis
+exit
+vis
+vis
+sudo pacman -Rns alacritty
+exit
+poweroff
+git clone https://github.com/vinceliuice/Tela-icon-theme && cd Tela-icon-theme && ./install.sh
+cd
+rm -rf Tela-icon-theme/
+ls
+ls ~/.config
+rm -rf .config/kitty.old
+ls ~/.config
+ls Downloads
+ls ~/.config
+ls
+ls ~/.config
+ls ~/.config
+ls /usr/local/bin
+ls ~/.config
+sudo pacman -S gnome-screenshot
+exit
+ls ~/.config
+vis
+vis
+vis
+sudo pacman -S polybar
+sudo pacman -S polybar-git
+yay -S polybar
+ls .config
+ls .config/dconf/
+micro .config/dconf/user
+micro .config/dconf/user2
+sudo pacman -S xclip
+micro .config/dconf/user2
+mv .config/dconf/user ~/.config/dconf/user1
+micro .config/dconf/user2 ~/.config/dconf/user
+mv .config/dconf/user2 ~/.config/dconf/user
+nano .config/gtk-3.0/gtk.css
+nano .config/gtk-3.0/gtk.css
+ls .config/dconf/
+rm -rf .config/dconf/user
+mv .config/dconf/user1 ~/.config/dconf/user
+wget https://raw.githubusercontent.com/streambinder/dots/master/.config/dconf/com.solus-project -O /tmp/budgie-detsktop.dconf\
+dconf load /com/solus-project/ < /tmp/budgie-detsktop.dconf\
+mkdir -p ~/.config/gtk-3.0\
+wget https://raw.githubusercontent.com/streambinder/dots/master/.config/gtk-3.0/gtk.css -O .config/gtk-3.0/gtk.css\
+budgie-panel --replace &!
+wget https://raw.githubusercontent.com/streambinder/dots/master/.config/dconf/com.solus-project -O /tmp/budgie-detsktop.dconf\
+dconf load /com/solus-project/ < /tmp/budgie-detsktop.dconf\
+mkdir -p ~/.config/gtk-3.0\
+wget https://raw.githubusercontent.com/streambinder/dots/master/.config/gtk-3.0/gtk.css -O .config/gtk-3.0/gtk.css\
+budgie-panel --replace &!
+wget https://raw.githubusercontent.com/streambinder/dots/master/.config/dconf/com.solus-project -O /tmp/budgie-detsktop.dconf\
+dconf load /com/solus-project/ < /tmp/budgie-detsktop.dconf\
+mkdir -p ~/.config/gtk-3.0\
+wget https://raw.githubusercontent.com/streambinder/dots/master/.config/gtk-3.0/gtk.css -O .config/gtk-3.0/gtk.css\
+budgie-panel --replace &!
+ls .config/dconf/
+exit
+git clone https://github.com/vinceliuice/Orchis-theme
+cd Orchis-theme
+./install.sh
+cd
+rm -rf thing.png Orchis-theme/
+ls .themes
+cd .themes
+cd Orchis-dark
+cd gtk-3.0/
+nano gtk.css
+..
+..
+nano Qogir-dark
+cd nano Qogir-dark
+cd Qogir-dark
+cd gtk-3.0/
+nano gtk.css
+nano ~/.themes/Orchis-dark/gtk-3.0/gtk.css
+nano gtk.css
+budgie-panel -r
+budgie-panel --help
+budgie-panel --replace &
+cd
+rm -rf .themes
+ls /usr/share/themes
+git clone https://github.com/vinceliuice/Qogir-theme
+cd Qogir-theme
+./install.sh -d /usr/share/themes
+sudo ./install.sh -d /usr/share/themes
+./install.sh --twes round -d /usr/share/themes
+./install.sh --aktwes round -d /usr/share/themes
+./install.shtweakswes round -d /usr/share/themes
+./install .shtweakswes round -d /usr/share/themes
+./install.sh -d /usr/share/themes --tweaks round
+sudo ./install.sh -d /usr/share/themes --tweaks round
+exit
+exit
+budgie-panel --replace &
+exit
+exit
+reboot
+cd Downloads
+ls
+mv Iosevka.zip ~/.local/share/fonts && cd ~/.local/share/fonts/
+unzip Iosevka.zip
+sudo fc-cache -fv
+sudo mv Iosevka*/usr/share/fonts
+sudo mv Iosevka* /usr/share/fonts
+sudo fc-cache -fv
+ls /usr/share/fonts
+vis
+nano .config/vis/config
+vis
+nano .config/vis/config
+nano .config/vis/colors/basic_colors
+wget https://raw.githubusercontent.com/smartsyncing/dotfiles/main/install.sh
+chmod +x install.sh
+./install.sh
+cd
+sudo rm -rf /usr/share/fonts/Iosevka*
+git clone https://github.com/smartsyncing/dotfiles
+rm -rf install.sh
+cd dotfiles
+./install.sh
+chmod +x install.sh
+./install.sh
+vis
+nano .config/vis/config
+nano ~/.config/vis/config
+cd
+rm -rf dotfiles/
+vis
+nano ~/.config/vis/config
+vis
+nano ~/.config/vis/config
+nano ~/.config/vis/config
+vis
+ls ~/.config
+mkdir .local/share/fonts/
+cd .local/share/fonts
+ls
+vis
+poweroff
+exit
+nano .config/zsh/.zshrc
+rzsh
+nano .config/zsh/.zshrc
+rzsh
+nano .config/zsh/.zshrc
+rzsh
+s
+sudo
+nano .config/zsh/.zshrc
+rzsh
+nano .config/zsh/.zshrc
+rzsh
+ÔÅÉ¥
+prompt='%B%F{green}%~%f%b%F{green} ${vcs_info_msg_0_}%F{green}ÔÅÉ¥%f%b '
+rzsh
+nano .config/zsh/.zshrc
+rzsh
+nano .config/zsh/.zshrc
+nano ~/.config/zsh/.zshrc
+rzsh
+cd dotfiles
+git clone https://github.com/smartsyncing/dotfiles
+cd dotfiles
+ nano ~/.config/zsh/.zshrc
+rzsh
+ nano ~/.config/zsh/.zshrc
+rzsh
+ nano ~/.config/zsh/.zshrc
+rzsh
+ nano ~/.config/zsh/.zshrc
+rzsh
+ nano ~/.config/zsh/.zshrc
+zsh
+cd .config
+cd
+exit
+ nano ~/.config/zsh/.zshrc
+cd
+zsh
+exit
+nano ~/.config/zsh/.zshrc
+nano ~/.config/zsh/autostart
+zsh
+bat ~/.config/zsh/.zshrc
+bat --help
+bat --list-themes
+bat --theme OneHalfDark
+bat --theme OneHalfDark ~/.config/zsh/.zshrc
+vim
+sudo pacman -S neovim
+nvim
+mv ~/.config/nvim ~/.config/NVIM.BAK
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1\
+nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
+nvim ~/.config/zsh/.zshrc
+nvim ~/.config/zsh/.zshrc
+nvim dotfiles/LICENSE
+nvim dotfiles/
+nvim --help
+nvim ~/.config/zsh/.zshrc
+nvim ~/.config/zsh/.zshrc
+nvim
+nvim
+rm -rf .config/nvim
+ls
+rm -rf cli-visualizer
+rm -rf Qogir-theme/
+sudo pacman -Rns neovim
+git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d\
+~/.emacs.d/bin/doom install
+sudo pacman -S emacs
+git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d\
+~/.emacs.d/bin/doom install
+rm -rf .emacs.d/
+git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d\
+~/.emacs.d/bin/doom install
+emacs
+emacs
+emacs ~/.config/zsh/.zshrc
+emacs ~/.config/zsh/.zshrc
+rzsh
+emacs ~/.config/zsh/.zshrc
+emacs
+emacs
+emacs
+emacs && exit
+cava
+ncursesw6-config
+yay -Rns cava-git
+git clone https://github.com/karlstav/cava#building
+git clone https://github.com/karlstav/cava#
+git clone https://github.com/karlstav/cava
+cd cava
+make
+./autogen.sh\
+./configure\
+make
+sudo make install
+cd
+cava
+nano .config/cava/config
+nano ~/.config/cava/config
+nano ~/.config/cava/config
+nano ~/.config/cava/config
+cava
+nano ~/.config/cava/config
+cava
+nano ~/.config/cava/config
+cava
+nano ~/.config/cava/config
+cava
+nano ~/.config/cava/confiG
+sudo modprobe snd_aloop
+cava
+git clone https://aur.archlinux.org/cava.git\
+cd cava\
+makepkg -si
+makepkg -si
+makepkg -si --nocheck 
+cd
+rm -rf cava/
+git clone https://aur.archlinux.org/cava.git\
+cd cava\
+makepkg -si
+cava
+sudo pacman -S asound
+sudo pacman -S alsa-firmware
+sudo pacman -S alsa-utils
+cava
+git clone https://aur.archlinux.org/cava.git\
+cd cava\
+
+makepkg -si --nocheck 
+cava
+sudo pacman -S pipewire-pulse
+sudo pacman -S pipewire-alsa 
+sudo pacman -S gst-plugin-pipewire
+sudo pacman -S gst-plugin-pipewire
+sudo pacman -S gst-plugin-pipewire
+yay -S gst-plugin-pipewire
+sudo pacman -S lib32-pipewire
+nano /etc/pacman.conf
+sudo nano /etc/pacman.conf
+cd
+rm -rf cava/
+yay -S cava-git
+pacman -Sy
+sudo pacman -Sy
+yay -S cava-git
+cava
+cava
+sudo pacman -Syu
+reboot
+journalctl
+journalctl -x
+journalctl -xfD
+journalctl -x
+journalctl /usr/bin/budgie-wm
+journalctl Xorg
+journalctl
+yay -S mutter-rounded
+sudo pacman -Rns pipewire*
+sudo pacman -Rns pipewire
+sudo pacman -Rns pipewire libpipewire wireplumber
+sudo pacman -Rns pipewire wireplumber pipewire-pulse
+sudo pacman -S pipewire
+sudo pacman -S wireplumber
+yay -S nvidia
+yay -S nvidia nvidia-utils
+git clone https://aur.archlinux.org/mutter-rounded.git
+cd mutter-rounded
+makepkg -si --nocheck 
+reboot
+ls ~/.config
+exiot
+exit
+emacs ~/.emacs.d/init.el
+exit
+exit
+cava
+snd_aloop
+sudo pacman -S alasa
+sudo pacman -S alsa
+cava
+sudo pacman -S lib32-pipewire
+cava
+sudo modprobe snd_aloop
+cava
+cava
+localectl set-locale LANG=en_US.UTF-8
+cava
+cava
+localectl set-locale LANG=en_GB.UTF-8
+cava
+nano .config/cava/config
+cava
+nano .config/cava/config
+cava
+mutter_settings 
+gsettings set org.gnome.mutter round-corners-radius 10
+gsettings set org.gnome.mutter round-corners-radius 9
+nano .config/cava/config
+cava
+nano .config/cava/config
+cava
+nano .config/cava/config
+cava
+nano .config/cava/config
+cava
+nano .config/cava/config
+cava
+nano .config/cava/config
+nano .config/cava/config
+cava
+nano .config/cava/config
+cava
+cava
+exit
+sudo pacman -S nautilus
+poweroff
+exit
+git clone https://github.com/vinceliuice/Fluent-icon-theme && cd Fluent-icon-theme && chmod +x install.sh && ./install.sh
+git clone https://github.com/vinceliuice/Fluent-icon-theme && cd Fluent-icon-theme && chmod +x install.sh && ./install.sh
+git clone https://github.com/vinceliuice/Fluent-icon-theme
+cd Fluent-icon-theme/
+./install.sh
+Ô™®
+cd
+exit
+wget -qO- https://git.io/papirus-icon-theme-install | DESTDIR="$HOME/.icons" sh
+exit
+Downloads
+tar -xf Zafiro-Icons-Dark.tar.xz
+mv Zafiro-Icons-Dark/ ~/.local/share/icons/
+cd
+git clone https://github.com/totoro-ghost/dotfiles/tree/master/.config/polybar
+git clone https://github.com/totoro-ghost/dotfiles
+rm -rf dotfiles/
+git clone https://github.com/totoro-ghost/dotfiles
+cd dotfiles
+cd .config
+mv polybar/ ~/.config/
+cd
+rm -rf dotfiles/
+yay -S polybar
+polybar 
+polybar -c .config/polybar/launch.sh
+.config/polybar/launch.sh
+./config/polybar/launch.sh
+./.config/polybar/launch.sh
+/.config/polybar/launch.sh | bash
+.config/polybar/launch.sh | bash
+~/.config/polybar/launch.sh | bash
+chmod +x .config/polybar/launch.sh
+~/.config/polybar/launch.sh | bash
+~/.config/polybar/launch.sh | bash
+sudo pacman -S xrandr
+sudo pacman -S xorg
+~/.config/polybar/launch.sh | bash
+~/.config/polybar/launch.sh | bash
+~/.config/polybar/launch.sh
+~/.config/polybar/launch.sh
+~/.config/polybar/launch.sh
+yay -Rns polybar
+rm -rf .config/polybar/
+git clone https://aur.archlinux.org/ulauncher.git && cd ulauncher && makepkg -is
+ulauncher
+ulauncher
+yay -Rns ulauncher
+cD
+cd
+rm -rf Fluent-icon-theme/ mutter-rounded/ ulauncher/ *.png
+yay -S polybar
+polybar example
+polybar example &
+mkdir .config/polybar
+nano .config/polybar/config
+polybar
+polybar drei
+polybar ein
+nano .config/polybar/config
+polybar main
+polybar main
+nano .config/polybar/config
+polybar main
+polybar main
+nano .config/polybar/config
+polybar main
+nano .config/polybar/config
+polybar main
+xrandr
+nano .config/polybar/config
+polybar main
+polybar main
+rm -rf dotfiles/
+git clone https://github.com/Okirshen/dotfiles/
+cd dotfiles
+mv polybar/ ~/.config/
+rm -rf .config/polybar && mv polybar/ ~/.config/
+rm -rf ~/.config/polybar && mv polybar/ ~/.config/
+polybar main
+polybar example
+polybar bar
+polybar bar
+polybar bar
+polybar bar
+cd
+polybar bar
+polybar bar
+polybar bar &
+killall -q polybar\
+while pgrep -x polybar >/dev/null; do sleep 1; done\
+polybar bar &
+killall -q polybar\
+while pgrep -x polybar >/dev/null; do sleep 1; done\
+polybar bar &
+exit
+$ git clone --depth=1 https://github.com/adi1090x/polybar-themes.git
+git clone --depth=1 https://github.com/adi1090x/polybar-themes.git
+cd polybar-themes/
+chmod +x setup.sh
+./setup.sh
+polybar bar
+polybar 
+ls ~/.config/polybar/
+~/.config/polybar/launch.sh
+~/.config/polybar/launch.sh --blocks
+~/.config/polybar/launch.sh --block
+exit
+~/.config/polybar/launch.sh 
+~/.config/polybar/launch.sh --colorblocks
+~/.config/polybar/launch.sh --colorblocks
+~/.config/polybar/launch.sh --colorblock
+~/.config/polybar/launch.sh -- &
+~/.config/polybar/launch.sh --shades &
+sudo pacman -S mpd
+~/.config/polybar/launch.sh --shades &
+nano .config/polybar/cuts/config.ini
+~/.config/polybar/launch.sh --cuts &
+ls /sys
+ls /sys/devices/pci0000:00/0000:00:01.3/0000:00:01.3:pcie002
+~/.config/polybar/launch.sh 
+nano .config/polybar/panels/config.ini
+~/.config/polybar/launch.sh --panels
+~/.config/polybar/launch.sh
+~/.config/polybar/launch.sh --grayblocks
+pkill budgie-panel
+pkill budgie-panel
+sudo pacman -S rofi
+rofi
+rofi
+rofi drun
+rofi run
+rofi -show drun
+~/.config/polybar/launch.sh 
+~/.config/polybar/launch.sh --hack
+~/.config/polybar/launch.sh --h
+~/.config/polybar/launch.sh --shades
+~/.config/polybar/launch.sh --sh
+~/.config/polybar/launch.sh --docky
+~/.config/polybar/launch.sh --
+~/.config/polybar/launch.sh --forest
+ls .config/autostart
+~/.config/polybar/launch.sh --forest
+exit
+ls .config/autostart
+nano .config/autostart/Set\ keymap.desktop
+nano .config/autostart/Polybar
+nano .config/autostart/Polybar.desktop
+ls .config/autostart/Polybar.desktop
+nano .config/autostart/Polybar.desktop
+nano .config/polybar/forest/colors.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/colors.ini
+nano .config/polybar/forest/colors.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/colors.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/colors.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+nano .config/polybar/forest/bars.ini
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+exit
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+nano .config/polybar/forest/colors.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/colors.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/colors.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/colors.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/colors.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/colors.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/colors.ini
+budgie-panel
+budgie-panel --help
+budgie-panel --help-all
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+exit
+cava
+nano .config/polybar/forest/config.ini
+nano .config/polybar/forest/colors.ini
+~/.config/polybar/launch.sh --forest
+sudo pacman -S gimP
+sudo pacman -S gimp
+rm -rf dotfiles/
+git clone https://github.com/smartsyncing/dotfiles
+cp -r ~/.config/polybar/ ~/dotfiles/
+ls
+cd dotfiles
+git add polybar
+cp -r ~/.config/cava ~/dotfiles/
+ls
+git add cava
+git add polybar
+rm -rf vis
+git add vis
+ls
+cd assets/
+..
+git commit -m "changes"
+sudo pacman -S github-cli
+gh auth
+gh auth setup
+gh auth setup login
+gh auth setup-git
+gh auth login
+gh auth setup-git
+git commit -m "changes"
+git \
+
+\
+  git config --global user.email "yes.vrocht@slmail.me"
+  git config --global user.name "smartsyncing"
+git commit -m "changes"
+git push
+systemctl restart lightdm
+reboot
+~/.config/polybar/launch.sh --forest
+kitty
+kitty
+nano .config/autostart/Polybar.desktop
+nano .config/autostart/Set\ keymap.desktop
+ls /etc/profile.d
+nano /etc/profile.d/polybar.sh
+sudo nano /etc/profile.d/polybar.sh
+reboot
+sudo systemctl restart lightdm
+rm -rf /etc/profile.d/polybar.sh
+sudo rm -rf /etc/profile.d/polybar.sh
+nano ~/.config/autostart/Set\ keymap.desktop
+setxkbmap gb
+~/.config/polybar/launch.sh --forest
+~/.config/polybar/launch.sh --forest | bash
+~/.config/polybar/launch.sh --forest
+nano /etc/xdg/autostart/budgie-desktop-nm-applet.desktop
+nano /etc/xdg/autostart/polybar.desktop
+sudo nano /etc/xdg/autostart/polybar.desktop
+nano .config/autostart/Polybar.desktop
+sudo nano /etc/xdg/autostart/polybar.desktop
+reboot
+sudo rm -rf /etc/xdg/autostart/polybar.desktop
+nano /etc/profile.d/polybar.sh
+sudo nano /etc/profile.d/polybar.sh
+nano .config/autostart/Set\ wallpaper.desktop
+sudo nano /etc/profile.d/polybar.sh
+sudo nano /etc/profile.d/polybar.sh
+rm -rf ~/.config/autostart/Polybar.desktop
+reboot
+~/my_script.sh | rofi -dmenu
+rofi -show run
+rofi
+rofi -window
+rofi -show window
+rm -rf dotfiles/
+git clone https://github.com/totoro-ghost/dotfiles
+cd dotfiles
+cd Scripts/
+cdmv 
+cd
+rm -rf polybar-themes *.png Downloads/
+sudo pacman -Rns sysprof
+ls .config
+cd .config
+rm -rf GIMP/ vis* polybar.old
+cd rofi
+mkdir rofi
+cd rofi
+nano config.rasi
+rofi -show drun
+rofi -show run
+exit
+exit
+nano .config/rofi/config.rasi
+nano .config/rofi/config.rasi
+ls .config/polybar/forest/scripts/rofi/colors.rasi
+nano .config/polybar/forest/scripts/rofi/colors.rasi
+nano .config/polybar/forest/scripts/rofi/colors.rasi
+nano .config/polybar/forest/scripts/rofi/colors.rasi
+ls .config/polybar/forest/scripts/rofi
+git clone https://github.com/UnnatShaneshwar/dotfiles
+rm -rf dotfiles/
+git clone https://github.com/UnnatShaneshwar/dotfiles
+cd dotfiles
+cd .config
+mv rofi ~/.config
+rm -rf ~/.config/rofi/
+mv rofi ~/.config
+cd
+rofi -show run
+rofi -show run
+rofi -show 
+rofi
+rm -rf ~/.config/rofi/
+nano ~/.config/polybar/forest/scripts/rofi/colors.rasi
+cd .config/polybar
+rm -rf hack grayblocks/ material/ shapes cuts
+ls
+rm -rf docky panels shades pwidgets/ colorblocks/ blocks/
+ls
+~/.config/polybar/launch.sh --forest
+~/.config/polybar/launch.sh --forest
+mv forest/ bar/
+ls
+cd bar/
+cd
+cd .config/polybar
+nano launch.sh
+cd
+cd dotfiles
+cd
+rm -rf dotfiles why.png
+git clone https://github.com/smartsyncing/dotfiles
+cd dotfiles
+rm -rf polybar
+cp -r ~/.config/polybar ~/dotfiles
+setxkbmap gb
+l
+ls
+git add polybar
+git commit -m "changes"
+git push
+cd
+rm -rf dotfiles 
+reboot
+nano .config/polybar/bar/launch.sh
+nano .config/polybar/launch.sh
+nano .config/polybar/bar/config.ini
+cd .config/polybar
+mv bar forest
+ls
+reboot
+emacs ~/.config/polybar/forest/bars.ini
+emacs ~/.config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+emacs ~/.config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+~/.config/polybar/launch.sh --forest
+emacs ~/.config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+~/.config/polybar/launch.sh --forest
+emacs ~/.config/polybar/forest/config.ini
+emacs ~/.config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+~/.config/polybar/launch.sh --forest
+emacs ~/.config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+emacs ~/.config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+emacs ~/.config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+emacs ~/.config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+emacs ~/.config/polybar/forest/config.ini
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+exit
+nano .config/polybar/forest/config.ini
+nano .config/polybar/forest/bars.ini
+mv .config/polybar/forest .config/polybar/forest.old
+mv .config/polybar/forest.old .config/polybar/forest
+nano
+ws-icon-0 = I;ÔÉÅ∏\
+ws-icon-1 = II;ÔÉ§ÉÄ\
+ws-icon-2 = III;Ô™Éæ\
+ws-icon-3 = IV;ÔÉ§ÉÅ\
+ws-icon-4 = V;Ô±É∏
+nano .config/polybar/forest/config.ini
+nano .config/polybar/forest/config.ini
+nano .config/polybar/forest/modules.ini
+~/.config/polybar/launch.sh --forest
+~/.config/polybar/launch.sh --forest
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/modules.ini
+~/.config/polybar/launch.sh --forest
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/modules.ini
+nano .config/polybar/forest/modules.ini
+nano .config/polybar/forest/config.ini
+nano .config/polybar/forest/modules.ini
+~/.config/polybar/launch.sh --forest
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/modules.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/modules.ini
+nano .config/polybar/forest/config.ini
+nano .config/polybar/forest/modules.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/modules.ini
+~/.config/polybar/launch.sh --forest
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/modules.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/modules.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/modules.ini
+nano .config/polybar/forest/modules.ini
+nano .config/polybar/forest/modules.ini
+nano .config/polybar/forest/modules.ini
+rofi -show
+rofi 
+rofi -show run
+rofi -show windowcd
+rofi -show window
+rofi -show combi
+nano .config/polybar/forest/modules.ini
+xprop -root _NET_DESKTOP_NAMES
+xprop -root _NET_DESKTOP_NAMES
+sudo pacman -S xorg
+~/.config/polybar/launch.sh --forest
+xprop -root _NET_DESKTOP_NAMES
+xprop -root _NET_DESKTOP_NAMES
+nano .config/polybar/forest/modules.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/modules.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/modules.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/modules.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/modules.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/modules.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/modules.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/modules.ini
+~/.config/polybar/launch.sh --forest
+xprop -root _NET_DESKTOP_NAMES
+~/.config/polybar/launch.sh --forest
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/modules.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/modules.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/modules.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/modules.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/modules.ini
+~/.config/polybar/launch.sh --forest
+~/.config/polybar/launch.sh --forest
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/modules.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/modules.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/modules.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/modules.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/modules.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/modules.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/modules.ini
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+emacs ~/.config/polybar/forest/config.ini
+nano .config/polybar/forest/modules.ini
+micro .config/polybar/forest/modules.ini
+nano .config/polybar/forest/config.ini
+micro .config/polybar/forest/modules.ini
+rm -rf .config/polybar/forest/modules.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+~/.config/polybar/launch.sh --forest
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+~/.config/polybar/launch.sh --forest
+~/.config/polybar/
+cd forest/
+nano bars.ini
+scripts
+..
+nano config.ini
+rm -rf preview*
+~/.config/polybar/launch.sh --forest
+~/.config/polybar/launch.sh --forest
+~/.config/polybar/launch.sh --forest
+ls
+nano config.ini
+~/.config/polybar/launch.sh --forest
+~/.config/polybar/launch.sh --forest
+nano config.ini
+~/.config/polybar/launch.sh --forest
+~/.config/polybar/launch.sh --forest
+nano config.ini
+~/.config/polybar/launch.sh --forest
+nano config.ini
+~/.config/polybar/launch.sh --forest
+exit
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+emacs ~/.config/polybar/forest/modules.ini
+emacs ~/.config/polybar/forest/modules.ini
+micro ~/.config/polybar/forest/modules.ini
+nano config.ini
+micro ~/.config/polybar/forest/modules.ini
+~/.config/polybar/launch.sh --forest
+pkill zsh
+pkill zsh
+exit
+cd
+cd
+reboot
+rm -rf dotfiles 
+git clone https://github.com/smartsyncing/dotfiles
+cd dotfiles
+cp -r ~/.config/polybar ~/dotfiles
+rm -rf polybar
+cp -r ~/.config/polybar ~/dotfiles
+git add polybar
+git commit -m "changes"
+git push
+exit
+cd dotfiles
+git push
+git commit -m "changes"
+git push
+exit
+cava
+cd
+rm -rf *.png
+rm -rf dotfiles 
+git clone https://github.com/smartsyncing/dotfiles
+cd dotfiles
+cd assets
+rm -rf ricenew.png rice1.png setup.PNG nfndojodew.png raven.png emacs2.png emacs.png cleanrice.png
+ls
+rm -rf imam
+ls
+rm -rf imamamamamamaa.png
+cd
+cd dotfiles
+git add assets
+git commit -m "changes"
+git push
+caca
+cava
+cava
+exit
+nano .config/polybar/forest/config.ini
+nano .config/polybar/forest/config.ini
+cd dotfiles
+git pull
+rm -rf polybar
+cp -r ~/.config/polybar ~/dotfiles
+git add polybar
+git commit -m "changes"
+git push
+reboot
+tmux
+exit
+tmux
+sudo pacman -S tmux
+tmux
+tmux join-pane
+cd
+sudo pacman -R tmux
+cava
+cava
+poweroff
+sudo pacman -S openbox
+systemctl restart lightdm
+sudo pacman -S feh
+feh --bg-center ~/Downloads/inaki-andonegi-castle-in-the-sky.jpg dotfiles
+feh --bg-cen ~/Downloads/inaki-andonegi-castle-in-the-sky.jpg dotfiles
+feh  ~/Downloads/inaki-andonegi-castle-in-the-sky.jpg dotfiles
+feh -- ~/Downloads/inaki-andonegi-castle-in-the-sky.jpg dotfiles
+feh --help
+feh --bg
+feh --bg-scale ~/Downloads/inaki-andonegi-castle-in-the-sky.jpg
+nano .config/picom.conf
+sudo pacman -Rns budgie-desktop mutter-rounded
+sudo pacman -Rns gimp
+sudo pacman -Rns gnome* gnome-screenshot
+sudo pacman -Rns gnome*
+bash
+exit
+yay -S picom-ibhagwan-git
+konsole
+picom -f -c
+picom -f -c &
+exit
+sudo pacman -S obconf
+obconf
+exit
+sudo pacman -S lxappearance
+lxappearance
+nano .config/picom.conf
+~/.config/polybar/launch.sh --forest
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+xprop -root _NET_DESKTOP_NAMES
+nano .config/polybar/forest/config.ini
+nano .config/polybar/forest/config.ini
+xprop -root _NET_DESKTOP_NAMES
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+picom -f -c &
+exit
+sudo nano /etc/profile.d/polybar.sh
+sudo nano /etc/profile.d/setkeymap.sh
+sudo nano /etc/profile.d/setwall.sh
+ls Downloads
+sudo nano /etc/profile.d/setwall.sh
+sudo nano /etc/profile.d/picom.sh
+reboot
+nano .config/picom.conf
+nano .config/picom.conf
+nano .config/picom.conf
+exit
+nano .config/openbox/
+nano .config/openbox/rc.xml
+openbox
+openbox -
+openbox --help
+openbox --restart
+pkill vivaldi-bin
+vivaldi-stable &
+cd .config/openbox
+nano autostart
+ls ~/Downloads/
+nano autostart
+ls /etc/profile.d
+nano autostart
+cd /etc/profile.d/
+sudo rm -rf picom.sh
+sudo rm -rf polybar.sh
+sudo rm -rf setwall.sh
+sudo rm -rf setwall.
+sudo rm -rf setkeymap.sh
+cd
+git clone https://github.com/ilham25/dotfiles-openbox/tree/main/.themes/ZorinBlue/openbox-3
+git clone https://github.com/ilham25/dotfiles-openbox
+cd dotfiles-openbox
+cd .themes
+cd ZorinBlue/
+sudo mv openbox-3/ /usr/share/themes/
+exit
+exit
+yay -S openbox-arc-git
+ls .config/polybar/forest/scripts/rofi
+exit
+ls .themes
+ls /usr/share/themes
+git clone https://github.com/tr1nh/qogir-theme-openbox/tree/master/Qogir-Dark
+git clone https://github.com/tr1nh/qogir-theme-openbox
+cd qogir-theme-openbox
+mv Qogir-Dark/ Qogir-Dark1
+mv Qogir-Dark1 /usr/share/themes
+sudo mv Qogir-Dark1 /usr/share/themes
+cd
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+lxappearance
+openbox --help
+openbox --restart
+openbox --restart
+openbox --restart
+nano obam.pl
+./obam.pl
+chmod +x obam.pl
+./obam.pl
+mv obam.pl ~/.config/openbox/
+nano .config/openbox/rc.xml
+ls .config/polybar/forest/scripts/rofi
+nano .config/openbox/rc.xml
+sudo pacman -S flameshot
+sudo pacman -S flameshot
+exit
+sudo pacman -Rns flameshot
+sudo pacman -S gnome-screenshot
+exit
+cava
+xprop -format _MOTIF_WM_HINTS 32c -set _MOTIF_WM_HINTS 2
+xprop -format _MOTIF_WM_HINTS 32c -set _MOTIF_WM_HINTS 2
+rm -rf dotfiles
+rm -rf dotfiles-openbox
+git clone https://github.com/smartsyncing/dotfiles && cd dotfiles
+mv ~/*.png ~/dotfiles/assets/
+cd assets
+..
+cp -r ~/.config/openbox/ ~/dotfiles
+ls .config
+ls ~/.config
+git add openbox/
+git add assets
+git commit -m "changes"
+git push
+nano README.md
+feh assets/openbox2.png
+feh assets/openbox.png
+nano README.md
+git add README.md
+git commit -m "changes"
+git push
+cd
+rm -rf qogir-theme-openbox/
+poweroff
+dunstify "Test"
+dunstify "Progress: " -h int:value:"`ponymix get-volume`"
+dunstify "Progress: " -h int:value:"`ponymix get-volume`"
+bash
+dunstify "Progress: " -h int:value:"`ponymix get-volume`"
+dunstify "Progress: " -h int:value:"`ponymix get-volume`"
+alsamixer 
+alsamixer --help
+amixer 
+amixer --help
+sudo pacman -S ponymix
+sudo pacman -S ponymixer
+awk -F"[][]" '/dB/ { print $2 }' <(amixer sget Master)
+amixer sget Master
+amixer -D pulse get Master | awk -F 'Left:|[][]' 'BEGIN {RS=""}{ print $3 }'\
+\
+
+amixer -D pulse get Master | awk -F 'Left:|[][]' 'BEGIN {RS=""}{ print $3 }'\
+\
+
+dunstify "Progress: " -h int:value:"`ponymix get-volume`"
+dunstify -h string:x-canonical-private-synchronous:audio "Volume: " -h int:value:"`ponymix get-volume`"\
+\
+
+dunstify -h string:x-canonical-private-synchronous:audio "Volume: " -h int:value:"`ponymix get-volume`"\
+\
+
+dunstify -h string:x-canonical-private-synchronous:audio "Volume: " -h int:value:"`ponymix get-volume`"\
+\
+
+mixer
+alsamixer
+alsamixer --help
+alsamixer --V playback
+alsamixer -V playback
+alsamixer
+ amixer sset 'Master' 50%
+ amixer sset 'Master' 100%
+amixer
+ amixer sset 'Mast' 100%
+ amixer sset 'Capture' 100%
+amixer -q sset Master 3%+
+amixer -q sset Master 3%+
+amixer -q sset Master 50%+
+pactl set-sink-volume 0 +15%
+pactl set-sink-volume 0 +15%
+pactl set-sink-volume 0 +15%
+pactl set-sink-volume 0 +15%
+pactl set-sink-volume 0 +15%
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+sudo pacman -S dunst
+dunst
+dunst &
+nano .config/dunst/dunstrc
+mkdir .config/dunst/
+nano .config/dunst/dunstrc
+dunst &
+dunst 
+rm -rf .config/dunst/dunstrc
+cp -r /etc/dunst/dunstrc .config/dunst
+ls .config/dunst/
+nano .config/dunst/dunstrc
+dunst 
+pkill dunst
+dunst &
+nano .config/dunst/dunstrc
+systemctl start dunst
+dunstctl
+dunstctl --help
+dunstctl set-paused
+dunstctl --toggle set-paused
+dunstctl toggle set-paused
+dunstctl set-paused --toggle
+dunstctl set-paused toggle
+dunstctl set-paused toggle
+dunstctl set-paused toggle
+dunstctl set-paused toggle
+dunstctl set-paused toggle
+nano .config/dunst/dunstrc
+dunst
+nano .config/dunst/dunstrc
+nano .config/dunst/dunstrc
+dunstify -h string:x-dunst-stack-tag:test Test -A 'tested,default'
+dunstify -h string:x-dunst-stack-tag:test Test -A 'tested,default'
+sudo pacman -S libnotify
+dunstify -h string:x-dunst-stack-tag:test Test -A 'tested,default'
+nano .config/dunst/dunstrc
+rm -rf .config/dunst/dunstrc
+cp -r /etc/dunst/dunstrc .config/dunst
+dunstify -h string:x-dunst-stack-tag:test Test -A 'tested,default'
+sudo pacman -S notification-daemon
+dunstify -h string:x-dunst-stack-tag:test Test -A 'tested,default'
+pkill dunst
+dunst -print
+dunst -print
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+nano .config/polybar/forest/config.ini
+~/.config/polybar/launch.sh --forest
+ls -A .config/vivaldi
+dunstify "It works"\
+\
+
+#!/bin/bash\
+# changeVolume\
+\
+# Arbitrary but unique message tag\
+msgTag="myvolume"\
+\
+# Change the volume using alsa(might differ if you use pulseaudio)\
+amixer -c 0 set Master "$@" > /dev/null\
+\
+# Query amixer for the current volume and whether or not the speaker is muted\
+volume="$(amixer -c 0 get Master | tail -1 | awk '{print $4}' | sed 's/[^0-9]*//g')"\
+mute="$(amixer -c 0 get Master | tail -1 | awk '{print $6}' | sed 's/[^a-z]*//g')"\
+if [[ $volume == 0 || "$mute" == "off" ]]; then\
+    # Show the sound muted notification\
+    dunstify -a "changeVolume" -u low -i audio-volume-muted -h string:x-dunst-stack-tag:$msgTag "Volume muted" \
+else\
+    # Show the volume notification\
+    dunstify -a "changeVolume" -u low -i audio-volume-high -h string:x-dunst-stack-tag:$msgTag \\
+    -h int:value:"$volume" "Volume: ${volume}%"\
+fi\
+\
+# Play the volume changed sound\
+canberra-gtk-play -i audio-volume-change -d "changeVolume"
+#!/bin/bash\
+# changeVolume\
+\
+# Arbitrary but unique message tag\
+msgTag="myvolume"\
+\
+# Change the volume using alsa(might differ if you use pulseaudio)\
+amixer -c 0 set Master "$@" > /dev/null\
+\
+# Query amixer for the current volume and whether or not the speaker is muted\
+volume="$(amixer -c 0 get Master | tail -1 | awk '{print $4}' | sed 's/[^0-9]*//g')"\
+mute="$(amixer -c 0 get Master | tail -1 | awk '{print $6}' | sed 's/[^a-z]*//g')"\
+if [[ $volume == 0 || "$mute" == "off" ]]; then\
+    # Show the sound muted notification\
+    dunstify -a "changeVolume" -u low -i audio-volume-muted -h string:x-dunst-stack-tag:$msgTag "Volume muted" \
+else\
+    # Show the volume notification\
+    dunstify -a "changeVolume" -u low -i audio-volume-high -h string:x-dunst-stack-tag:$msgTag \\
+    -h int:value:"$volume" "Volume: ${volume}%"\
+fi\
+\
+# Play the volume changed sound\
+canberra-gtk-play -i audio-volume-change -d "changeVolume"
+nano dunst.sh
+chmod +x dunst.sh
+./dunst.sh
+nano dunst.sh
+nano .config/dunst/dunstrc
+./dunst.sh
+./dunst.sh
+pkill dunst
+dunst
+pkill dunst
+dunst &
+./dunst.sh
+./dunst.sh
+./dunst.sh
+./dunst.sh
+./dunst.sh
+nano .config/dunst/dunstrc
+nano dunst.sh
+amixer -q sset Master 50%+
+amixer -q sset Master 50%-
+amixer -q sset Master 50%-
+amixer -q sset Master 50%+
+amixer -q sset Master 50%+
+amixer -q sset Master 50%+
+amixer -q sset Master 50%+
+amixer -q sset Master 50%+
+amixer -q sset Master 50%+
+dunstify "It works"\
+\
+
+dunstify "It works"\
+\
+
+dunstify "It works"\
+\
+
+dunstify "It works"\
+\
+
+dunstify "It works"\
+\
+
+dunstify "It works"\
+\
+
+nano .config/dunst/dunstrc
+dunstify "It works"\
+\
+
+dunstify "It works"\
+\
+
+dunstify "Progress: " -h int:value:60
+dunstify "Progress: " -h int:value:60
+systemctl restart lightdm
+dunstify "Helloc" -u low -i volume-mute
+dunstify -u low -i volume-mute
+dunstify a -u low -i volume-mute
+pactl
+pactl
+pactl --help
+sudo pacman -S pamixer
+#!/bin/bash\
+\
+function send_notification() {\
+	volume=$(pamixer --get-volume)\
+	dunstify -a "changevolume" -u low -r "9993" -h int:value:"$volume" -i "volume-$1" "Volume: ${volume}%" -t 2000\
+}\
+\
+case $1 in\
+up)\
+	# Set the volume on (if it was muted)\
+	pamixer -u\
+	pamixer -i 5 --allow-boost\
+	send_notification $1\
+	;;\
+down)\
+	pamixer -u\
+	pamixer -d 5 --allow-boost\
+	send_notification $1\
+	;;\
+mute)\
+	pamixer -t\
+	if $(pamixer --get-mute); then\
+		dunstify -i volume-mute -a "changevolume" -t 2000 -r 9993 -u low "Muted"\
+	else\
+		send_notification up\
+	fi\
+	;;\
+esac
+pamixer
+pamixer --get-mute
+nano dunst.sh
+./dunst.sh
+./dunst.sh
+nano	volume=$(pamixer --get-volume)\
+	dunstify -a "changevolume" -u low -r "9993" -h int:value:"$volume" -i "volume-$1" "Volume: ${volume}%" -t 2000
+	volume=$(pamixer --get-volume)\
+	dunstify -a "changevolume" -u low -r "9993" -h int:value:"$volume" -i "volume-$1" "Volume: ${volume}%" -t 2000
+	volume=$(pamixer --get-volume)\
+	dunstify -a "changevolume" -u low -r "9993" -h int:value:"$volume" -i "volume-$1" "Volume: ${volume}%" -t 2000
+	volume=$(pamixer --get-volume)\
+	dunstify -a "changevolume" -u low -r "9993" -h int:value:"$volume" -i "volume-$1" "Volume: ${volume}%" -t 2000
+changevolume
+nano .config/dunst/dunstrc
+	volume=$(pamixer --get-volume)\
+	dunstify -a "changevolume" -u low -r "9993" -h int:value:"$volume" -i "volume-$1" "Volume: ${volume}%" -t 2000
+	volume=$(pamixer --get-volume)\
+	dunstify -a "changevolume" -u low -r "9993" -h int:value:"$volume" -i "volume-$1" "Volume: ${volume}%" -t 2000
+pkill dunst
+dunst &
+pkill dunst
+dunst &
+	volume=$(pamixer --get-volume)\
+	dunstify -a "changevolume" -u low -r "9993" -h int:value:"$volume" -i "volume-$1" "Volume: ${volume}%" -t 2000
+export PATH=/home/lewis/dunst.sh
+zsh
+zsh
+exit
+exit
+git clone https://github.com/smartsyncing/dotfiles && cd dotfiles
+rm -rf dotfiles
+git clone https://github.com/smartsyncing/dotfiles && cd dotfiles
+rm -rf polybar
+cp -r ~/.config/polybar ~/dotfiles
+git add polybar
+git commit -m "changes"
+git push
+cd
+rm -rf dunst.sh
+tmux
+tmux join-pane
+tmux --help
+tmux -c hi
+tmux -c echo "hi"
+tmux -c echo "hi"
+tmux -c echo hi
+tmux -c echo hi
+exit
+dunstify a -u low -i volume-mute
+dunstify a -u low -i volume-mute
+dunstify a -u low -i volume-mute
+dunstify a -u low -i volume-mute
+./dunst.sh
+./dunst.sh
+pamixer
+pamixer -i 50
+pamixer -d 10
+pamixer -i 75
+pamixer -i 75
+pamixer -i 75
+pamixer -i 75
+pamixer -i 75
+alsamixer
+pamixer -i 75
+pamixer -i 75
+pamixer -d 75
+pamixer -i 75
+pamixer -i 75
+pamixer -i 75
+pamixer -i 75
+pamixer -i 75
+pamixer -i 75
+pamixer -i 75
+nano dunst.sh
+nano .config/openbox/rc.xml
+nano .tmux.conf
+sudo pacman -S tmux
+tmux
+rm -rf .tmux.conf
+sudo pacman -Rns tmux
+nano .config/dunst/dunstrc
+pkill dunst
+dunst &
+dunstify hi
+dunstify hi
+dunstify hi
+dunstify hi
+nano .config/dunst/dunstrc
+dunstify hi
+dunstify hi
+dunstify hijdfjdfjdsfjlk
+pkill dunst
+dunst &
+dunstify hijdfjdfjdsfjlk
+nano .config/dunst/dunstrc
+dunstify hijdfjdfjdsfjlk -t 30000000000000000000000000000000000000000000000000000000000000000000
+dunstify hijdfjdfjdsfjlk -t 300000000000000000000000000000000000000000000000000
+dunstify hijdfjdfjdsfjlk -t 300000000000000000000000000000000
+dunstify hijdfjdfjdsfjlk -t 30000000000000000000
+dunstify hijdfjdfjdsfjlk -t 3000000000
+dunstify hijdfjdfjdsfjlk -t 3000000
+nano .config/dunst/dunstrc
+pkill dunst
+dunst &
+dunstify hijdfjdfjdsfjlk -t 3000000
+nano .config/dunst/dunstrc
+nano .config/dunst/dunstrc
+dunstify
+dunstify --help
+dunstify -u high
+dunstify -u high d
+dunstify -u high dd
+pkill dunst
+nano .config/dunst/dunstrc
+dunst &
+dunstify hijdfjdfjdsfjlk -t 3000000
+alias rdunst="pkill dunst && dunst && dunstify hijdfjdfjdsfjlk -t 3000000"
+rdunst
+nano .config/dunst/dunstrc
+rdunst
+nano .config/dunst/dunstrc
+rdunst
+nano .config/dunst/dunstrc
+rdunst
+rdunst
+pkill dunst
+dunst &
+rdunst
+pkill dunst
+nano .config/dunst/dunstrc
+pkill dunst
+dunst &
+dunstify hijdfjdfjdsfjlk -t 3000000
+pkill dunst
+nano .config/dunst/dunstrc
+dunst &
+dunstify hijdfjdfjdsfjlk -t 3000000
+dunstify hijdfjdfjdsfjlk -t 3000000
+nano .config/dunst/dunstrc
+dunstify hijdfjdfjdsfjlk -t 3000000
+pkill dunst
+dunst &
+dunstify hijdfjdfjdsfjlk -t 3000000
+pkill dunst
+nano dunst1.sh
+chmod +x dunst1.sh
+./dunst1.sh
+./dunst1.sh
+nano dunst1.sh
+dunstify -h
+dunstify -h hi
+dunstify --help
+nano dunst1.sh
+#!/bin/sh\
+\
+pactl set-sink-volume @DEFAULT_SINK@ "$1" &\
+\
+vol=$(pamixer --get-volume)\
+\
+dunstify -a "Volume"\
+  "Volume : $vol%" \\
+  -h int:value:$vol \\
+  -r 69 \\
+\
+\
+
+#!/bin/sh\
+\
+pactl set-sink-volume @DEFAULT_SINK@ "$1" &\
+\
+vol=$(pamixer --get-volume)\
+\
+dunstify -a "Volume"\
+  "Volume : $vol%" \\
+  -h int:value:$vol \\
+  -r 69 \\
+\
+\
+
+#!/bin/sh\
+\
+pactl set-sink-volume @DEFAULT_SINK@ "$1" &\
+\
+vol=$(pamixer --get-volume)\
+\
+dunstify -a "Volume"\
+  "Volume : $vol%" \\
+  -h int:value:$vol \\
+  -r 69 \\
+\
+\
+
+dunst &
+#!/bin/sh\
+\
+pactl set-sink-volume @DEFAULT_SINK@ "$1" &\
+\
+vol=$(pamixer --get-volume)\
+\
+dunstify -a "Volume"\
+  "Volume : $vol%" \\
+  -h int:value:$vol \\
+  -r 69 \\
+\
+\
+
+#!/bin/sh\
+\
+pactl set-sink-volume @DEFAULT_SINK@ "$1" &\
+\
+vol=$(pamixer --get-volume)\
+\
+dunstify -a "Volume"\
+  "Volume : $vol%" \\
+  -h int:value:$vol \\
+  -r 69 \\
+\
+\
+
+#!/bin/sh\
+\
+pactl set-sink-volume @DEFAULT_SINK@ "$1" &\
+\
+vol=$(pamixer --get-volume)\
+\
+dunstify -a "Volume"\
+  "Volume : $vol%" \\
+  -h int:value:$vol \\
+  -r 69 \\
+\
+\
+
+#!/bin/sh\
+\
+pactl set-sink-volume @DEFAULT_SINK@ "$1" &\
+\
+vol=$(pamixer --get-volume)\
+\
+dunstify -a "Volume"\
+  "Volume : $vol%" \\
+  -h int:value:$vol \\
+  -r 69 \\
+\
+\
+
+nano dunst1.sh
+#!/bin/sh\
+\
+pactl set-sink-volume @DEFAULT_SINK@ "$1" &\
+\
+vol=$(pamixer --get-volume)\
+\
+dunstify -a "Volume"\
+  "Volume : $vol%" \\
+  -h int:value:$vol \\
+  -r 69 \\
+\
+\
+
+./dunst1.sh
+./dunst1.sh
+nano dunst1.sh
+./dunst1.sh
+./dunst1.sh
+./dunst1.sh
+./dunst1.sh
+nano dunst1.sh
+./dunst1.sh
+./dunst1.sh
+alsamixer
+./dunst1.sh
+./dunst1.sh
+alsamixer
+./dunst1.sh
+./dunst1.sh
+nano dunst1.sh
+alsamixer
+./dunst1.sh
+./dunst1.sh
+./dunst1.sh
+alsamixer
+nano dunst1.sh
+alsamixer
+./dunst1.sh
+dunstify --help
+./dunst1.sh
+nano dunst1.sh
+./dunst1.sh
+./dunst1.sh
+nano dunst1.sh
+./dunst1.sh
+./dunst1.sh
+dunstify --hel
+nano .config/dunst/dunstrc
+dunstify --hel
+./dunst1.sh
+./dunst1.sh
+./dunst1.sh
+./dunst1.sh
+nano dunst1.sh
+./dunst1.sh
+nano dunst1.sh
+ls /usr/share/dunst
+notify-send hi
+$./volume.sh up
+./dunst1.sh up
+./dunst1.sh up
+nano dunst1.sh
+nano .config/dunst/dunstrc
+nano dunst1.sh
+./dunst1.sh up
+./dunst1.sh 
+./dunst1.sh down
+./dunst1.sh down
+./dunst1.sh up
+./dunst1.sh up
+nano .config/openbox
+nano .config/openbox/rc.xml
+mkdir .local/bin
+cd .local/bin
+mv ~/dunst1.sh ~/volume.sh
+mv ~/volume.sh ~/.local/bin
+cd
+volume
+rzsh
+volume
+~/.local/bin/volume.sh
+~/.local/bin/volume.sh
+~/.local/bin/volume.sh
+~/.local/bin/volume.sh up
+~/.local/bin/volume.sh up
+mv ~/.local/bin/volume.sh ~/.local/bin/volume
+export PATH=/home/lewis/.local/bin/volume
+volume
+export PATH=/home/lewis/.local/bin/
+volume
+volume
+volume
+volume up
+pamixer
+nano
+exit
+exit
+volume
+cd
+erxit
+exit
+nano .config/zsh/.zshrc
+ls /usr/share/bin
+ls /usr/bin
+nano .config/zsh/.zshrc
+ls /
+nano .config/zsh/.zshrc
+rzsh
+volume up
+volume
+nano .config/zsh/.zshrc
+zsh
+exit
+openbox --restart
+nano /usr/bin/volume
+openbox --restart
+exit
+bash -c '~/.config/polybar/forest/scripts/rofi/launcher.rasi'
+sudo bash -c '~/.config/polybar/forest/scripts/rofi/launcher.rasi'
+bash -c '~/.config/polybar/forest/scripts/rofi/launcher.rasi'
+chmod +x .config/polybar/forest/scripts/rofi/launcher.rasi
+bash -c '~/.config/polybar/forest/scripts/rofi/launcher.rasi'
+bash -c '~/.config/polybar/forest/scripts/rofi/launcher.rasi'
+rofi
+rofi -show run
+openbox --restart
+mv .config/polybar/forest/scripts/rofi/launcher.rasi
+nano .config/polybar/forest/scripts/rofi/launcher.rasi
+mkdir .config/rofi
+nano .config/polybar/forest/scripts/rofi/launcher.rasi
+cp -r ~/.config/polybar/forest/scripts/rofi/* ~/.config/rofi 
+rofi -show run
+rofi -show run
+rofi -show launcher
+ .config/polybar/forest/scripts/
+ .config/polybar/forest/scripts/launcher.sh
+nano ~/.config/polybar/forest/scripts/launcher.sh
+rm -rf ~/.config/rofi/
+openbox --restart
+exit

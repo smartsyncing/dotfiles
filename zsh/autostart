@@ -58,4 +58,4 @@ if [[ $OS = *"Void"* ]]; then
     COLOR=$GREEN
 fi
 
-echo " Welcome to ZSH\n\n $(whoami)@$(hostname)\n\n $(date +'%A %d,    %n %B %Y')\n $(printf $COLOR)$(figlet -w 200 -f small $OS)$(printf $STOP) \nLife is to you a dashing and bold adventure.\n"
+echo " Welcome to ZSH\n\n $(whoami)@$(hostname)\n\n $(date +'%A %d    %n %B %Y')\n $(printf $COLOR)$(figlet -w 200 -f small $OS)$(printf $STOP) \nLife is to you a dashing and bold adventure.\n"
