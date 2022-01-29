@@ -17,7 +17,7 @@
   <img src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/rofi.png" alt="Dotfiles"/>
 </p>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/openbox.png" alt="Dotfiles"/>
+  <img src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/openbox1.png" alt="Dotfiles"/>
 </p>
 <p align="center">
   <img src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/openbox2.png" alt="Dotfiles"/>
