@@ -1,8 +1,14 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/smartersyncing/dotfiles/main/assets/dots.png" alt="Dotfiles"/>
-</p>
+``` 
+ ____           _      _          
+ (|   \         | | o  | |         
+  |    | __ _|_ | |    | |  _   ,  
+ _|    |/  \_|  |/  |  |/  |/  / \_
+(/\___/ \__/ |_/|__/|_/|__/|__/ \/ 
+                |\                 
+                |/              
+```   
 
-<h2 align=center>🐧 One Dark - Openbox - Arch</h2>
+<h2 align=center>🐧 One Dark - Openbox - Void</h2>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/blank.png" alt="Dotfiles"/>
