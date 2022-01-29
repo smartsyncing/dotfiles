@@ -70,7 +70,7 @@ if [[ $OS = *"void"* ]]; then
     COLOR=$GREEN
     PCOLOR=10
     PACKAGE_COUNT=$(xbps-query -l | wc -l)
-    ASCII=$(printf "        _    _
+    ASCII=$(printf "         _    _ 
 __ _____(_)__| |
 \ V / _ \ / _\` |
  \_/\___/_\__,_|")
@@ -105,8 +105,8 @@ getUptime() {
   [ "$m" ] && uptime="$uptime$m min$mp"
   [ "$s" ] && uptime="$uptime$s sec$sp"
   uptime=${uptime%, }
-  printf "$COLOR  $STOP%s" "$uptime"
+  printf "$uptime"
 }
 
-echo "$(whoami)$GREEN@$STOP$(hostname)\n\n$COLOR$STOP  $DESKTOP_SESSION\n$COLOR$STOP  $(ps -p $$ -ocomm=)\n$COLOR$STOP  $PACKAGE_COUNT\n$(getUptime)\n $(printf $COLOR)$ASCII\n$(printf $STOP) \nEat $COLOR $STOP, Sleep $COLOR $STOP, Linux $COLOR $STOP\n"
+echo "$(printf $COLOR)$ASCII\n\n  $(printf $STOP) $(whoami)\n$COLOR   $STOP$DESKTOP_SESSION\n$COLOR  $STOP $(ps -p $$ -ocomm=)\n$COLOR  $STOP $PACKAGE_COUNT\n$COLOR   $STOP$(getUptime)\n  \nEat $COLOR $STOP, Sleep $COLOR $STOP, Linux $COLOR $STOP\n"
 
