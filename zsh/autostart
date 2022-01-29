@@ -9,25 +9,6 @@ if [ -f /etc/os-release ]; then
     . /etc/os-release
     OS=$PRETTY_NAME
     VER=$VERSION_ID
-elif type lsb_release >/dev/null 2>&1; then
-    # linuxbase.org
-    OS=$(lsb_release -si)
-    VER=$(lsb_release -sr)
-elif [ -f /etc/lsb-release ]; then
-    # For some versions of Debian/Ubuntu without lsb_release command
-    . /etc/lsb-release
-    OS=$DISTRIB_ID
-    VER=$DISTRIB_RELEASE
-elif [ -f /etc/debian_version ]; then
-    # Older Debian/Ubuntu/etc.
-    OS=Debian
-    VER=$(cat /etc/debian_version)
-elif [ -f /etc/SuSe-release ]; then
-    # Older SuSE/etc.
-    ...
-elif [ -f /etc/redhat-release ]; then
-    # Older Red Hat, CentOS, etc.
-    ...
 else
     # Fall back to uname, e.g. "Linux <version>", also works for BSD, etc.
     OS=$(uname -s)
@@ -36,26 +17,61 @@ fi
 if [[ $OS = *"Arch"* ]]; then
     OS=arch
     COLOR=$BLUE
+    PCOLOR=4
 fi
 if [[ $OS = *"Fedora"* ]]; then
     OS=fedora
-    COLOR=$BLUE
+    COLOR=$BLUE 
+    PCOLOR=12
 fi
 if [[ $OS = *"Ubuntu"* ]]; then
     OS=ubuntu
     COLOR=$ORANGE
+    PCOLOR=3
 fi
 if [[ $OS = *"Debian"* ]]; then
     OS=debian
     COLOR=$RED
+    PCOLOR=9
 fi
 if [[ $OS = *"OpenSUSE"* ]]; then
     OS=opensuse
     COLOR=$GREEN
+    PCOLOR=10
 fi
-if [[ $OS = *"Void"* ]]; then
+if [[ $OS = *"void"* ]]; then
     OS=void
     COLOR=$GREEN
+    PCOLOR=10
 fi
+getUptime() {
+  IFS=. read -r s _ < /proc/uptime 
 
-echo " Welcome to ZSH\n\n $(whoami)@$(hostname)\n\n $(date +'%A %d    %n %B %Y')\n $(printf $COLOR)$(figlet -w 200 -f small $OS)$(printf $STOP) \nLife is to you a dashing and bold adventure.\n"
+  # Convert uptime to readable value
+  d="$((s / 60 / 60 / 24))"
+  h="$((s / 60 / 60 % 24))"
+  m="$((s / 60 % 60))"
+
+  # Plurals
+  [ "$d" -gt 1 ] && dp=s
+  [ "$h" -gt 1 ] && hp=s
+  [ "$m" -gt 1 ] && mp=s
+  [ "$s" -gt 1 ] && sp=s
+
+  # Hide empty fields.
+  [ "$d" = 0 ] && d=
+  [ "$h" = 0 ] && h=
+  [ "$m" = 0 ] && m=
+  [ "$m" != "" ] && s=
+
+  # Make the output of uptime smaller.
+  [ "$d" ] && uptime="$d day$dp, "
+  [ "$h" ] && uptime="$uptime$h hour$hp, "
+  [ "$m" ] && uptime="$uptime$m min$mp"
+  [ "$s" ] && uptime="$uptime$s sec$sp"
+
+  uptime=${uptime%, }
+  printf "$COLOR  $STOP%s" "$uptime"
+}
+
+echo "$(whoami)$GREEN@$STOP$(hostname)\n\n$COLOR$STOP  $DESKTOP_SESSION\n$COLOR$STOP  $(ps -p $$ -ocomm=)\n$(getUptime)\n $(printf $COLOR)$(figlet -w 200 -f small $OS)$(printf $STOP) \nEat $COLOR $STOP, Sleep $COLOR $STOP, Linux $COLOR $STOP.\n"
