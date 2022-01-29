@@ -2,6 +2,7 @@ ORANGE="\e[33m"
 RED="\e[31m"
 BLUE="\e[94m"
 GREEN="\e[92m"
+PINK="\e[95m"
 STOP="\e[0m"
 
 if [ -f /etc/os-release ]; then
@@ -9,6 +10,9 @@ if [ -f /etc/os-release ]; then
     . /etc/os-release
     OS=$PRETTY_NAME
     VER=$VERSION_ID
+elif [ -d /bedrock/ ]; then
+    OS=Bedrock
+    VER=Bedrock Linux
 else
     # Fall back to uname, e.g. "Linux <version>", also works for BSD, etc.
     OS=$(uname -s)
@@ -44,6 +48,17 @@ if [[ $OS = *"void"* ]]; then
     COLOR=$GREEN
     PCOLOR=10
 fi
+if [[ $OS = *"Gentoo"* ]]; then
+    OS=gentoo
+    COLOR=$PINK
+    PCOLOR=13
+fi
+if [[ $OS = *"Bedrock"* ]]; then
+    OS=bedrock
+    COLOR=$GREEN
+    PCOLOR=10
+fi
+
 getUptime() {
   IFS=. read -r s _ < /proc/uptime 
 
