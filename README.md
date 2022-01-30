@@ -1,17 +1,6 @@
-```
-      .    .
- .   .       .
-     .----._______ .
-    . | .  .  .  |    .      .                                                 
-      | .  ___________ .    .
- .   ╔╦╔═╗╔╦╗╔═╗╦╦  ╔═ ╔═╗  
-     ║║║ ║ ║ ╠╣ ║║  ║╣ ╚═╗  .
-.    ╩╝╚═╝ ╩ ╚  ╩╩═╝╚═╝╚═╝  
- .    |  / . . . .  /    .  . 
-    . |____________/ .         
- .     .
-              .         .
-```
+<p align="center">
+  <img src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/dots.png" alt="Dotfiles"/>
+</p>
 
 <h2 align=center>🐧 One Dark - Openbox - Void</h2>
 
