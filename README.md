@@ -26,7 +26,7 @@
 * Bar: Polybar
 * Launcher: Rofi
 * Editor: Neovim
-* Wallpaper: https://cdna.artstation.com/p/assets/images/images/009/538/556/4k/inaki-andonegi-castle-in-the-sky.jpg
+* [Wallpaper](https://cdna.artstation.com/p/assets/images/images/009/538/556/4k/inaki-andonegi-castle-in-the-sky.jpg)
 
 # Dependencies
 
