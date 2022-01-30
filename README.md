@@ -32,29 +32,29 @@
 
 ### ZSH
 
-* [FZF](https://github.com/junegunn/fzf)
+* <b>[FZF](https://github.com/junegunn/fzf)</b>
 
-* [LSD](https://github.com/Peltoche/lsd)
+* <b>[LSD](https://github.com/Peltoche/lsd)</b>
 
-* [Kitty](https://github.com/kovidgoyal/kitty) 
+* <b>[Kitty](https://github.com/kovidgoyal/kitty)</b>
 
-* [Zsh](https://github.com/zsh-users/zsh) 
+* <b>[Zsh](https://github.com/zsh-users/zsh)</b>
 
-* [Bat](https://github.com/sharkdp/bat)
+* <b>[Bat](https://github.com/sharkdp/bat)</b></b>
 
-* [Iosevka](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Iosevka.zip)
+* <b>[Iosevka](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Iosevka.zip)</b>
 
-* [ZSH Completions](https://github.com/zsh-users/zsh-completions)
+* <b>[ZSH Completions](https://github.com/zsh-users/zsh-completions)</b>
 
 ### Openbox
 
-* [Rofi](https://github.com/davatorium/rofi)
+* <b>[Rofi](https://github.com/davatorium/rofi)</b>
 
-* [Polybar](https://github.com/polybar/polybar)
+* <b>[Polybar](https://github.com/polybar/polybar)</b>
 
-* [Dunst](https://github.com/dunst-project/dunst)
+* <b>[Dunst](https://github.com/dunst-project/dunst)</b>
 
-* [Picom](https://github.com/ibhagwan/picom)
+* <b>[Picom](https://github.com/ibhagwan/picom)</b>
 
 
 
