@@ -4,9 +4,10 @@ export FZF_DEFAULT_OPTS='--layout=default --height=60% --border --info=hidden --
 export FZF_CTRL_T_OPTS="--preview 'file {}' --preview-window up,1,border --layout=reverse"
 export FZF_ALT_C_OPTS="--preview 'file {}' --preview-window up,1,border --layout=reverse"
 alias ezsh="vim ~/.config/zsh/.zshrc"
-alias lc="colorls"
-alias update="sudo pacman -Syu"
-alias install="sudo pacman -S"
+alias lc="lsd"
+alias update="sudo xbps-install -Syu"
+alias install="sudo xbps-install -S"
+alias remove="sudo xbps-remove"
 alias rzsh="source ~/.zshrc"
 alias ga="git add"
 alias gps="git push"
@@ -21,3 +22,9 @@ alias grebase="git rebase"
 alias gmerge="git merge"
 alias cat="bat --color=always"
 alias ls="lsd"
+alias ff='find . -type f -name'
+alias h='history'
+alias hgrep="fc -El 0 | grep"
+alias help='man'
+alias p='ps -f'
+alias sortnr='sort -n -r'
