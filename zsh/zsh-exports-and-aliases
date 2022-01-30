@@ -3,28 +3,21 @@ export FZF_DEFAULT_OPTS='--layout=default --height=60% --border --info=hidden --
 --color=info:#98c379,prompt:#61afef,pointer:#e5c07b,marker:#e5c07b,spinner:#61afef,header:#61afef,gutter:#282c34 --margin=18% --prompt="» " --pointer="▶" --marker="▶"'
 export FZF_CTRL_T_OPTS="--preview 'file {}' --preview-window up,1,border --layout=reverse"
 export FZF_ALT_C_OPTS="--preview 'file {}' --preview-window up,1,border --layout=reverse"
-alias ezsh="vim ~/.config/zsh/.zshrc"
-alias lc="lsd"
 alias update="sudo xbps-install -Syu"
 alias install="sudo xbps-install -S"
 alias remove="sudo xbps-remove"
-alias rzsh="source ~/.zshrc"
-alias ga="git add"
-alias gps="git push"
+alias uninstall="sudo xbps-remove"
+alias gi="git init"
+alias gs="git status -sbu"
+alias gco="git checkout"
+alias gcob="git checkout -b"
+alias gp="git push"
+alias gm="git merge"
+alias ga="git add ."
+alias gcm="git commit -m"
 alias gpl="git pull"
-alias gin="git init"
-alias gcl="git clone"
-alias grv="git remote -v"
-alias gra="git remote add"
-alias gs="git status"
-alias gl="git log"
-alias grebase="git rebase"
-alias gmerge="git merge"
+alias gst="git stash"
+alias gstl="git stash list"
+alias glg='git log --graph --oneline --decorate --all'
 alias cat="bat --color=always"
 alias ls="lsd"
-alias ff='find . -type f -name'
-alias h='history'
-alias hgrep="fc -El 0 | grep"
-alias help='man'
-alias p='ps -f'
-alias sortnr='sort -n -r'

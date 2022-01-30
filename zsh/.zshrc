@@ -1,13 +1,5 @@
-
-#       ____  ______ __  _____          ____     
-#      /_  / / __/ // / / ___/__  ___  / _(_)__ _
-#       / /__\ \/ _  / / /__/ _ \/ _ \/ _/ / _ `/
-#      /___/___/_//_/  \___/\___/_//_/_//_/\_, / 
-#                                         /___/  
-#      __ __     _                                _                                   
-#       /(_ |_| /  _ ._ _ ._ | __|_o _ ._  _ o _ |_) _  _ _ ._ _ ._ _  _ ._  _| _  _| 
-#      /___)| | \_(_)| | ||_)|(/_|_|(_)| |_> |_> | \(/_(_(_)| | || | |(/_| |(_|(/_(_| 
-#                         |                                                           
+# My custom zsh config
+# Zsh-completions is recommended.
 
 HISTFILE=~/.config/zsh/zsh_history
 HISTSIZE=50000
@@ -33,11 +25,15 @@ bindkey "$terminfo[kcud1]" down-line-or-beginning-search
 bindkey -M vicmd 'k' up-line-or-beginning-search
 bindkey -M vicmd 'j' down-line-or-beginning-search
 bindkey '^P' autosuggest-accept
+bindkey ' ' magic-space        
 autoload -Uz compinit
 
 source ~/.config/zsh/zsh-plugins/zsh-autosuggestions.zsh
 source ~/.config/zsh/zsh-plugins/zsh-syntax-highlighting.zsh
+source ~/.config/zsh/zsh-plugins/you-should-use.plugin.zsh
 source ~/.config/zsh/zsh-functions/autols
+source ~/.config/zsh/zsh-functions/ezsh
+source ~/.config/zsh/zsh-functions/rzsh
 source ~/.config/zsh/zsh-exports-and-aliases
 [ -f /usr/share/fzf/completion.zsh ] && source /usr/share/fzf/completion.zsh
 [ -f /usr/share/fzf/key-bindings.zsh ] && source /usr/share/fzf/key-bindings.zsh

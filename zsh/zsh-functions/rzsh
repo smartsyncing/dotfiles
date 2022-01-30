@@ -1,0 +1,5 @@
+rzsh(){
+    source ~/.zshrc
+    echo "ZSH config reloaded."
+}
+
