@@ -56,11 +56,17 @@
 
 * <b>[Picom](https://github.com/ibhagwan/picom)</b>
 
+# Installation
 
+```
+git clone https://github.com/smartsyncing/dotfiles && cd dotfiles
 
+mv * ~/.config
 
+mv ~/.config/.zshrc ~/ && mv ~/.config/.gtkrc-2.0 ~/
 
+cd .. && rm -rf dotfiles
 
-
-
+source ~/.zshrc
+```
 
