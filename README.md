@@ -68,5 +68,7 @@ mv ~/.config/.zshrc ~/ && mv ~/.config/.gtkrc-2.0 ~/
 cd .. && rm -rf dotfiles
 
 source ~/.zshrc
+
+openbox --reconfigure
 ```
 
