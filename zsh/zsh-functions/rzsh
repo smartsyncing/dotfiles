@@ -1,3 +1,11 @@
+#                 __ 
+#    _______ ___ / / 
+#   / __/_ /(_-</ _ \
+#  /_/  /__/___/_//_/
+#                  
+
+
+
 rzsh(){
     source ~/.zshrc
     echo "ZSH config reloaded."

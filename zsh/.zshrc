@@ -1,9 +1,18 @@
-# My custom zsh config
-# Zsh-completions is recommended.
+#               __          
+#      ___ ___ / /  ________
+#   _ /_ /(_-</ _ \/ __/ __/
+#  (_)/__/___/_//_/_/  \__/ 
+#
 
+#  History
+                      
 HISTFILE=~/.config/zsh/zsh_history
 HISTSIZE=50000
 SAVEHIST=50000
+
+
+
+#  Completions
 
 zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
 zstyle ':completion:*' list-colors ''
@@ -14,6 +23,10 @@ zstyle ':completion:*' menu select
 zstyle :compinstall filename '~/.config/zsh/.zshrc'
 
 stty stop undef
+
+
+
+#  Keybindings
 
 bindkey -v
 autoload -U up-line-or-beginning-search
@@ -28,9 +41,14 @@ bindkey '^P' autosuggest-accept
 bindkey ' ' magic-space        
 autoload -Uz compinit
 
+
+
+#  Sourcing files
+
 source ~/.config/zsh/zsh-plugins/zsh-autosuggestions.zsh
 source ~/.config/zsh/zsh-plugins/zsh-syntax-highlighting.zsh
 source ~/.config/zsh/zsh-plugins/you-should-use.plugin.zsh
+source ~/.config/zsh/zsh-functions/addalias 
 source ~/.config/zsh/zsh-functions/autols
 source ~/.config/zsh/zsh-functions/ezsh
 source ~/.config/zsh/zsh-functions/rzsh
@@ -42,6 +60,10 @@ source ~/.config/zsh/zsh-exports-and-aliases
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f $ZDOTDIR/completion/_fnm ] && fpath+="$ZDOTDIR/completion/"
 compinit
+
+
+
+#  Shell Options
 
 setopt extendedglob autocd interactive_comments prompt_subst
 unsetopt nomatch notify beep
@@ -55,8 +77,16 @@ precmd() {
     vcs_info
 }
 
+
+
+#  Prompt
+
 prompt='%B%F{$PCOLOR}%2~${vcs_info_msg_0_}%f »  %b'
 RPROMPT='%T'
+
+
+
+#  Autostart
 	
 source ~/.config/zsh/autostart
 source ~/.config/zsh/zsh-plugins/fzf-tab/fzf-tab.plugin.zsh

@@ -1,23 +1,126 @@
+#                           __    
+#   _____ __ ___  ___  ____/ /____
+#  / -_) \ // _ \/ _ \/ __/ __(_-<
+#  \__/_\_\/ .__/\___/_/  \__/___/
+#         /_/                     
+#                 __
+#   ___ ____  ___/ /
+#  / _ `/ _ \/ _  / 
+#  \_,_/_//_/\_,_/            
+#  
+#         ___                
+#   ___ _/ (_)__ ____ ___ ___
+#  / _ `/ / / _ `(_-</ -_|_-<
+#  \_,_/_/_/\_,_/___/\__/___/
+#                         
+
+
+#  FZF
+
+
 export FZF_DEFAULT_OPTS='--layout=default --height=60% --border --info=hidden --padding=3 --color=dark
 --color=fg:-1,bg:-1,hl:#c678dd,fg+:#ffffff,bg+:#282c34,hl+:#d858fe
 --color=info:#98c379,prompt:#61afef,pointer:#e5c07b,marker:#e5c07b,spinner:#61afef,header:#61afef,gutter:#282c34 --margin=18% --prompt="» " --pointer="▶" --marker="▶"'
+
 export FZF_CTRL_T_OPTS="--preview 'file {}' --preview-window up,1,border --layout=reverse"
+
 export FZF_ALT_C_OPTS="--preview 'file {}' --preview-window up,1,border --layout=reverse"
-alias update="sudo xbps-install -Syu"
-alias install="sudo xbps-install -S"
-alias remove="sudo xbps-remove"
-alias uninstall="sudo xbps-remove"
+
+
+
+#  Package managers
+
+
+# XBPS
+
+alias xupdate="sudo xbps-install -Syu"
+
+alias xinstall="sudo xbps-install -S"
+
+alias xremove="sudo xbps-remove"
+
+alias xuninstall="sudo xbps-remove"
+
+
+# Pacman
+
+alias pupdate="sudo pacman -Syu"
+
+alias pinstall="sudo pacman -S"
+
+alias premove="sudo pacman -Runs"
+
+alias puninstall="sudo pacman -Runs"
+
+
+# Apt
+
+alias aupdate="sudo apt-get update && sudo apt-get upgrade"
+
+alias ainstall="sudo apt-get install"
+
+alias aremove="sudo apt-get remove"
+
+alias auninstall="sudo apt-get remove"
+
+
+
+#  Git aliases
+
+
+alias g="git"
+
 alias gi="git init"
+
 alias gs="git status -sbu"
+
 alias gco="git checkout"
+
 alias gcob="git checkout -b"
+
 alias gp="git push"
+
 alias gm="git merge"
+
 alias ga="git add ."
+
 alias gcm="git commit -m"
+
 alias gpl="git pull"
+
 alias gst="git stash"
+
 alias gstl="git stash list"
+
 alias glg='git log --graph --oneline --decorate --all'
+
+
+
+#  Other
+
+
 alias cat="bat --color=always"
-alias ls="lsd"
+
+alias ls="lsd --blocks name,date,size --date relative -X"
+
+alias ex="chmod +x"
+
+alias c="clear"
+
+alias x="exit"
+
+alias h="history -30"
+
+alias hc="echo -n > ~/.config/zsh/zsh_history"
+
+alias hg="history | fc -ln 0 | sed 's/^/  /' | grep"
+
+alias ag="alias | sed 's/^/  /' | grep"
+
+alias nv="neovim"
+
+alias grep="grep -n --color" 
+
+alias mkdir="mkdir -pv" 
+
+alias ping="ping -c 5"
