@@ -88,6 +88,7 @@ alias gstl="git stash list"
 
 alias glg='git log --graph --oneline --decorate --all'
 
+alias gcl="git clone"
 
 
 #  Other
@@ -118,5 +119,3 @@ alias grep="grep -n --color"
 alias mkdir="mkdir -pv" 
 
 alias ping="ping -c 5"
-
-alias gcl="git clone"
