@@ -33,35 +33,29 @@ export FZF_ALT_C_OPTS="--preview 'file {}' --preview-window up,1,border --layout
 
 # XBPS
 
-alias xupdate="sudo xbps-install -Syu"
+alias xu="sudo xbps-install -Syu"
 
-alias xinstall="sudo xbps-install -S"
+alias xi="sudo xbps-install -S"
 
-alias xremove="sudo xbps-remove"
-
-alias xuninstall="sudo xbps-remove"
+alias xr="sudo xbps-remove"
 
 
 # Pacman
 
-alias pupdate="sudo pacman -Syu"
+alias pu="sudo pacman -Syu"
 
-alias pinstall="sudo pacman -S"
+alias pi="sudo pacman -S"
 
-alias premove="sudo pacman -Runs"
-
-alias puninstall="sudo pacman -Runs"
+alias pr="sudo pacman -Runs"
 
 
 # Apt
 
-alias aupdate="sudo apt-get update && sudo apt-get upgrade"
+alias au="sudo apt-get u && sudo apt-get upgrade"
 
-alias ainstall="sudo apt-get install"
+alias ai="sudo apt-get install"
 
-alias aremove="sudo apt-get remove"
-
-alias auninstall="sudo apt-get remove"
+alias ar="sudo apt-get remove"
 
 
 
@@ -124,3 +118,5 @@ alias grep="grep -n --color"
 alias mkdir="mkdir -pv" 
 
 alias ping="ping -c 5"
+
+alias gcl="git clone"

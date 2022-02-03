@@ -1,0 +1,12 @@
+#     __       __              
+#    / /  ___ / /__  __ _  ___ 
+#   / _ \/ -_) / _ \/  ' \/ -_)
+#  /_//_/\__/_/ .__/_/_/_/\__/ 
+#            /_/              
+#
+ 
+helpme(){
+  echo "Aliases:\n$(alias)\n\n\n\n"
+
+  echo "Key bindings:\n$(bindkey)\n\n\n\n"
+}
