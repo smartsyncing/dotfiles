@@ -37,6 +37,7 @@ source ~/.config/zsh/zsh-plugins/you-should-use.plugin.zsh
 source ~/.config/zsh/zsh-functions/addalias 
 source ~/.config/zsh/zsh-functions/autols
 source ~/.config/zsh/zsh-functions/ezsh
+source ~/.config/zsh/zsh-functions/helpme
 source ~/.config/zsh/zsh-functions/rzsh
 source ~/.config/zsh/zsh-exports-and-aliases
 [ -f /usr/share/fzf/completion.zsh ] && source /usr/share/fzf/completion.zsh
