@@ -59,16 +59,8 @@
 # Installation
 
 ```
-git clone https://github.com/smartsyncing/dotfiles && cd dotfiles
-
-mv * ~/.config
-
-mv ~/.config/.zshrc ~/ && mv ~/.config/.gtkrc-2.0 ~/
-
-cd .. && rm -rf dotfiles
-
-source ~/.zshrc
-
-openbox --reconfigure
+curl -s -S -O https://raw.githubusercontent.com/smartsyncing/dotfiles/main/install.sh
+chmod +x install.sh
+./install.sh
 ```
 
