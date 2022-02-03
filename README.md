@@ -59,7 +59,6 @@
 # Installation
 
 ```
-curl -s -S -O https://raw.githubusercontent.com/smartsyncing/dotfiles/main/install.sh | chmod +x install.sh
-./install.sh
+curl -s -S -O https://raw.githubusercontent.com/smartsyncing/dotfiles/main/install.sh && chmod +x install.sh && ./install.sh
 ```
 
