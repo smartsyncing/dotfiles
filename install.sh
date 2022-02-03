@@ -1,6 +1,6 @@
 #!/bin/bash
 
-printf "This script requires the following dependencies to run:\n\n ZSH\n FZF\n LSD\n Kitty\n Zsh\n Bat\n ZSH Completions\n Openbox\n Rofi\n Polybar\n Dunst\n Picom\n\n"
+printf "\nThis script requires the following dependencies to run:\n\n ZSH\n FZF\n LSD\n Kitty\n Zsh\n Bat\n ZSH Completions\n Openbox\n Rofi\n Polybar\n Dunst\n Picom\n\n"
 
 read -r -p "Are you sure you would like to proceed? [y/n]: " response
 
