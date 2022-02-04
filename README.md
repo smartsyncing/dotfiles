@@ -26,6 +26,7 @@
 * <b>Bar:</b> Polybar
 * <b>Launcher:</b> Rofi
 * <b>Editor:</b> Neovim
+* <b>Browser:</b> Vivaldi
 * <b>[Wallpaper](https://cdna.artstation.com/p/assets/images/images/009/538/556/4k/inaki-andonegi-castle-in-the-sky.jpg)</b>
 
 # Dependencies
