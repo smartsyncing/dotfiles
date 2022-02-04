@@ -112,13 +112,22 @@ alias hg="history | fc -ln 0 | sed 's/^/  /' | grep"
 
 alias ag="alias | sed 's/^/  /' | grep"
 
-alias nv="neovim"
+alias nv="nvim"
+
+alias nvrc="nvim ~/.config/nvim/nvimrc
 
 alias grep="grep -n --color" 
 
 alias mkdir="mkdir -pv" 
 
-alias rm="rm -i"
-
 alias ping="ping -c 5"
 
+alias rm="rm -Rv"
+
+alias mv="mv -v"
+
+alias ln="ln -sv"
+
+alias cp="cp -Rv"
+
+alias expand="expand -t 4"
