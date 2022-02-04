@@ -118,4 +118,7 @@ alias grep="grep -n --color"
 
 alias mkdir="mkdir -pv" 
 
+alias rm="rm -i"
+
 alias ping="ping -c 5"
+

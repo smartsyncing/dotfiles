@@ -30,7 +30,7 @@
 
 # Dependencies
 
-### ZSH
+### ZSH 
 
 * <b>[FZF](https://github.com/junegunn/fzf)</b>
 
@@ -38,11 +38,9 @@
 
 * <b>[Kitty](https://github.com/kovidgoyal/kitty)</b>
 
-* <b>[Zsh](https://github.com/zsh-users/zsh)</b>
+* <b>[ZSH](https://github.com/zsh-users/zsh)</b>
 
 * <b>[Bat](https://github.com/sharkdp/bat)</b></b>
-
-* <b>[Iosevka](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Iosevka.zip)</b>
 
 * <b>[ZSH Completions](https://github.com/zsh-users/zsh-completions)</b>
 
@@ -61,4 +59,3 @@
 ```
 curl -s -S -O https://raw.githubusercontent.com/smartsyncing/dotfiles/main/install.sh && chmod +x install.sh && ./install.sh
 ```
-

@@ -6,7 +6,7 @@
 #
  
 helpme(){
-  echo "Aliases:\n$(alias)\n\n\n\n"
+  echo "Aliases:\n$(alias | sed 's/^/  /' | grep =)\n\n\n\n"
 
   echo "Key bindings:\n$(bindkey)\n\n\n\n"
 }
