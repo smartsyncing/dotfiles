@@ -23,6 +23,7 @@ autoload -U up-line-or-beginning-search
 autoload -U down-line-or-beginning-search
 zle -N up-line-or-beginning-search
 zle -N down-line-or-beginning-search
+bindkey -s '^o' 'ranger^M'
 bindkey "$terminfo[kcuu1]" up-line-or-beginning-search
 bindkey "$terminfo[kcud1]" down-line-or-beginning-search
 bindkey -M vicmd 'k' up-line-or-beginning-search
@@ -47,7 +48,7 @@ source ~/.config/zsh/zsh-exports-and-aliases
 [ -f $ZDOTDIR/completion/_fnm ] && fpath+="$ZDOTDIR/completion/"
 compinit
 
-setopt extendedglob autocd interactive_comments prompt_subst
+setopt extendedglob autocd interactive_comments prompt_subst histignoredups cdablevars histreduceblanks append_history share_history extendedhistory inc_append_history hist_reduce_blanks no_case_glob
 unsetopt nomatch notify beep
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' enable git svn	
