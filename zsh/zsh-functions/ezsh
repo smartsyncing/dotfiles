@@ -1,0 +1,11 @@
+#                __ 
+#   ___ ___ ___ / / 
+#  / -_)_ /(_-</ _ \
+#  \__//__/___/_//_/
+#                
+
+ezsh(){
+    vim ~/.config/zsh/.zshrc
+    source ~/.config/zsh/.zshrc
+    echo "ZSH config reloaded."
+}
