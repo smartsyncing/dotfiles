@@ -48,7 +48,6 @@ source ~/.config/zsh/zsh-exports-and-aliases
 [ -f /usr/share/doc/fzf/examples/completion.zsh ] && source /usr/share/doc/fzf/examples/completion.zsh
 [ -f /usr/share/doc/fzf/examples/key-bindings.zsh ] && source /usr/share/doc/fzf/examples/key-bindings.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-[ -f $ZDOTDIR/completion/_fnm ] && fpath+="$ZDOTDIR/completion/"
 compinit
 
 setopt extendedglob autocd interactive_comments prompt_subst histignoredups cdablevars histreduceblanks append_history share_history extendedhistory inc_append_history hist_reduce_blanks no_case_glob complete_aliases

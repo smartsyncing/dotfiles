@@ -17,6 +17,7 @@
 
 #  FZF
 
+export FZF_DEFAULT_COMMAND='rg --files --hidden --glob '"'"'!.git/'"'"       
 
 export FZF_DEFAULT_OPTS='--layout=default --height=60% --border --info=hidden --padding=3 --color=dark
 --color=fg:-1,bg:-1,hl:#c678dd,fg+:#ffffff,bg+:#282c34,hl+:#d858fe
@@ -90,6 +91,9 @@ alias glg='git log --graph --oneline --decorate --all'
 
 alias gcl="git clone"
 
+alias gclr="git clone --recursive"
+
+
 
 #  Other
 
@@ -108,15 +112,15 @@ alias h="history -30"
 
 alias hc="echo -n > ~/.config/zsh/zsh_history"
 
-alias hg="history | fc -ln 0 | sed 's/^/  /' | grep"
+alias hg="history | fc -ln 0 | sed 's/^/  /' | rgrep"
 
-alias ag="alias | sed 's/^/  /' | grep"
+alias ag="alias | sed 's/^/  /' | rgrep"
 
 alias nv="nvim"
 
 alias nvrc="nvim ~/.config/nvim/nvimrc"
 
-alias grep="grep -n --color" 
+alias grep="rgrep -n --color" 
 
 alias mkdir="mkdir -pv" 
 
@@ -131,3 +135,5 @@ alias ln="ln -sv"
 alias cp="cp -Rv"
 
 alias expand="expand -t 4"
+
+alias zsh="zs"
