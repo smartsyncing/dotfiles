@@ -114,7 +114,7 @@ alias ag="alias | sed 's/^/  /' | grep"
 
 alias nv="nvim"
 
-alias nvrc="nvim ~/.config/nvim/nvimrc
+alias nvrc="nvim ~/.config/nvim/nvimrc"
 
 alias grep="grep -n --color" 
 
