@@ -58,5 +58,11 @@
 # Installation
 
 ```
-curl -s -S -O https://raw.githubusercontent.com/smartsyncing/dotfiles/main/install.sh && chmod +x install.sh && ./install.sh
+git clone --recursive https://github.com/smartsyncing/dotfiles
+cd dotfiles
+mv * ~/.config &&
+mv ~/.config/.gtkrc-2.0 ~/
+mv ~/.config/.zshrc ~/
+openbox --reconfigure
+source ~/.zshrc
 ```
