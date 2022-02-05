@@ -32,8 +32,10 @@ bindkey '^P' autosuggest-accept
 bindkey ' ' magic-space        
 autoload -Uz compinit
 
+fpath=(~/.config/zsh/zsh-plugins/zsh-completions/src $fpath)
+source ~/.config/zsh/zsh-plugins/manydots-magic
 source ~/.config/zsh/zsh-plugins/zsh-autosuggestions.zsh
-source ~/.config/zsh/zsh-plugins/zsh-syntax-highlighting.zsh
+source ~/.config/zsh/zsh-plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 source ~/.config/zsh/zsh-plugins/you-should-use.plugin.zsh
 source ~/.config/zsh/zsh-plugins/zsh-autopair/autopair.zsh
 source ~/.config/zsh/zsh-functions/addalias 
@@ -49,8 +51,7 @@ source ~/.config/zsh/zsh-exports-and-aliases
 [ -f $ZDOTDIR/completion/_fnm ] && fpath+="$ZDOTDIR/completion/"
 compinit
 
-eval $(thefuck --alias)      
-setopt extendedglob autocd interactive_comments prompt_subst histignoredups cdablevars histreduceblanks append_history share_history extendedhistory inc_append_history hist_reduce_blanks no_case_glob
+setopt extendedglob autocd interactive_comments prompt_subst histignoredups cdablevars histreduceblanks append_history share_history extendedhistory inc_append_history hist_reduce_blanks no_case_glob complete_aliases
 unsetopt nomatch notify beep
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' enable git svn	
