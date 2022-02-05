@@ -60,7 +60,7 @@ precmd() {
     vcs_info
 }
 
-prompt='%B%F{$PCOLOR}%2~${vcs_info_msg_0_}%f »  %b'
+prompt='%B%F{$PCOLOR}%2~${vcs_info_msg_0_}%f   %b'
 RPROMPT='%T'
 	
 source ~/.config/zsh/autostart
