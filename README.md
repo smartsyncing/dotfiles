@@ -39,11 +39,7 @@
 
 * <b>[Kitty](https://github.com/kovidgoyal/kitty)</b>
 
-* <b>[ZSH](https://github.com/zsh-users/zsh)</b>
-
 * <b>[Bat](https://github.com/sharkdp/bat)</b></b>
-
-* <b>[ZSH Completions](https://github.com/zsh-users/zsh-completions)</b>
 
 ### Openbox
 
