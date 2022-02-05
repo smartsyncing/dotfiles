@@ -41,6 +41,8 @@
 
 * <b>[Bat](https://github.com/sharkdp/bat)</b></b>
 
+* <b>[Ripgrep](https://github.com/BurntSushi/ripgrep)</b></b>
+
 ### Openbox
 
 * <b>[Rofi](https://github.com/davatorium/rofi)</b>
