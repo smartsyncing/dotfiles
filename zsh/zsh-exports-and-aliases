@@ -112,15 +112,15 @@ alias h="history -30"
 
 alias hc="echo -n > ~/.config/zsh/zsh_history"
 
-alias hg="history | fc -ln 0 | sed 's/^/  /' | rgrep"
+alias hg="history | fc -ln 0 | sed 's/^/  /' | grep"
 
-alias ag="alias | sed 's/^/  /' | rgrep"
+alias ag="alias | sed 's/^/  /' | grep"
 
 alias nv="nvim"
 
 alias nvrc="nvim ~/.config/nvim/nvimrc"
 
-alias grep="rgrep -n --color" 
+alias grep="grep -n --color" 
 
 alias mkdir="mkdir -pv" 
 
@@ -136,4 +136,3 @@ alias cp="cp -Rv"
 
 alias expand="expand -t 4"
 
-alias zsh="zs"
