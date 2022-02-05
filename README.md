@@ -45,7 +45,7 @@
 
 * <b>[ZSH Completions](https://github.com/zsh-users/zsh-completions)</b>
 
-*<b>[TheFuck](https://github.com/nvbn/thefuck)</b>
+* <b>[TheFuck](https://github.com/nvbn/thefuck)</b>
 
 ### Openbox
 
