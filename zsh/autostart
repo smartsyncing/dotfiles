@@ -113,5 +113,4 @@ getUptime() {
   printf "$uptime"
 }
 
-echo "$(printf $COLOR)$ASCII\n\n  $(printf $STOP) ➜  $(whoami)\n$COLOR  $(printf $STOP) ➜  $DESKTOP_SESSION\n$COLOR  $(printf $STOP) ➜  $(ps -p $$ -ocomm=)\n$COLOR  $(printf $STOP) ➜  $PACKAGE_COUNT\n$COLOR  $(printf $STOP) ➜  $(getUptime)\n  \nEat $COLOR $STOP, Sleep $COLOR $STOP, Linux $COLOR $STOP\n"
-
+echo "$(printf $COLOR)$ASCII\n\n  $(printf $STOP)    $(whoami)\n$COLOR  $(printf $STOP)    $DESKTOP_SESSION\n$COLOR  $(printf $STOP)    $(ps -p $$ -ocomm=)\n$COLOR  $(printf $STOP)    $PACKAGE_COUNT\n$COLOR  $(printf $STOP)    $(getUptime)\n  \nEat $COLOR $STOP, Sleep $COLOR $STOP, Linux $COLOR $STOP\n"
