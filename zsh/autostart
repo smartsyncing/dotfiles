@@ -138,4 +138,4 @@ getShell() {
   echo "$( printf ${SHELL##*/} )"; 
 } 
 
-echo "$(printf $COLOR)$ASCII\n\n  $(printf $STOP)   $(whoami)\n$COLOR  $(printf $STOP)   $wm\n$COLOR  $(printf $STOP)   $(getShell)\n$COLOR  $(printf $STOP)   $PACKAGE_COUNT\n$COLOR  $(printf $STOP)   $(getUptime)\n\n$(col)\n"
+echo -e "$(printf $COLOR)$ASCII\n\n  $(printf $STOP)   $(whoami)\n$COLOR  $(printf $STOP)   $wm\n$COLOR  $(printf $STOP)   $(getShell)\n$COLOR  $(printf $STOP)   $PACKAGE_COUNT\n$COLOR  $(printf $STOP)   $(getUptime)\n\n$(col)\n"

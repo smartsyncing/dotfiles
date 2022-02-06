@@ -45,7 +45,6 @@ source ~/.config/zsh/zsh-plugins/zsh-defer/zsh-defer.plugin.zsh
 source ~/.config/zsh/zsh-plugins/manydots-magic
 source ~/.config/zsh/zsh-plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.config/zsh/zsh-plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
-source ~/.config/zsh/zsh-plugins/you-should-use.plugin.zsh
 source ~/.config/zsh/zsh-plugins/zsh-autopair/autopair.zsh
 source ~/.config/zsh/zsh-exports-and-aliases
 [ -f /usr/share/fzf/completion.zsh ] && source /usr/share/fzf/completion.zsh
@@ -59,7 +58,7 @@ setopt extendedglob autocd interactive_comments prompt_subst histignoredups cdab
 unsetopt nomatch notify beep
 
 prompt='%B%F{$PCOLOR}%2~%F{15}$(gitprompt)%f   %b'
-RPROMPT='%T'
+RPROMPT='祥%T'
 	
 source ~/.config/zsh/autostart
 source ~/.config/zsh/zsh-plugins/fzf-tab/fzf-tab.plugin.zsh
