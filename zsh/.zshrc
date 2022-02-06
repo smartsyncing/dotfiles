@@ -33,16 +33,20 @@ bindkey ' ' magic-space
 autoload -Uz compinit
 
 fpath=(~/.config/zsh/zsh-plugins/zsh-completions/src $fpath)
-source ~/.config/zsh/zsh-plugins/zsh-defer.plugin.zsh
+source ~/.config/zsh/zsh-functions/gitprompt.zsh
+source ~/.config/zsh/zsh-functions/addalias
+source ~/.config/zsh/zsh-functions/addplugin
+source ~/.config/zsh/zsh-functions/rzsh
+source ~/.config/zsh/zsh-functions/ezsh
+source ~/.config/zsh/zsh-functions/helpme
+source ~/.config/zsh/zsh-functions/autols
+source ~/.config/zsh/zsh-plugins/zsh-async/async.zsh
+source ~/.config/zsh/zsh-plugins/zsh-defer/zsh-defer.plugin.zsh
 source ~/.config/zsh/zsh-plugins/manydots-magic
 source ~/.config/zsh/zsh-plugins/zsh-autosuggestions.zsh
 source ~/.config/zsh/zsh-plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 source ~/.config/zsh/zsh-plugins/you-should-use.plugin.zsh
 source ~/.config/zsh/zsh-plugins/zsh-autopair/autopair.zsh
-source ~/.config/zsh/zsh-functions/addalias 
-source ~/.config/zsh/zsh-functions/autols
-source ~/.config/zsh/zsh-functions/ezsh
-source ~/.config/zsh/zsh-functions/rzsh
 source ~/.config/zsh/zsh-exports-and-aliases
 [ -f /usr/share/fzf/completion.zsh ] && source /usr/share/fzf/completion.zsh
 [ -f /usr/share/fzf/key-bindings.zsh ] && source /usr/share/fzf/key-bindings.zsh
@@ -53,17 +57,8 @@ compinit
 
 setopt extendedglob autocd interactive_comments prompt_subst histignoredups cdablevars histreduceblanks append_history share_history extendedhistory inc_append_history hist_reduce_blanks no_case_glob complete_aliases
 unsetopt nomatch notify beep
-autoload -Uz vcs_info
-zstyle ':vcs_info:*' enable git svn	
-zstyle ':vcs_info:git*' formats "%B on %F{magenta} %b%u%f"
-zstyle ':vcs_info:*' unstagedstr '*'
-zstyle ':vcs_info:*' check-for-changes true
 
-precmd() {
-    vcs_info
-}
-
-prompt='%B%F{$PCOLOR}%2~${vcs_info_msg_0_}%f   %b'
+prompt='%B%F{$PCOLOR}%2~%F{15}$(gitprompt)%f   %b'
 RPROMPT='%T'
 	
 source ~/.config/zsh/autostart

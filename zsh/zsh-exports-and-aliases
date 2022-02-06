@@ -98,8 +98,6 @@ alias gclr="git clone --recursive"
 #  Other
 
 
-alias cat="bat --color=always"
-
 alias ls="lsd --blocks name,date,size --date relative -X"
 
 alias ex="chmod +x"
