@@ -6,6 +6,4 @@
 
 ezsh(){
     vim ~/.config/zsh/.zshrc
-    source ~/.config/zsh/.zshrc
-    echo "ZSH config reloaded."
 }
