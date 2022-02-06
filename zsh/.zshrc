@@ -22,7 +22,6 @@ fpath=($fpath ~/.config/zsh/zsh-functions)
 autoload -Uz gitprompt	
 autoload -Uz addalias
 autoload -Uz addplugin
-autoload -Uz rzsh
 autoload -Uz ezsh
 autoload -Uz helpme
 autoload -Uz autols
@@ -66,7 +65,7 @@ setopt extendedglob autocd interactive_comments prompt_subst histignoredups cdab
 unsetopt nomatch notify beep
 
 prompt='%B%F{$PCOLOR}%2~%F{15}$(gitprompt)%f   %b'
-RPROMPT='祥%T'
+RPROMPT='祥 %T'
 	
 source ~/.config/zsh/autostart
 source ~/.config/zsh/zsh-plugins/fzf-tab/fzf-tab.plugin.zsh
