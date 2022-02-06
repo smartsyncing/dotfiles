@@ -16,17 +16,6 @@ zstyle ':completion:*' menu select
 
 zstyle :compinstall filename '~/.config/zsh/.zshrc'
 
-# Lazy loading
-fpath=(~/.config/zsh/zsh-plugins/zsh-completions/src $fpath)
-fpath=($fpath ~/.config/zsh/zsh-functions)
-autoload -Uz gitprompt	
-autoload -Uz addalias
-autoload -Uz addplugin
-autoload -Uz rzsh
-autoload -Uz ezsh
-autoload -Uz helpme
-autoload -Uz autols
-
 stty stop undef
 
 bindkey -v
@@ -43,26 +32,35 @@ bindkey '^P' autosuggest-accept
 bindkey ' ' magic-space        
 autoload -Uz compinit
 
-source ~/.config/zsh/zsh-plugins/alias-tips/alias-tips.plugin.zsh
-source ~/.config/zsh/zsh-plugins/zsh-async/async.zsh
-source ~/.config/zsh/zsh-plugins/zsh-defer/zsh-defer.plugin.zsh
-source ~/.config/zsh/zsh-plugins/manydots-magic
-source ~/.config/zsh/zsh-plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/.config/zsh/zsh-plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
-source ~/.config/zsh/zsh-plugins/zsh-autopair/autopair.zsh
+fpath=(~/.config/zsh/zsh-plugins/zsh-completions/src $fpath)
+fpath=($fpath ~/.config/zsh/lazyload)
+source ~/.config/zsh/zsh-functions/gitprompt.zsh
+source ~/.config/zsh/zsh-functions/addalias
+source ~/.config/zsh/zsh-functions/addplugin
+source ~/.config/zsh/zsh-functions/rzsh
+source ~/.config/zsh/zsh-functions/ezsh
+source ~/.config/zsh/zsh-functions/helpme
+source ~/.config/zsh/zsh-functions/autols
+#source ~/.config/zsh/zsh-plugins/alias-tips/alias-tips.plugin.zsh
+#source ~/.config/zsh/zsh-plugins/zsh-async/async.zsh
+#source ~/.config/zsh/zsh-plugins/zsh-defer/zsh-defer.plugin.zsh
+#source ~/.config/zsh/zsh-plugins/manydots-magic
+#source ~/.config/zsh/zsh-plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+#source ~/.config/zsh/zsh-plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+#source ~/.config/zsh/zsh-plugins/zsh-autopair/autopair.zsh
 source ~/.config/zsh/zsh-exports-and-aliases
 [ -f /usr/share/fzf/completion.zsh ] && source /usr/share/fzf/completion.zsh
 [ -f /usr/share/fzf/key-bindings.zsh ] && source /usr/share/fzf/key-bindings.zsh
 [ -f /usr/share/doc/fzf/examples/completion.zsh ] && source /usr/share/doc/fzf/examples/completion.zsh
 [ -f /usr/share/doc/fzf/examples/key-bindings.zsh ] && source /usr/share/doc/fzf/examples/key-bindings.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-if [[ -n ${ZDOTDIR}/.zcompdump(#qN.mh+24) ]]; then
-	compinit;
-else
-	compinit -C;
-fi;
+autoload -Uz compinit
+for dump in ~/.zcompdump(N.mh+24); do
+  compinit
+done
+compinit -C
 
-setopt extendedglob autocd interactive_comments prompt_subst histignoredups cdablevars histreduceblanks append_history share_history extendedhistory inc_append_history hist_reduce_blanks no_case_glob
+setopt extendedglob autocd interactive_comments prompt_subst histignoredups cdablevars histreduceblanks append_history share_history extendedhistory inc_append_history hist_reduce_blanks no_case_glob complete_aliases
 unsetopt nomatch notify beep
 
 prompt='%B%F{$PCOLOR}%2~%F{15}$(gitprompt)%f   %b'
@@ -70,6 +68,3 @@ RPROMPT='祥%T'
 	
 source ~/.config/zsh/autostart
 source ~/.config/zsh/zsh-plugins/fzf-tab/fzf-tab.plugin.zsh
-
-gitprompt
-autols
