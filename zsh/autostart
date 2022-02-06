@@ -30,6 +30,17 @@ if [[ $OS = *"Arch"* ]]; then
 / _\` | '_/ _| ' \\
 \__,_|_| \__|_||_|")
 fi
+if [[ $OS = *"Manjaro"* ]]; then
+    OS=manjaro
+    COLOR=$GREEN
+    PCOLOR=10
+    PACKAGE_COUNT=$(pacman -Qq | wc -l)
+    ASCII=$(printf "                  _              
+ _ __  __ _ _ _  (_)__ _ _ _ ___ 
+| '  \/ _` | ' \ | / _` | '_/ _ \
+|_|_|_\__,_|_||_|/ \__,_|_| \___/
+               |__/              ")
+fi
 if [[ $OS = *"Fedora"* ]]; then
     OS=fedora
     COLOR=$BLUE 

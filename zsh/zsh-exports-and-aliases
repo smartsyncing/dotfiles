@@ -134,3 +134,6 @@ alias cp="cp -Rv"
 
 alias expand="expand -t 4"
 
+export ZSH_AUTOSUGGEST_USE_ASYNC=1       
+
+export ZSH_AUTOSUGGEST_MANUAL_REBIND=1
