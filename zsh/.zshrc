@@ -33,6 +33,7 @@ bindkey ' ' magic-space
 autoload -Uz compinit
 
 fpath=(~/.config/zsh/zsh-plugins/zsh-completions/src $fpath)
+source ~/.config/zsh/zsh-plugins/zsh-defer.plugin.zsh
 source ~/.config/zsh/zsh-plugins/manydots-magic
 source ~/.config/zsh/zsh-plugins/zsh-autosuggestions.zsh
 source ~/.config/zsh/zsh-plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
