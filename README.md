@@ -39,8 +39,6 @@
 
 * <b>[Kitty](https://github.com/kovidgoyal/kitty)</b>
 
-* <b>[Bat](https://github.com/sharkdp/bat)</b></b>
-
 * <b>[Ripgrep](https://github.com/BurntSushi/ripgrep)</b></b>
 
 * <b>[Nerd Fonts](https://nerdfonts.com)</b></b>
