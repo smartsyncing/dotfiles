@@ -42,7 +42,6 @@ bindkey '^P' autosuggest-accept
 bindkey ' ' magic-space        
 autoload -Uz compinit
 
-source ~/.config/zsh/zsh-plugins/alias-tips/alias-tips.plugin.zsh
 source ~/.config/zsh/zsh-plugins/zsh-async/async.zsh
 source ~/.config/zsh/zsh-plugins/zsh-defer/zsh-defer.plugin.zsh
 source ~/.config/zsh/zsh-plugins/manydots-magic
