@@ -40,6 +40,7 @@ source ~/.config/zsh/zsh-functions/rzsh
 source ~/.config/zsh/zsh-functions/ezsh
 source ~/.config/zsh/zsh-functions/helpme
 source ~/.config/zsh/zsh-functions/autols
+source ~/.config/zsh/zsh-plugins/alias-tips/alias-tips.plugin.zsh
 source ~/.config/zsh/zsh-plugins/zsh-async/async.zsh
 source ~/.config/zsh/zsh-plugins/zsh-defer/zsh-defer.plugin.zsh
 source ~/.config/zsh/zsh-plugins/manydots-magic
@@ -52,7 +53,11 @@ source ~/.config/zsh/zsh-exports-and-aliases
 [ -f /usr/share/doc/fzf/examples/completion.zsh ] && source /usr/share/doc/fzf/examples/completion.zsh
 [ -f /usr/share/doc/fzf/examples/key-bindings.zsh ] && source /usr/share/doc/fzf/examples/key-bindings.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-compinit
+autoload -Uz compinit
+for dump in ~/.zcompdump(N.mh+24); do
+  compinit
+done
+compinit -C
 
 setopt extendedglob autocd interactive_comments prompt_subst histignoredups cdablevars histreduceblanks append_history share_history extendedhistory inc_append_history hist_reduce_blanks no_case_glob complete_aliases
 unsetopt nomatch notify beep
