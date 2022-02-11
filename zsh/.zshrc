@@ -40,8 +40,11 @@ bindkey -M vicmd 'k' up-line-or-beginning-search
 bindkey -M vicmd 'j' down-line-or-beginning-search
 bindkey '^P' autosuggest-accept
 bindkey ' ' magic-space        
+bindkey '^[[A' history-substring-search-up   
+bindkey '^[[B' history-substring-search-down   
 autoload -Uz compinit
 
+source ~/.config/zsh/zsh-plugins/zsh-history-substring-search.zsh
 source ~/.config/zsh/zsh-plugins/zsh-async/async.zsh
 source ~/.config/zsh/zsh-plugins/zsh-defer/zsh-defer.plugin.zsh
 source ~/.config/zsh/zsh-plugins/manydots-magic
