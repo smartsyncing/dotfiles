@@ -4,10 +4,12 @@
 #  (_)/__/___/_//_/_/  \__/ 
 #
                       
+#  History
 HISTFILE=~/.config/zsh/zsh_history
 HISTSIZE=50000
 SAVEHIST=50000
 
+#  Completions
 zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
 zstyle ':completion:*' list-colors ''
 zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}' 'r:|[._-]=** r:|=**' '+r:|[._-]=** r:|=** l:|=*'
@@ -16,7 +18,7 @@ zstyle ':completion:*' menu select
 
 zstyle :compinstall filename '~/.config/zsh/.zshrc'
 
-# Lazy loading
+#  Lazy loading of functions
 fpath=(~/.config/zsh/zsh-plugins/zsh-completions/src $fpath)
 fpath=($fpath ~/.config/zsh/zsh-functions)
 autoload -Uz gitprompt	
@@ -26,8 +28,8 @@ autoload -Uz ezsh
 autoload -Uz helpme
 autoload -Uz autols
 
+#  Shell options
 stty stop undef
-
 bindkey -v
 autoload -U up-line-or-beginning-search
 autoload -U down-line-or-beginning-search
@@ -44,6 +46,7 @@ bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down   
 autoload -Uz compinit
 
+#  Sourcing files
 source ~/.config/zsh/zsh-plugins/zsh-history-substring-search.zsh
 source ~/.config/zsh/zsh-plugins/zsh-async/async.zsh
 source ~/.config/zsh/zsh-plugins/zsh-defer/zsh-defer.plugin.zsh
@@ -67,7 +70,7 @@ setopt extendedglob autocd interactive_comments prompt_subst histignoredups cdab
 unsetopt nomatch notify beep
 
 prompt='%B%F{$PCOLOR}%2~%F{15}$(gitprompt)%f   %b'
-RPROMPT='祥 %T'
+RPROMPT='祥%T'
 	
 source ~/.config/zsh/autostart
 source ~/.config/zsh/zsh-plugins/fzf-tab/fzf-tab.plugin.zsh
