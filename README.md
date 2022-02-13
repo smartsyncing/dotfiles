@@ -8,13 +8,13 @@
   <img src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/blank.png" alt="Dotfiles"/>
 </p>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/rofi.png" alt="Dotfiles"/>
+  <img src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/launcher.png" alt="Dotfiles"/>
 </p>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/openbox1.png" alt="Dotfiles"/>
+  <img src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/tis complete.png" alt="Dotfiles"/>
 </p>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/openbox2.png" alt="Dotfiles"/>
+  <img src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/browsedit.png" alt="Dotfiles"/>
 </p>
 
 # Details 
