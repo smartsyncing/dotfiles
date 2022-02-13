@@ -1,4 +1,6 @@
 picom -f -c &
+pipewire &
+pipewire-pulse &
 feh --bg-fill ~/Downloads/inaki-andonegi-castle-in-the-sky.jpg &
 setxkbmap gb &
 ~/.config/polybar/launch.sh --forest
