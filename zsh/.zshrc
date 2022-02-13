@@ -3,7 +3,8 @@
 #   _ /_ /(_-</ _ \/ __/ __/
 #  (_)/__/___/_//_/_/  \__/ 
 #
-                      
+
+                     
 #  History
 HISTFILE=~/.config/zsh/zsh_history
 HISTSIZE=50000
@@ -47,7 +48,6 @@ bindkey '^[[B' history-substring-search-down
 autoload -Uz compinit
 
 #  Sourcing files
-source ~/.config/zsh/zsh-plugins/you-should-use.zsh
 source ~/.config/zsh/zsh-plugins/zsh-history-substring-search.zsh
 source ~/.config/zsh/zsh-plugins/zsh-async/async.zsh
 source ~/.config/zsh/zsh-plugins/zsh-defer/zsh-defer.plugin.zsh
@@ -70,8 +70,8 @@ fi;
 setopt extendedglob autocd interactive_comments prompt_subst histignoredups cdablevars histreduceblanks append_history share_history extendedhistory inc_append_history hist_reduce_blanks no_case_glob
 unsetopt nomatch notify beep
 
-prompt='%B%F{$PCOLOR}%2~%F{15}$(gitprompt)%f   %b'
-RPROMPT='祥%T'
+prompt='%B%F{$PCOLOR}%2~% %F{7}$(gitprompt) %B%F{$PCOLOR} %b' 
+RPROMPT='%F{7}%n@%m%'
 	
 source ~/.config/zsh/autostart
 source ~/.config/zsh/zsh-plugins/fzf-tab/fzf-tab.plugin.zsh
