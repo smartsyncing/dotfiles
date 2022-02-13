@@ -70,7 +70,7 @@ fi;
 setopt extendedglob autocd interactive_comments prompt_subst histignoredups cdablevars histreduceblanks append_history share_history extendedhistory inc_append_history hist_reduce_blanks no_case_glob
 unsetopt nomatch notify beep
 
-prompt='%B%F{$PCOLOR}%2~% %F{7}$(gitprompt) %B%F{$PCOLOR} %b' 
+prompt='%B%F{$PCOLOR}%2~% %F{7}$(gitprompt) %B%F{$PCOLOR}  %b' 
 RPROMPT='%F{7}%n@%m%'
 	
 source ~/.config/zsh/autostart
