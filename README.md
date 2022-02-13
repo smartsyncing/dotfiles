@@ -45,9 +45,9 @@
 
 ### Openbox
 
-* <b>[Rofi](https://github.com/davatorium/rofi)</b>
+* <b>[FZF](https://github.com/junegunn/fzf)</b>
 
-* <b>[Polybar](https://github.com/polybar/polybar)</b>
+* <b>[tint2](https://github.com/o9000/tint2)</b>
 
 * <b>[Dunst](https://github.com/dunst-project/dunst)</b>
 
