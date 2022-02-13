@@ -131,6 +131,7 @@ col() {
 	printf '\033[0m\n'
 }
 
+# Set manually if this does not work.
 wm=$XDG_CURRENT_DESKTOP
 [ "$wm" ] || wm=$DESKTOP_SESSION
  
