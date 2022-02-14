@@ -37,11 +37,14 @@
 
 * <b>[LSD](https://github.com/Peltoche/lsd)</b>
 
-* <b>[Kitty](https://github.com/kovidgoyal/kitty)</b>
-
 * <b>[Ripgrep](https://github.com/BurntSushi/ripgrep)</b></b>
 
-* <b>[Nerd Fonts](https://nerdfonts.com)</b></b>
+* <b>[Nerd Fonts](https://nerdfonts.com)</b>
+
+
+
+
+
 
 ### Openbox
 
