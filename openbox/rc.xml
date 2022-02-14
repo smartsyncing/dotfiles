@@ -809,8 +809,5 @@
         <y>center</y>
       </position>
     </application>
-    <application name="*">
-      <skip_taskbar>yes</skip_taskbar>
-    </application>
   </applications>
 </openbox_config>
