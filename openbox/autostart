@@ -1,3 +1,4 @@
+dunst --no-startup-id &
 picom -f -c &
 pipewire &
 pipewire-pulse &
