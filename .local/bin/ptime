@@ -5,8 +5,8 @@ tput civis
 
 ptime() {
   clear
-  date +"%H : %M" | figlet -w $COLS -c -f script 
-  date +"%m / %d / %y" | figlet -w $COLS -c -f script
+  date +"%H : %M" | figlet -w $COLS -c -f slant 
+  date +"%m / %d / %y" | figlet -w $COLS -c -f smslant
   stty -echo
   sleep 60	
 }
