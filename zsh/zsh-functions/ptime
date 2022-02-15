@@ -1,9 +1,18 @@
-center=$(tput cols)
+#!/bin/bash -ei
+
+
+tput civis
 
 ptime() {
   clear
-  date +"%H : %M" | figlet -w $center -c -f slant
-  date +"%m / %d / %y" | figlet -w $center -c -f slant
+  date +"%H : %M" | figlet -w $center -c -f script 
+  date +"%m / %d / %y" | figlet -w $center -c -f script
+  stty -echo
+  sleep 60	
 }
 
-while true; do ptime & sleep 60; done
+trap "tput cvvis & echo 'Exited.'" EXIT
+
+while true; do
+stty echo &
+ptime; done
