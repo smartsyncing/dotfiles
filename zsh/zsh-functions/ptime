@@ -1,12 +1,12 @@
 #!/bin/bash -ei
 
-
+COLS=$(tput cols)
 tput civis
 
 ptime() {
   clear
-  date +"%H : %M" | figlet -w $center -c -f script 
-  date +"%m / %d / %y" | figlet -w $center -c -f script
+  date +"%H : %M" | figlet -w $COLS -c -f script 
+  date +"%m / %d / %y" | figlet -w $COLS -c -f script
   stty -echo
   sleep 60	
 }
@@ -14,5 +14,4 @@ ptime() {
 trap "tput cvvis & echo 'Exited.'" EXIT
 
 while true; do
-stty echo &
 ptime; done
