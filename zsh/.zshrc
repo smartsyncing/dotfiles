@@ -23,6 +23,7 @@ zstyle :compinstall filename '~/.config/zsh/.zshrc'
 fpath=(~/.config/zsh/zsh-plugins/zsh-completions/src $fpath)
 fpath=($fpath ~/.config/zsh/zsh-functions)
 autoload -Uz gitprompt	
+autoload -Uz time
 autoload -Uz addalias
 autoload -Uz addplugin
 autoload -Uz ezsh

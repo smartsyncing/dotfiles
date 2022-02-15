@@ -1,0 +1,9 @@
+center=$(tput cols)
+
+time() {
+  clear
+  date +"%H : %M" | figlet -w $center -c -f slant 
+  date +"%m / %d / %y" | figlet -w $center -c -f slant
+}
+
+while true; do time & sleep 60; done
