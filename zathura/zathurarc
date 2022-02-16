@@ -1,0 +1,60 @@
+set recolor
+set sandbox strict
+set statusbar-h-padding 0
+set statusbar-v-padding 0
+set page-padding 1
+set selection-clipboard clipboard
+map u scroll half-up
+map d scroll half-down
+map D toggle_page_mode
+map J scroll full-down
+map K scroll full-up
+map r reload
+map R rotate
+map A zoom in
+map D zoom out
+map i recolor
+map p print
+set font                        "iosevka normal 9"
+#prime one
+map b toggle_statusbar
+
+
+
+set default-fg 			    "#abb2bf"
+set default-bg 			    "#282c34"
+
+set completion-bg		    "#282c34"
+set completion-fg		    "#abb2bf"
+set completion-highlight-bg	"#575268"
+set completion-highlight-fg	"#abb2bf"
+set completion-group-bg		"#282c34"
+set completion-group-fg		"#96cdfb"
+
+set statusbar-fg		    "#abb2bf"
+set statusbar-bg		    "#282c34"
+
+set notification-bg		    "#282c34"
+set notification-fg		    "#abb2bf"
+set notification-error-bg	"#282c34"
+set notification-error-fg	"#f28fad"
+set notification-warning-bg	"#282c34"
+set notification-warning-fg	"#fae3b0"
+
+set inputbar-fg			    "#abb2bf"
+set inputbar-bg 		    "#282c34"
+
+set recolor-lightcolor		"#282c34"
+set recolor-darkcolor		"#abb2bf"
+
+set index-fg			    "#abb2bf"
+set index-bg			    "#282c34"
+set index-active-fg		    "#abb2bf"
+set index-active-bg		    "#282c34"
+
+set render-loading-bg		"#282c34"
+set render-loading-fg		"#abb2bf"
+
+set highlight-color		    "#575268"
+set highlight-fg            "#f5c2e7"
+set highlight-active-color	"#f5c2e7"

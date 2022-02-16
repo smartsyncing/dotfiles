@@ -809,5 +809,11 @@
         <y>center</y>
       </position>
     </application>
+    <application name="*">
+      <skip_taskbar>yes</skip_taskbar>
+    </application>
+    <application class="Zathura">
+      <decor>no</decor>
+    </application>
   </applications>
 </openbox_config>
