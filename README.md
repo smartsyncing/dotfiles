@@ -22,7 +22,7 @@
 </p>
 <br />
 
-# Details 
+## Details 
 
 
 * <b>Distro:</b> Void Linux
@@ -54,7 +54,7 @@
 * <b>[Wallpaper](https://cdna.artstation.com/p/assets/images/images/009/538/556/4k/inaki-andonegi-castle-in-the-sky.jpg)</b>
 <br />
 
-# Dependencies
+## Dependencies
 
 ### ZSH 
 
@@ -81,7 +81,7 @@
 * <b>[Picom](https://github.com/ibhagwan/picom)</b> - effects
 <br />
 
-# Installation
+## Installation
 
 ```
 git clone --recursive https://github.com/smartsyncing/dotfiles
@@ -99,3 +99,5 @@ openbox --reconfigure
 source ~/.zshrc
 ```
 
+## Contributors
+![contrib](https://contrib.rocks/image?repo=smartsyncing/dotfiles)
