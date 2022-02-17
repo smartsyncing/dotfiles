@@ -58,13 +58,13 @@
 
 ### ZSH 
 
-* <b>[FZF](https://github.com/junegunn/fzf)</b>
+* <b>[FZF](https://github.com/junegunn/fzf)</b> - fuzzy searching through files
 
-* <b>[LSD](https://github.com/Peltoche/lsd)</b>
+* <b>[LSD](https://github.com/Peltoche/lsd)</b> - replaces the default 'ls' command
 
-* <b>[Ripgrep](https://github.com/BurntSushi/ripgrep)</b></b>
+* <b>[Ripgrep](https://github.com/BurntSushi/ripgrep)</b></b> - better searching
 
-* <b>[Nerd Fonts](https://nerdfonts.com)</b>
+* <b>[Nerd Fonts](https://nerdfonts.com)</b> - icons in the terminal
 
 
 
@@ -72,13 +72,13 @@
 
 ### Openbox
 
-* <b>[FZF](https://github.com/junegunn/fzf)</b>
+* <b>[FZF](https://github.com/junegunn/fzf)</b> - app launcher
 
-* <b>[tint2](https://github.com/o9000/tint2)</b>
+* <b>[tint2](https://github.com/o9000/tint2)</b> - bar/panel
 
-* <b>[Dunst](https://github.com/dunst-project/dunst)</b>
+* <b>[Dunst](https://github.com/dunst-project/dunst)</b> - notification daemon
 
-* <b>[Picom](https://github.com/ibhagwan/picom)</b>
+* <b>[Picom](https://github.com/ibhagwan/picom)</b> - effects
 <br />
 
 # Installation
