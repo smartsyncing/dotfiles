@@ -5,16 +5,7 @@
 <h2 align=center>🐧 One Dark - Openbox - Void</h2>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/blank.png" alt="Dotfiles"/>
-</p>
-<p align="center">
-  <img src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/launcher.png" alt="Dotfiles"/>
-</p>
-<p align="center">
-  <img src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/tis complete.png" alt="Dotfiles"/>
-</p>
-<p align="center">
-  <img src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/browsedit.png" alt="Dotfiles"/>
+  <img src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/wt90urz8s6i81.png" alt="Dotfiles"/>
 </p>
 
 # Details 
