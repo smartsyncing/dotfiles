@@ -25,6 +25,10 @@
 # Details 
 
 
+
+* <b>Distro:</b> Void Linux
+* <b>WM:</b> Openbox
+* <b>Colorscheme:</b> One Dark
 * <b>GTK Theme:</b> Qogir Dark
 * <b>Icons:</b> Tela Dark
 * <b> Font:</b> Iosevka Nerd Font
