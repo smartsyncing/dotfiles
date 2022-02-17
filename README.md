@@ -15,7 +15,6 @@
 
 <br />
 <br />
-<br />
 
 # Preview
 <p align="center">  
@@ -49,7 +48,6 @@
 * <b>[Ripgrep](https://github.com/BurntSushi/ripgrep)</b></b>
 
 * <b>[Nerd Fonts](https://nerdfonts.com)</b>
-<br />
 
 
 
