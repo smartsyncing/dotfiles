@@ -1,12 +1,21 @@
-
+#
+<br />
 <p align="center">
   <img alt="Dotfiles" src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/yes22222.png"/>
  </p>
-
+ 
 <p align="center">
   <img alt="GitHub Repo Stars" src="https://img.shields.io/github/stars/smartsyncing/dotfiles?color=c678dd&labelColor=282c34&style=for-the-badge">
   <img alt="GitHub Repo Forks" src="https://img.shields.io/github/forks/smartsyncing/dotfiles?color=c678dd&labelColor=282c34&style=for-the-badge">
   <img alt="GitHub Repo Visits" src="https://badges.pufler.dev/visits/smartsyncing/dotfiles?style=for-the-badge&color=c678dd&labelColor=282c34"/>
+  </p>
+
+#
+
+
+<br />
+<br />
+<p align="center">  
   <img alt="Preview" src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/wt90urz8s6i81.png"/>
 </p>
 
@@ -61,3 +70,4 @@ mv ~/.config/.zshrc ~/
 openbox --reconfigure
 source ~/.zshrc
 ```
+
