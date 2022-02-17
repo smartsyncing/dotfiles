@@ -98,6 +98,7 @@ openbox --reconfigure
 
 source ~/.zshrc
 ```
+<br />
 
 ## Contributors
 ![contrib](https://contrib.rocks/image?repo=smartsyncing/dotfiles)
