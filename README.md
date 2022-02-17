@@ -7,7 +7,7 @@
   <img src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/wt90urz8s6i81.png" alt="Dotfiles"/>
 </p>
 
-<img src="https://badges.pufler.dev/visits/mdnght-4/dotfiles?style=for-the-badge&color=282c34&labelColor="/>
+<img src="https://badges.pufler.dev/visits/smartsyncing/dotfiles?style=for-the-badge&color=282c34&labelColor=c678dd"/>
 
 # Details 
 * <b>GTK Theme:</b> Qogir Dark
