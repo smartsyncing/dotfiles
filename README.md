@@ -25,15 +25,15 @@
 # Details 
 
 
-
 * <b>Distro:</b> Void Linux
 * <b>WM:</b> Openbox
-* <b>Colorscheme:</b> One Dark
 * <b>GTK Theme:</b> Qogir Dark
 * <b>Icons:</b> Tela Dark
 * <b> Font:</b> Iosevka Nerd Font
 * <b>Terminal:</b> Kitty
+* <b>Editor:</b> Zathura
 * <b>Shell:</b> ZSH
+* <b>Colorscheme:</b> One Dark
 * <b>Bar:</b> tint2
 * <b>Launcher:</b> FZF
 * <b>Editor:</b> Neovim
