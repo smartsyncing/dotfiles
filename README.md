@@ -15,11 +15,17 @@
 
 <br />
 <br />
+<br />
+
+# Preview
 <p align="center">  
   <img alt="Preview" src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/wt90urz8s6i81.png"/>
 </p>
+<br />
 
 # Details 
+
+
 * <b>GTK Theme:</b> Qogir Dark
 * <b>Icons:</b> Tela Dark
 * <b> Font:</b> Iosevka Nerd Font
@@ -30,20 +36,20 @@
 * <b>Editor:</b> Neovim
 * <b>Browser:</b> Vivaldi
 * <b>[Wallpaper](https://cdna.artstation.com/p/assets/images/images/009/538/556/4k/inaki-andonegi-castle-in-the-sky.jpg)</b>
+<br />
 
 # Dependencies
 
 ### ZSH 
 
 * <b>[FZF](https://github.com/junegunn/fzf)</b>
-![wt90urz8s6i81](https://user-images.githubusercontent.com/95539466/154523928-448f5fc0-0047-4e21-9148-539a2fd484bc.png)
 
 * <b>[LSD](https://github.com/Peltoche/lsd)</b>
 
 * <b>[Ripgrep](https://github.com/BurntSushi/ripgrep)</b></b>
 
 * <b>[Nerd Fonts](https://nerdfonts.com)</b>
-
+<br />
 
 
 
@@ -58,6 +64,7 @@
 * <b>[Dunst](https://github.com/dunst-project/dunst)</b>
 
 * <b>[Picom](https://github.com/ibhagwan/picom)</b>
+<br />
 
 # Installation
 
