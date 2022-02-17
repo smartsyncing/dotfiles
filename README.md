@@ -26,18 +26,31 @@
 
 
 * <b>Distro:</b> Void Linux
+
 * <b>WM:</b> Openbox
+
 * <b>GTK Theme:</b> Qogir Dark
+
 * <b>Icons:</b> Tela Dark
+
 * <b> Font:</b> Iosevka Nerd Font
+
 * <b>Terminal:</b> Kitty
+
 * <b>Editor:</b> Zathura
+
 * <b>Shell:</b> ZSH
+
 * <b>Colorscheme:</b> One Dark
+
 * <b>Bar:</b> tint2
+
 * <b>Launcher:</b> FZF
+
 * <b>Editor:</b> Neovim
+
 * <b>Browser:</b> Vivaldi
+
 * <b>[Wallpaper](https://cdna.artstation.com/p/assets/images/images/009/538/556/4k/inaki-andonegi-castle-in-the-sky.jpg)</b>
 <br />
 
@@ -72,11 +85,17 @@
 
 ```
 git clone --recursive https://github.com/smartsyncing/dotfiles
+
 cd dotfiles
+
 mv * ~/.config &&
+
 mv ~/.config/.gtkrc-2.0 ~/
+
 mv ~/.config/.zshrc ~/
+
 openbox --reconfigure
+
 source ~/.zshrc
 ```
 
