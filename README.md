@@ -1,13 +1,14 @@
-# Dotfiles
-
-
-### 🐧 One Dark - Openbox - Void
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/wt90urz8s6i81.png" alt="Dotfiles"/>
-</p>
+  <img alt="Dotfiles" src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/yes22222.png"/>
+ </p>
 
-<img src="https://badges.pufler.dev/visits/smartsyncing/dotfiles?style=for-the-badge&color=282c34&labelColor=c678dd"/>
+<p align="center">
+  <img alt="GitHub Repo Stars" src="https://img.shields.io/github/stars/smartsyncing/dotfiles?color=c678dd&labelColor=282c34&style=for-the-badge">
+  <img alt="GitHub Repo Forks" src="https://img.shields.io/github/forks/smartsyncing/dotfiles?color=c678dd&labelColor=282c34&style=for-the-badge">
+  <img alt="GitHub Repo Visits" src="https://badges.pufler.dev/visits/smartsyncing/dotfiles?style=for-the-badge&color=c678dd&labelColor=282c34"/>
+  <img alt="Preview" src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/wt90urz8s6i81.png"/>
+</p>
 
 # Details 
 * <b>GTK Theme:</b> Qogir Dark
@@ -26,6 +27,7 @@
 ### ZSH 
 
 * <b>[FZF](https://github.com/junegunn/fzf)</b>
+![wt90urz8s6i81](https://user-images.githubusercontent.com/95539466/154523928-448f5fc0-0047-4e21-9148-539a2fd484bc.png)
 
 * <b>[LSD](https://github.com/Peltoche/lsd)</b>
 
