@@ -1,12 +1,13 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/dots.png" alt="Dotfiles"/>
-</p>
+# Dotfiles
 
-<h2 align=center>🐧 One Dark - Openbox - Void</h2>
+
+### 🐧 One Dark - Openbox - Void
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/wt90urz8s6i81.png" alt="Dotfiles"/>
 </p>
+
+<img src="https://badges.pufler.dev/visits/mdnght-4/dotfiles?style=for-the-badge&color=282c34&labelColor="/>
 
 # Details 
 * <b>GTK Theme:</b> Qogir Dark
