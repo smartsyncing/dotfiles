@@ -27,8 +27,7 @@ if [[ "$OS" = *"rch"* ]]; then
  __ _ _ _ __| |_  
 / _\` | '_/ _| ' \ 
 \__,_|_| \__|_||_|"
-fi
-if [[ "$OS" = *"anjaro"* ]]; then
+elif [[ "$OS" = *"anjaro"* ]]; then
     PCOLOR=$GREEN
     pkgs=$(pacman -Qq | wc -l)
     ASCII="                  _              
@@ -36,48 +35,42 @@ if [[ "$OS" = *"anjaro"* ]]; then
 | '  \/ _\` | ' \ | / _\` | '_/ _ \\
 |_|_|_\__,_|_||_|/ \__,_|_| \___/
                |__/              "
-fi
-if [[ "$OS" = *"edora"* ]]; then
+elif [[ "$OS" = *"edora"* ]]; then
     PCOLOR=$BLUE
     pkgs=$(dnf list installed | wc -l)
     ASCII="  __        _              
  / _|___ __| |___ _ _ __ _ 
 |  _/ -_) _\` / _ \ '_/ _\` |
 |_| \___\__,_\___/_| \__,_|"
-fi
-if [[ "$OS" = *"buntu"* ]]; then
+elif [[ "$OS" = *"buntu"* ]]; then
     PCOLOR=$ORANGE
     pkgs=$(dpkg-query -f '${binary:Package}\n' -W | wc -l)
     ASCII="      _             _        
  _  _| |__ _  _ _ _| |_ _  _ 
 | || | '_ \ || | ' \  _| || |
  \_,_|_.__/\_,_|_||_\__|\_,_|"
-fi
-if [[ "$OS" = *"ebian"* ]]; then
+elif [[ "$OS" = *"ebian"* ]]; then
     PCOLOR=$RED
     pkgs=$(dpkg-query -f '${binary:Package}\n' -W | wc -l)
     ASCII="    _     _    _           
  __| |___| |__(_)__ _ _ _  
 / _\` / -_) '_ \ / _\` | ' \ 
 \__,_\___|_.__/_\__,_|_||_|"
-fi
-if [[ "$OS" = *"pen"* ]]; then
+elif [[ "$OS" = *"pen"* ]]; then
     PCOLOR=$GREEN
     pkgs=$(zypper pa -i | wc -l)
     ASCII=" ___ _ __  ___ _ _  ____  _ ___ ___ 
 / _ \ '_ \/ -_) ' \(_-< || (_-</ -_)
 \___/ .__/\___|_||_/__/\_,_/__/\___|
     |_|              "
-fi
-if [[ "$OS" = *"oid"* ]]; then
+elif [[ "$OS" = *"oid"* ]]; then
     PCOLOR=$GREEN
     pkgs=$(xbps-query -l | wc -l)
     ASCII="         _    _ 
 __ _____(_)__| |
 \ V / _ \ / _\` |
  \_/\___/_\__,_|"
-fi
-if [[ "$OS" = *"entoo"* ]]; then
+elif [[ "$OS" = *"entoo"* ]]; then
     PCOLOR=$PINK
     pkgs=$(ls /var/db/pkg* | wc -l)
     ASCII="              _            
