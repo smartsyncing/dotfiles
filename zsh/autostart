@@ -17,8 +17,8 @@ if [ -f /etc/os-release ]; then
     OS=$(printf $PRETTY_NAME | tr '[:upper:]' '[:lower:]')
     VER=$VERSION_ID
 else
-    OS=$(uname -s)
-    VER=$(uname -r)
+    printf "OS not supported yet!"
+    exit
 fi
 if [[ "$OS" = *"rch"* ]]; then
     PCOLOR=$BLUE
