@@ -98,7 +98,7 @@ alias gclr="git clone --recursive"
 #  Other
 
 
-alias ls="lsd --blocks name,date,size --date relative -X"
+alias ls="exa --group-directories-first --icons -x"
 
 alias ex="chmod +x"
 
@@ -138,4 +138,4 @@ export ZSH_AUTOSUGGEST_USE_ASYNC=1
 
 export ZSH_AUTOSUGGEST_MANUAL_REBIND=1
 
-export GPG_TTY=$(tty)      
+export GPG_TTY=$(tty) 

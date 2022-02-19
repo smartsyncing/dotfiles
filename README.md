@@ -58,7 +58,7 @@
 
 * <b>[FZF](https://github.com/junegunn/fzf)</b> - fuzzy searching through files
 
-* <b>[LSD](https://github.com/Peltoche/lsd)</b> - replaces the default 'ls' command
+* <b>[Exa](https://github.com/ogham/exa)</b> - replaces the default 'ls' command
 
 * <b>[Ripgrep](https://github.com/BurntSushi/ripgrep)</b></b> - better searching
 
