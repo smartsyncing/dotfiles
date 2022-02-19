@@ -98,7 +98,7 @@ alias gclr="git clone --recursive"
 #  Other
 
 
-alias ls="exa --group-directories-first --icons -x"
+alias ls="exa -lhx --group-directories-first --icons"
 
 alias ex="chmod +x"
 

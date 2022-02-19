@@ -7,9 +7,9 @@
 auto_ls(){
     if [[ $(git rev-parse --is-inside-work-tree 2> /dev/null) == true ]]; then
         git status
-        exa -lh --group-directories-first --time=changed --git --icons
+        exa --group-directories-first --git --git-ignore --icons
     else
-        exa --icons -x --group-directories-first
+        exa --group-directories-first --icons
     fi
 }
 
