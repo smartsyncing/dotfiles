@@ -9,7 +9,7 @@ auto_ls(){
         git status
         exa -lh --group-directories-first --time=changed --git --icons
     else
-        exa --icons -x --header
+        exa --icons -x --group-directories-first
     fi
 }
 
