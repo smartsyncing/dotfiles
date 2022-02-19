@@ -90,11 +90,11 @@ col() {
 wm=${WAYLAND_DISPLAY:-$(xprop -id "$(xprop -root _NET_SUPPORTING_WM_CHECK | cut -d' ' -f5)" _NET_WM_NAME | cut -d'"' -f2 | tr '[:upper:]' '[:lower:]')}
 shell=$(basename $SHELL)
 uptime=`echo $(uptime | awk '{print $3}' | sed 's/,//g' | sed 's/\:/h /g')m` 
+user=$(whoami)
 
+printf "$PCOLOR$ASCII$STOP
 
-printf "$PCOLOR$ASCII
-
-  $STOP   $(whoami)
+$PCOLOR  $STOP   $user
 $PCOLOR  $STOP   $wm
 $PCOLOR  $STOP   $shell
 $PCOLOR  $STOP   $pkgs
