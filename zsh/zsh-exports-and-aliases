@@ -148,3 +148,7 @@ export ZSH_AUTOSUGGEST_MANUAL_REBIND=1
 export GPG_TTY=$(tty) 
 
 export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+
+export user=$(whoami)
+
+export SUDO_PROMPT="password for $user: "
