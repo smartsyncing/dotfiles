@@ -11,7 +11,7 @@ RED=$(tput setaf 1)
 BLUE=$(tput setaf 4)
 GREEN=$(tput setaf 2)
 PINK=$(tput setaf 5)
-STOP=$(tput sgr0)
+STOP=$(tput setaf 7)
 if [ -f /etc/os-release ]; then
     . /etc/os-release
     OS=$(printf $PRETTY_NAME | tr '[:upper:]' '[:lower:]')
