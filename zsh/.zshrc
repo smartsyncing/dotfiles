@@ -22,6 +22,7 @@ zstyle :compinstall filename '~/.config/zsh/.zshrc'
 #  Lazy loading of functions
 fpath=(~/.config/zsh/zsh-plugins/zsh-completions/src $fpath)
 fpath=($fpath ~/.config/zsh/zsh-functions)
+autoload -Uz fzf-git
 autoload -Uz gitprompt	
 autoload -Uz ptime
 autoload -Uz addalias
@@ -79,5 +80,6 @@ PCOLOR=$(echo $PCOLOR |  grep -o '[[:digit:]]*' | cut -c 4)
 prompt='%B%F{$PCOLOR}%2~% %F{sgr0}$(gitprompt) %B%F{$PCOLOR}  %b'
 RPROMPT='%F{sgr0}%n@%m%'
 
+fzf-git
 gitprompt
 autols
