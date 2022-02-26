@@ -52,7 +52,6 @@ autoload -Uz compinit
 #  Sourcing files
 source ~/.config/zsh/zsh-plugins/you-should-use.zsh
 source ~/.config/zsh/zsh-plugins/zsh-history-substring-search.zsh
-source ~/.config/zsh/zsh-plugins/zsh-defer/zsh-defer.plugin.zsh
 source ~/.config/zsh/zsh-plugins/manydots-magic
 source ~/.config/zsh/zsh-plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.config/zsh/zsh-plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
