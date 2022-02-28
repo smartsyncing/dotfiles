@@ -50,19 +50,19 @@ alias xr="sudo xbps-remove -o"
 
 # AUR/Pacman
 
-if command -v paru > /dev/null 2>&1; then
-	  PREFIX="paru"
-  elif command -v yay > /dev/null 2>&1; then
-	    PREFIX="yay"
-    else
-	      PREFIX="sudo pacman"
+if command -v paru &> /dev/null; then
+  prefix="paru"
+elif command -v yay &> /dev/null; then
+  prefix="yay"
+else
+  prefix="sudo pacman"
 fi
 
-alias pu="$PREFIX -Syu"
+alias pu="$prefix -Syu"
 
-alias pi="$PREFIX -S"
+alias pi="$prefix -S"
 
-alias pr="$PREFIX -Runs"
+alias pr="$prefix -Runs"
 
 
 # Apt
@@ -148,8 +148,6 @@ alias ln="ln -sv"
 alias cp="cp -Rv"
 
 alias expand="expand -t 4"
-
-alias rfm="sudo reflector --latest 20 --protocol https --sort rate --save /etc/pacman.d/mirrorlist"
 
 export ZSH_AUTOSUGGEST_USE_ASYNC=1       
 
