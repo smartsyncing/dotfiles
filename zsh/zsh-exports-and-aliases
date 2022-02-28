@@ -45,26 +45,33 @@ alias xu="sudo xbps-install -Syu"
 
 alias xi="sudo xbps-install -S"
 
-alias xr="sudo xbps-remove"
+alias xr="sudo xbps-remove -o"
 
 
-# Pacman
+# AUR/Pacman
 
-alias pu="sudo pacman -Syu"
+if command -v paru > /dev/null 2>&1; then
+  PREFIX="paru"
+elif command -v yay > /dev/null 2>&1; then
+  PREFIX="yay"
+else
+  PREFIX="sudo pacman"
+fi
 
-alias pi="sudo pacman -S"
+alias pu="$PREFIX -Syu"
 
-alias pr="sudo pacman -Runs"
+alias pi="$PREFIX -S"
+
+alias pr="$PREFIX -Runs"
 
 
 # Apt
 
-alias au="sudo apt-get u && sudo apt-get upgrade"
+alias au="sudo apt-get update && sudo apt-get upgrade"
 
 alias ai="sudo apt-get install"
 
 alias ar="sudo apt-get remove"
-
 
 
 #  Git aliases
@@ -140,6 +147,8 @@ alias ln="ln -sv"
 alias cp="cp -Rv"
 
 alias expand="expand -t 4"
+
+alias rfm="sudo reflector --latest 20 --protocol https --sort rate --save /etc/pacman.d/mirrorlist"
 
 export ZSH_AUTOSUGGEST_USE_ASYNC=1       
 
