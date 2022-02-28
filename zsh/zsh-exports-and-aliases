@@ -45,21 +45,29 @@ alias xu="sudo xbps-install -Syu"
 
 alias xi="sudo xbps-install -S"
 
-alias xr="sudo xbps-remove"
+alias xr="sudo xbps-remove -o"
 
 
-# Pacman
+# AUR/Pacman
 
-alias pu="sudo pacman -Syu"
+if command -v paru &> /dev/null; then
+  prefix="paru"
+elif command -v yay &> /dev/null; then
+  prefix="yay"
+else
+  prefix="sudo pacman"
+fi
 
-alias pi="sudo pacman -S"
+alias pu="$prefix -Syu"
 
-alias pr="sudo pacman -Runs"
+alias pi="$prefix -S"
+
+alias pr="$prefix -Runs"
 
 
 # Apt
 
-alias au="sudo apt-get u && sudo apt-get upgrade"
+alias au="sudo apt-get update && sudo apt-get upgrade"
 
 alias ai="sudo apt-get install"
 

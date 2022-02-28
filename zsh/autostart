@@ -14,73 +14,71 @@ PINK=$(tput setaf 5)
 STOP=$(tput sgr0)
 
 if [ -f /etc/os-release ]; then
-    . /etc/os-release
-    OS=$(printf $PRETTY_NAME | tr '[:upper:]' '[:lower:]')
-    VER=$VERSION_ID
+  . /etc/os-release
+  OS=$(printf $PRETTY_NAME | tr '[:upper:]' '[:lower:]')
 else
-    printf "OS not supported yet!"
+  printf "OS not supported yet!" 
 fi
 
 if [[ "$OS" = *"rch"* ]]; then
-    PCOLOR=$BLUE
-    pkgs=$(pacman -Qq | wc -l)
-    ASCII="             _    
+  PCOLOR=$BLUE
+  pkgs=$(pacman -Qq | wc -l)
+  ASCII="             _    
  __ _ _ _ __| |_  
 / _\` | '_/ _| ' \ 
 \__,_|_| \__|_||_|"
 elif [[ "$OS" = *"anjaro"* ]]; then
-    PCOLOR=$GREEN
-    pkgs=$(pacman -Qq | wc -l)
-    ASCII="                  _              
+  PCOLOR=$GREEN
+  pkgs=$(pacman -Qq | wc -l)
+  ASCII="                  _              
  _ __  __ _ _ _  (_)__ _ _ _ ___ 
 | '  \/ _\` | ' \ | / _\` | '_/ _ \\
 |_|_|_\__,_|_||_|/ \__,_|_| \___/
                |__/              "
 elif [[ "$OS" = *"edora"* ]]; then
-    PCOLOR=$BLUE
-    pkgs=$(dnf list installed | wc -l)
-    ASCII="  __        _              
+  PCOLOR=$BLUE
+  pkgs=$(dnf list installed | wc -l)
+  ASCII="  __        _              
  / _|___ __| |___ _ _ __ _ 
 |  _/ -_) _\` / _ \ '_/ _\` |
 |_| \___\__,_\___/_| \__,_|"
 elif [[ "$OS" = *"buntu"* ]]; then
-    PCOLOR=$ORANGE
-    pkgs=$(dpkg-query -f '${binary:Package}\n' -W | wc -l)
-    ASCII="      _             _        
+  PCOLOR=$ORANGE
+  pkgs=$(dpkg-query -f '${binary:Package}\n' -W | wc -l)
+  ASCII="      _             _        
  _  _| |__ _  _ _ _| |_ _  _ 
 | || | '_ \ || | ' \  _| || |
  \_,_|_.__/\_,_|_||_\__|\_,_|"
 elif [[ "$OS" = *"ebian"* ]]; then
-    PCOLOR=$RED
-    pkgs=$(dpkg-query -f '${binary:Package}\n' -W | wc -l)
-    ASCII="    _     _    _           
+  PCOLOR=$RED
+  pkgs=$(dpkg-query -f '${binary:Package}\n' -W | wc -l)
+  ASCII="    _     _    _           
  __| |___| |__(_)__ _ _ _  
 / _\` / -_) '_ \ / _\` | ' \ 
 \__,_\___|_.__/_\__,_|_||_|"
 elif [[ "$OS" = *"pen"* ]]; then
-    PCOLOR=$GREEN
-    pkgs=$(zypper pa -i | wc -l)
-    ASCII=" ___ _ __  ___ _ _  ____  _ ___ ___ 
+  PCOLOR=$GREEN
+  pkgs=$(zypper pa -i | wc -l)
+  ASCII=" ___ _ __  ___ _ _  ____  _ ___ ___ 
 / _ \ '_ \/ -_) ' \(_-< || (_-</ -_)
 \___/ .__/\___|_||_/__/\_,_/__/\___|
     |_|              "
 elif [[ "$OS" = *"oid"* ]]; then
-    PCOLOR=$GREEN
-    pkgs=$(xbps-query -l | wc -l)
-    ASCII="         _    _ 
+  PCOLOR=$GREEN
+  pkgs=$(xbps-query -l | wc -l)
+  ASCII="         _    _ 
 __ _____(_)__| |
 \ V / _ \ / _\` |
  \_/\___/_\__,_|"
 elif [[ "$OS" = *"entoo"* ]]; then
-    PCOLOR=$PINK
-    pkgs=$(ls /var/db/pkg* | wc -l)
-    ASCII="              _            
+  PCOLOR=$PINK
+  pkgs=$(ls /var/db/pkg* | wc -l)
+  ASCII="              _            
  __ _ ___ _ _| |_ ___  ___ 
 / _\` / -_) ' \  _/ _ \/ _ \\
 \\__, \___|_||_\__\___/\___/
 |___/     "
 fi
-
 
 
 user=$(whoami)
@@ -93,6 +91,7 @@ uptime=`echo $(uptime | awk '{print $3}' | sed 's/,//g' | sed 's/\:/h /g')m`
 
 col=$(for i in 1 2 3 4 5 6 0; do printf "$(tput setaf $i)${colourblocks:-}  "; done; printf "$STOP";)
 
+
 printf "$PCOLOR$ASCII$STOP
 
 $PCOLOR  $STOP   $user
@@ -101,3 +100,4 @@ $PCOLOR  $STOP   $shell
 $PCOLOR  $STOP   $pkgs
 $PCOLOR  $STOP   $uptime
 \n$col\n\n"
+
