@@ -1,1 +1,0 @@
-/home/lewis/.config/zsh

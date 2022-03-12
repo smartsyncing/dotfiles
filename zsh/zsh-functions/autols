@@ -1,0 +1,18 @@
+#              __       __  
+#   ___ ___ __/ /____  / /__
+#  / _ `/ // / __/ _ \/ (_-<
+#  \_,_/\_,_/\__/\___/_/___/                         
+#
+
+auto_ls(){
+    if [[ $(git rev-parse --is-inside-work-tree 2> /dev/null) == true ]]; then
+        git status
+        exa --group-directories-first --git --git-ignore --icons
+    else
+        exa --group-directories-first --icons
+    fi
+}
+
+if [[ ! " ${chpwd_functions[*]} " =~ "auto_ls" ]]; then
+    chpwd_functions=(auto_ls $chpwd_functions)
+fi

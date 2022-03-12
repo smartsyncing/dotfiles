@@ -1,0 +1,17 @@
+#!/bin/bash -ei
+
+COLS=$(tput cols)
+tput civis
+
+ptime() {
+  clear
+  date +"                      %H : %M" | toilet -w $COLS -k -f smblock        
+#  date +"   %A, %d %B" | toilet -w $COLS -f future -F gay 
+  stty -echo
+  sleep 60	
+}
+
+trap "tput cvvis & echo 'Exited.'" EXIT
+
+while true; do
+ptime; done
