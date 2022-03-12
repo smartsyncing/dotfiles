@@ -90,6 +90,10 @@ mv * ~/.config &&
 
 mv ~/.config/local/ ~/
 
+mv ~/.config/.themes ~/
+
+mv ~/.config/.icons ~/
+
 mv ~/.config/.gtkrc-2.0 ~/
 
 mv ~/.config/.zshrc ~/
