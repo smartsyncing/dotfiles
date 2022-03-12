@@ -88,6 +88,8 @@ cd dotfiles
 
 mv * ~/.config &&
 
+mv ~/.config/local/ ~/
+
 mv ~/.config/.gtkrc-2.0 ~/
 
 mv ~/.config/.zshrc ~/
