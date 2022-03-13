@@ -1,17 +1,3 @@
-#!/bin/bash -ei
+#!/bin/bash
 
-COLS=$(tput cols)
-tput civis
-
-ptime() {
-  clear
-  date +"                      %H : %M" | toilet -w $COLS -k -f smblock        
-#  date +"   %A, %d %B" | toilet -w $COLS -f future -F gay 
-  stty -echo
-  sleep 60	
-}
-
-trap "tput cvvis & echo 'Exited.'" EXIT
-
-while true; do
-ptime; done
+printf "\n$(whoami)@$(hostname)\n $(date +%n%H:%M%n%m/%d/%Y%n)\n\n" 
