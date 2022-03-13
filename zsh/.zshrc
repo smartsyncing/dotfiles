@@ -72,13 +72,9 @@ fi;
 setopt extendedglob autocd interactive_comments prompt_subst histignoredups cdablevars histreduceblanks append_history share_history extendedhistory inc_append_history hist_reduce_blanks no_case_glob
 unsetopt nomatch notify beep
 
-source ~/.config/zsh/autostart
 source ~/.config/zsh/zsh-plugins/fzf-tab/fzf-tab.plugin.zsh
-
-PCOLOR=$(echo $PCOLOR |  grep -o '[[:digit:]]*' | cut -c 4)
-
-prompt='%B%F{$PCOLOR}  %b%B%F{$PCOLOR}%2~% %F{sgr0}$(gitprompt)  '
-RPROMPT='| %T'
+source ~/.config/zsh/zsh-functions/fetch
+source ~/.config/zsh/zsh-functions/ttyfriendlyprompt
 
 fzf-git
 gitprompt
