@@ -4,7 +4,7 @@
 #  \_,_/\_,_/\__/\___/___/\__/\_,_/_/  \__/ 
 #                                         
 
-#!/bin/sh
+#!/bin/bash
 
 ORANGE=$(tput setaf 3)
 RED=$(tput setaf 1)
