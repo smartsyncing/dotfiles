@@ -1,3 +1,22 @@
 #!/bin/bash
 
-printf "\n$(whoami)@$(hostname)\n $(date +%n%H:%M%n%m/%d/%Y%n)\n\n" 
+function box_out()
+{
+  local s=("$@") b w
+  for l in "${s[@]}"; do
+    ((w<${#l})) && { b="$l"; w="${#l}"; }
+  done
+  tput setaf 3
+  echo " -${b//?/-}-
+| ${b//?/ } |"
+  for l in "${s[@]}"; do
+    printf '| %s%*s%s |\n' "$(tput setaf $PCOLOR)" "-$w" "$l" "$(tput setaf 3)"
+  done
+  echo "| ${b//?/ } |
+ -${b//?/-}-"
+  tput sgr 0
+}
+
+box_out "$(whoami)@$(hostname)" "$(date +%H:%M)" "$(date +%m/%d/%Y)"
+
+
