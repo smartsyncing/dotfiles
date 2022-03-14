@@ -101,7 +101,7 @@ case $(tty) in /dev/tty[0-9]*)
 $PCOLOR $user$STOP@$PCOLOR$(hostname)
 $PCOLOR ------------------ $STOP
 $PCOLOR distro $STOP $OS
-$PCOLOR kernel $STOP $(uname -r)
+$PCOLOR kernel $STOP $kernel
 $PCOLOR shell $STOP  $shell
 $PCOLOR pkgs $STOP   $pkgs
 $PCOLOR uptime $STOP $uptime
