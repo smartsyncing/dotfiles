@@ -78,6 +78,10 @@ elif [[ "$OS" = *"entoo"* ]]; then
 / _\` / -_) ' \  _/ _ \/ _ \\
 \\__, \___|_||_\__\___/\___/
 |___/     "
+else
+  PCOLOR=$BLUE
+  pkgs=$(ls /bin/ | wc -l)
+  ASCII=$(figlet $OS)
 fi
 
 tty=$(tty)

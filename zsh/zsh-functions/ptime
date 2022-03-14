@@ -18,5 +18,3 @@ function box_out()
 }
 
 box_out "$(whoami)@$(hostname)" "$(date +%H:%M)" "$(date +%m/%d/%Y)"
-
-
