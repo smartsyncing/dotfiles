@@ -1,12 +1,13 @@
 
+
 PCOLOR=$(echo $PCOLOR |  grep -o '[[:digit:]]*' | cut -c 4)
 
 case $(tty) in /dev/tty[0-9]*)
-     prompt='%b%B%F{$PCOLOR}%2~% %F{sgr0}$(gitprompt) %B%F{$PCOLOR}> %b%F{sgr0}'
-     RPROMPT='| %T'
+     prompt='%B%(?.%F{$PCOLOR}.%F{1})%2~%b%f %B%(?.%F{$PCOLOR}.%F{1})>%b%f  %f'
+     RPROMPT='%(?..%F{1}[%?] )| %T'
    ;;
   *)
-     prompt='%B%F{$PCOLOR}  %b%B%F{$PCOLOR}%2~% %F{sgr0}$(gitprompt)  '
-     RPROMPT='| %T'
+     prompt='%B%(?.%F{$PCOLOR}.%F{1}) %b%f %(?.%F{$PCOLOR}.%F{1})%2~%f%f$(gitprompt)  '
+     RPROMPT='%(?..%F{1}窱%? )%f| %T'
    ;;
 esac

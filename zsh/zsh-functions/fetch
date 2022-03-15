@@ -90,7 +90,8 @@ user=$(whoami)
 
 shell=$(basename $SHELL)
 
-kernel=$(uname -r)
+read -r _ _ version _ < /proc/version                                                    
+kernel=${version%%-*}
 
 uptime=`echo $(uptime | awk '{print $3}' | sed 's/,//g' | sed 's/\:/h /g')m` 
 
