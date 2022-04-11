@@ -106,3 +106,4 @@ source ~/.zshrc
 
 ## Contributors
 ![contrib](https://contrib.rocks/image?repo=smartsyncing/dotfiles)
+
