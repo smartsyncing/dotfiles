@@ -30,6 +30,7 @@ autoload -Uz addplugin
 autoload -Uz ezsh
 autoload -Uz helpme
 autoload -Uz autols
+autoload -Uz shrinkpath
 
 #  Shell options
 stty stop undef
@@ -74,6 +75,7 @@ unsetopt nomatch notify beep
 
 source ~/.config/zsh/zsh-plugins/fzf-tab/fzf-tab.plugin.zsh
 source ~/.config/zsh/zsh-functions/fetch
+shrinkpath
 source ~/.config/zsh/zsh-functions/ttyfriendlyprompt
 
 fzf-git
