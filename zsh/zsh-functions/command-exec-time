@@ -12,13 +12,13 @@ prompt_precmd() {
     local -ri m=$(( (elapsed_s/60)%60 ))
     local -ri h=$(( elapsed_s/3600 ))
     if (( h > 0 )); then
-      printf -v prompt_elapsed_time 'took %ih%im  ' ${h} ${m}
+      printf -v prompt_elapsed_time "took %ih%im $SEP " ${h} ${m}
     elif (( m > 0 )); then
-      printf -v prompt_elapsed_time 'took %im  ' ${m}
+      printf -v prompt_elapsed_time "took %im $SEP " ${m}
     elif (( s >= 10 )); then
-      printf -v prompt_elapsed_time 'took %.0fs  ' ${s} # 12.34s
+      printf -v prompt_elapsed_time "took %.0fs $SEP " ${s} # 12.34s
     elif (( s >= 5 )); then
-      printf -v prompt_elapsed_time 'took %.0fs  ' ${s} # 1.234s
+      printf -v prompt_elapsed_time "took %.0fs $SEP " ${s} # 1.234s
     else
       unset prompt_elapsed_time
     fi
