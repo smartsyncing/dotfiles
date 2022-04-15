@@ -29,8 +29,10 @@ autoload -Uz addalias
 autoload -Uz addplugin
 autoload -Uz ezsh
 autoload -Uz helpme
+autoload -Uz command-not-found
 autoload -Uz autols
 autoload -Uz shrinkpath
+autoload -Uz command-exec-time
 
 #  Shell options
 stty stop undef
@@ -78,6 +80,8 @@ source ~/.config/zsh/zsh-functions/fetch
 shrinkpath
 source ~/.config/zsh/zsh-functions/ttyfriendlyprompt
 
+command-not-found
 fzf-git
 gitprompt
 autols
+command-exec-time

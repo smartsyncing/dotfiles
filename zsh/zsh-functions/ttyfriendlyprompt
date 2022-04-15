@@ -8,6 +8,6 @@ case $(tty) in /dev/tty[0-9]*)
    ;;
   *)
      prompt='%B%(?.%F{$PCOLOR}.%F{1}) %b%f %(?.%F{$PCOLOR}.%F{1})$(shrink_path -l -t)%f%f$(gitprompt)  '
-     RPROMPT='%(?..%F{1}窱%? )%f| %T'
+     RPROMPT='%(?..%F{1}窱%?%f  )${prompt_elapsed_time}%T'
    ;;
 esac

@@ -1,0 +1,4 @@
+command_not_found_handler() {
+  printf "invalid command: %s\n" "$1" >&2
+  return 127
+}
