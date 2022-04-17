@@ -54,6 +54,11 @@ bindkey '^[[B' history-substring-search-down
 autoload -Uz compinit
 
 #  Sourcing files
+if [ -f ~/.config/zsh/zsh-functions/startup ]; then
+  source ~/.config/zsh/zsh-functions/startup
+else
+  source ~/.config/zsh/zsh-functions/PCOLOR
+fi
 source ~/.config/zsh/zsh-plugins/you-should-use.zsh
 source ~/.config/zsh/zsh-plugins/zsh-history-substring-search.zsh
 source ~/.config/zsh/zsh-plugins/manydots-magic

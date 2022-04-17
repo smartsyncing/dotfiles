@@ -23,31 +23,22 @@ fi
 ASCII="$(~/.config/zsh/zsh-functions/figlet -f ~/.config/zsh/small.flf $OS)"
 
 if [[ "$OS" = *"rch"* ]]; then
-  PCOLOR=$BLUE
   pkgs=$(pacman -Qq | wc -l)
 elif [[ "$OS" = *"anjaro"* ]]; then
-  PCOLOR=$GREEN
   pkgs=$(pacman -Qq | wc -l)
 elif [[ "$OS" = *"edora"* ]]; then
-  PCOLOR=$BLUE
   pkgs=$(dnf list installed | wc -l)
 elif [[ "$OS" = *"buntu"* ]]; then
-  PCOLOR=$ORANGE
   pkgs=$(dpkg-query -f '${binary:Package}\n' -W | wc -l)
 elif [[ "$OS" = *"ebian"* ]]; then
-  PCOLOR=$RED
   pkgs=$(dpkg-query -f '${binary:Package}\n' -W | wc -l)
 elif [[ "$OS" = *"pen"* ]]; then
-  PCOLOR=$GREEN
   pkgs=$(zypper pa -i | wc -l)
 elif [[ "$OS" = *"oid"* ]]; then
-  PCOLOR=$GREEN
   pkgs=$(xbps-query -l | wc -l)
 elif [[ "$OS" = *"entoo"* ]]; then
-  PCOLOR=$PINK
   pkgs=$(ls /var/db/pkg* | wc -l)
 else
-  PCOLOR=$GREEN
   pkgs=$(ls /bin/ | wc -l)
 fi
 
