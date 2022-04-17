@@ -6,12 +6,10 @@ case $(tty) in /dev/tty[0-9]*)
      SEP="|"
      PROMPTCHAR=">"
      X="X "
-     source ~/.config/zsh/zsh-functions/transientprompt
    ;;
   *)
      SEP=""
      PROMPTCHAR="›"
      X="窱"
-     source ~/.config/zsh/zsh-functions/transientprompt
    ;;
 esac

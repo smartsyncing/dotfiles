@@ -54,11 +54,6 @@ bindkey '^[[B' history-substring-search-down
 autoload -Uz compinit
 
 #  Sourcing files
-if [ -f ~/.config/zsh/zsh-functions/startup ]; then
-  source ~/.config/zsh/zsh-functions/startup
-else
-  source ~/.config/zsh/zsh-functions/PCOLOR
-fi
 source ~/.config/zsh/zsh-plugins/you-should-use.zsh
 source ~/.config/zsh/zsh-plugins/zsh-history-substring-search.zsh
 source ~/.config/zsh/zsh-plugins/manydots-magic
@@ -81,10 +76,13 @@ setopt extendedglob autocd interactive_comments prompt_subst histignoredups cdab
 unsetopt nomatch notify beep
 
 source ~/.config/zsh/zsh-plugins/fzf-tab/fzf-tab.plugin.zsh
-source ~/.config/zsh/zsh-functions/fetch
-shrinkpath
 source ~/.config/zsh/zsh-functions/ttyfriendlyprompt
+source ~/.config/zsh/zsh-functions/startup
+source ~/.config/zsh/zsh-functions/PCOLOR
+source ~/.config/zsh/zsh-functions/fetch
+source ~/.config/zsh/zsh-functions/transientprompt
 
+shrinkpath
 command-not-found
 fzf-git
 gitprompt

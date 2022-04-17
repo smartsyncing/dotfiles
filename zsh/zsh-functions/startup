@@ -1,5 +1,7 @@
 #!/bin/bash
 
+if [ ! -f ~/.config/zsh/zsh-functions/PCOLOR ]; 
+then
 echo '
 ORANGE=$(tput setaf 3)
 RED=$(tput setaf 1)
@@ -7,7 +9,9 @@ BLUE=$(tput setaf 4)
 GREEN=$(tput setaf 2)
 PINK=$(tput setaf 5)
 STOP=$(tput sgr0)' >> ~/.config/zsh/zsh-functions/PCOLOR
+fi
 
+promptcolor() {
 clear
 
 trap '' 2  
@@ -17,14 +21,14 @@ echo "Prompt Color"
 printf "
 (1)  Blue
 
-$(tput setaf 4)~/dotfiles$(tput sgr0) on $(tput setaf 5) main $(tput setaf 4)✔$(tput sgr0)                                 took 5s  1:40
-$(tput setaf 4)›$(tput sgr0)
+$(tput setaf 4)~/dotfiles$(tput sgr0) on $(tput setaf 5) main $(tput setaf 2)✔$(tput sgr0)                                 took 5s  1:40
+$(tput setaf 4)$PROMPTCHAR$(tput sgr0)
 
 
 (2)  Green
 
 $(tput setaf 2)~/dotfiles$(tput sgr0) on $(tput setaf 5) main $(tput setaf 2)✔$(tput sgr0)                                 took 5s  1:40
-$(tput setaf 2)›$(tput sgr0) 
+$(tput setaf 2)$PROMPTCHAR$(tput sgr0) 
 "
 
 printf '
@@ -33,15 +37,28 @@ read -r promptcolor
 if [[ "$promptcolor" = "1" ]];
 then
   echo 'export PCOLOR="$BLUE"' >> ~/.config/zsh/zsh-functions/PCOLOR
-  rm -rf ~/.config/zsh/zsh-functions/startup 
+  if [ -f ~/.config/zsh/zsh-lockfile ]; 
+  then
+    rm -rf ~/.config/zsh/zsh-lockfile
+  fi
   exit
 elif [[ "$promptcolor" = "2" ]];
 then
   echo 'export PCOLOR="$GREEN"' >> ~/.config/zsh/zsh-functions/PCOLOR
-  rm -rf ~/.config/zsh/zsh-functions/startup
+  if [ -f ~/.config/zsh/zsh-lockfile ]; 
+  then
+    rm -rf ~/.config/zsh/zsh-lockfile    
+  fi  
   exit
 else
   ~/.config/zsh/zsh-functions/startup
 fi
 
 trap 2
+}
+
+if [ -f ~/.config/zsh/zsh-lockfile ];
+then
+  promptcolor
+fi
+

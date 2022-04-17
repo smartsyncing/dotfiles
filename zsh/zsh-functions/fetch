@@ -81,3 +81,4 @@ $PCOLOR  $STOP   $uptime
 esac
 
 
+PCOLOR=$(echo $PCOLOR |  grep -o '[[:digit:]]*' | cut -c 4)
