@@ -1,22 +1,31 @@
 #!/bin/bash
 
-if [ ! -f ~/.config/zsh/zsh-functions/PCOLOR ]; 
-then
-echo '
-ORANGE=$(tput setaf 3)
-RED=$(tput setaf 1)
-BLUE=$(tput setaf 4)
-GREEN=$(tput setaf 2)
-PINK=$(tput setaf 5)
-STOP=$(tput sgr0)' >> ~/.config/zsh/zsh-functions/PCOLOR
-fi
+export ORANGE=$(tput setaf 3)
+export RED=$(tput setaf 1)
+export BLUE=$(tput setaf 4)
+export GREEN=$(tput setaf 2)
+export PINK=$(tput setaf 5)
+export STOP=$(tput sgr0)
 
-promptcolor() {
+pcolor() {
+
+export PGREEN="2"
+export PBLUE="4"
+
+case $1 in
+  green) export PCOLOR=$PGREEN && echo 'export PCOLOR="$GREEN"' >> ~/.config/zsh/zsh-data/zsh-colors ;;
+  blue) export PCOLOR=$PBLUE && echo 'export PCOLOR="$BLUE"' >> ~/.config/zsh/zsh-data/zsh-colors ;;
+esac
+
+}
+
+
+if [ ! -f ~/.config/zsh/zsh-data/zsh-colors ]; then
+
 clear
+echo "Prompt Color"
 
 trap '' 2  
-
-echo "Prompt Color"
 
 printf "
 (1)  Blue
@@ -32,33 +41,21 @@ $(tput setaf 2)$PROMPTCHAR$(tput sgr0)
 "
 
 printf '
+You can change the prompt color later with "pcolor green/blue"
 Enter your selection:  '
 read -r promptcolor
 if [[ "$promptcolor" = "1" ]];
 then
-  echo 'export PCOLOR="$BLUE"' >> ~/.config/zsh/zsh-functions/PCOLOR
-  if [ -f ~/.config/zsh/zsh-lockfile ]; 
-  then
-    rm -rf ~/.config/zsh/zsh-lockfile
-  fi
-  exit
+  echo 'export PCOLOR="$BLUE"' >> ~/.config/zsh/zsh-data/zsh-colors 
+  clear
 elif [[ "$promptcolor" = "2" ]];
 then
-  echo 'export PCOLOR="$GREEN"' >> ~/.config/zsh/zsh-functions/PCOLOR
-  if [ -f ~/.config/zsh/zsh-lockfile ]; 
-  then
-    rm -rf ~/.config/zsh/zsh-lockfile    
-  fi  
-  exit
+  echo 'export PCOLOR="$GREEN"' >> ~/.config/zsh/zsh-data/zsh-colors 
+  clear
 else
   ~/.config/zsh/zsh-functions/startup
 fi
 
 trap 2
-}
 
-if [ -f ~/.config/zsh/zsh-lockfile ];
-then
-  promptcolor
 fi
-

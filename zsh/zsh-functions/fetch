@@ -6,13 +6,6 @@
 
 #!/bin/bash
 
-ORANGE=$(tput setaf 3)
-RED=$(tput setaf 1)
-BLUE=$(tput setaf 4)
-GREEN=$(tput setaf 2)
-PINK=$(tput setaf 5)
-STOP=$(tput sgr0)
-
 if [ -f /etc/os-release ]; then
   . /etc/os-release
   OS=$(printf $PRETTY_NAME | tr '[:upper:]' '[:lower:]' | awk '{print $1;}')
@@ -20,23 +13,19 @@ else
   printf "OS not supported yet!" 
 fi
 
-ASCII="$(~/.config/zsh/zsh-functions/figlet -f ~/.config/zsh/small.flf $OS)"
+ASCII="$(~/.config/zsh/zsh-functions/figlet -f ~/.config/zsh/zsh-data/small.flf $OS)"
 
-if [[ "$OS" = *"rch"* ]]; then
+if [ -x "$(command -v pacman)" ]; then
   pkgs=$(pacman -Qq | wc -l)
-elif [[ "$OS" = *"anjaro"* ]]; then
-  pkgs=$(pacman -Qq | wc -l)
-elif [[ "$OS" = *"edora"* ]]; then
+elif [ -x "$(command -v dnf)" ]; then
   pkgs=$(dnf list installed | wc -l)
-elif [[ "$OS" = *"buntu"* ]]; then
+elif [ -x "$(command -v dpkg-query)" ]; then
   pkgs=$(dpkg-query -f '${binary:Package}\n' -W | wc -l)
-elif [[ "$OS" = *"ebian"* ]]; then
-  pkgs=$(dpkg-query -f '${binary:Package}\n' -W | wc -l)
-elif [[ "$OS" = *"pen"* ]]; then
+elif [ -x "$(command -v zypper)" ]; then
   pkgs=$(zypper pa -i | wc -l)
-elif [[ "$OS" = *"oid"* ]]; then
+elif [ -x "$(command -v xbps-install)" ]; then
   pkgs=$(xbps-query -l | wc -l)
-elif [[ "$OS" = *"entoo"* ]]; then
+elif [ -x "$(command -v emerge)" ]; then
   pkgs=$(ls /var/db/pkg* | wc -l)
 else
   pkgs=$(ls /bin/ | wc -l)
@@ -79,6 +68,5 @@ $PCOLOR  $STOP   $uptime
   ;;
  
 esac
-
 
 PCOLOR=$(echo $PCOLOR |  grep -o '[[:digit:]]*' | cut -c 4)
