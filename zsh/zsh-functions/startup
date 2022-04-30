@@ -30,13 +30,13 @@ trap '' 2
 printf "
 (1)  Blue
 
-$(tput setaf 4)~/dotfiles$(tput sgr0) on $(tput setaf 5) main $(tput setaf 2)✔$(tput sgr0)                                 took 5s  1:40
+$(tput setaf 4)dotfiles$(tput sgr0) on $(tput setaf 5) main $(tput setaf 2)✔$(tput sgr0)                                 took 5s  1:40
 $(tput setaf 4)$PROMPTCHAR$(tput sgr0)
 
 
 (2)  Green
 
-$(tput setaf 2)~/dotfiles$(tput sgr0) on $(tput setaf 5) main $(tput setaf 2)✔$(tput sgr0)                                 took 5s  1:40
+$(tput setaf 2)dotfiles$(tput sgr0) on $(tput setaf 5) main $(tput setaf 2)✔$(tput sgr0)                                 took 5s  1:40
 $(tput setaf 2)$PROMPTCHAR$(tput sgr0) 
 "
 

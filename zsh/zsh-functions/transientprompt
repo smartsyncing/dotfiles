@@ -11,7 +11,7 @@ TRANSIENT_PROMPT='%B%(?.%F{$PCOLOR}.%F{1})$PROMPTCHAR%b%f '   # Sample value
 function set_prompt {
     ## Set the values of PROMPT and RPROMPT here
     # Sample values given below
-    PROMPT='%(?.%F{$PCOLOR}.%F{1})$(shrink_path -l -t)%f%f$(gitprompt) ${NEWLINE}%B%(?.%F{$PCOLOR}.%F{1})$PROMPTCHAR%b%f  '  
+    PROMPT='%(?.%F{$PCOLOR}.%F{1})$(directory_display -l -t)%f%f$(gitprompt) ${NEWLINE}%B%(?.%F{$PCOLOR}.%F{1})$PROMPTCHAR%b%f  '  
     RPROMPT='%{$(echotc UP 1)%}%(?..%F{1}$X%?%f $SEP )${prompt_elapsed_time}%T%{$(echotc DO 1)%}'
 }
 

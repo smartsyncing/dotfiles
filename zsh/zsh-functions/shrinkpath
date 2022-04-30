@@ -142,3 +142,11 @@ shrink_path () {
                 echo ${result:-/}
         )
 }
+
+directory_display() {
+if [[ $PWD = $HOME/* ]]; then
+  shrink_path -l -t | cut -c 3-
+else
+  shrink_path -l -t
+fi
+}
