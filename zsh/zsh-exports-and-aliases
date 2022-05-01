@@ -153,6 +153,8 @@ alias expand="expand -t 4"
 
 alias figlet="~/.config/zsh/zsh-functions/figlet -f ~/.config/zsh/zsh-data/small.flf"
 
+alias sl="xdg-open https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+
 export ZSH_AUTOSUGGEST_USE_ASYNC=1       
 
 export ZSH_AUTOSUGGEST_MANUAL_REBIND=1
