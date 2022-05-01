@@ -7,45 +7,73 @@ export GREEN=$(tput setaf 2)
 export PINK=$(tput setaf 5)
 export STOP=$(tput sgr0)
 
-if [ ! -f ~/.config/zsh/zsh-data/zsh-vars ]; then
-
+if [ ! -f ~/.config/zsh/zsh-data/zsh-lockfile ] 
+then
 clear
-echo "Prompt Color"
 
 trap '' 2  
+
+askpromptcolor() {
+echo "Prompt Color"
 
 printf "
 (1)  Blue
 
-$(tput setaf 4)dotfiles$(tput sgr0) on $(tput setaf 5) main $(tput setaf 2)✔$(tput sgr0)                                 took 5s  1:40
+$(tput setaf 4)dot/zsh$(tput sgr0) on $(tput setaf 5) main $(tput setaf 2)✔$(tput sgr0)                                 took 5s  1:40
 $(tput setaf 4)$PROMPTCHAR$(tput sgr0)
 
 
 (2)  Green
 
-$(tput setaf 2)dotfiles$(tput sgr0) on $(tput setaf 5) main $(tput setaf 2)✔$(tput sgr0)                                 took 5s  1:40
+$(tput setaf 2)dot/zsh$(tput sgr0) on $(tput setaf 5) main $(tput setaf 2)✔$(tput sgr0)                                 took 5s  1:40
 $(tput setaf 2)$PROMPTCHAR$(tput sgr0) 
-"
 
-printf '
-You can change the prompt color later with "pcolor green/blue"
-Enter your selection:  '
+
+Enter your selection:  "
 read -r promptcolor
-if [[ "$promptcolor" = "1" ]];
-then
-  echo 'export PCOLOR="$BLUE"' >> ~/.config/zsh/zsh-data/zsh-vars 
-  clear
-elif [[ "$promptcolor" = "2" ]];
-then
-  echo 'export PCOLOR="$GREEN"' >> ~/.config/zsh/zsh-data/zsh-vars 
-  clear
-else
-  ~/.config/zsh/zsh-functions/startup
-fi
+case $promptcolor in
+  1) echo 'export PCOLOR="$BLUE"' >> ~/.config/zsh/zsh-data/zsh-vars ;;
+  2) echo 'export PCOLOR="$GREEN"' >> ~/.config/zsh/zsh-data/zsh-vars ;;
+  *) clear && askpromptcolor
+esac
+}
 
-echo 'directorymethod=truncated' >> ~/.config/zsh/zsh-data/zsh-vars
-echo 'FETCH=true' >> ~/.config/zsh/zsh-data/zsh-vars    
+asktruncation() {
+printf "Would you like to enable directory truncation? [y/n]: " 
+read -r truncationtoggle
+case $truncationtoggle in
+  y) export directorymethod=normal && echo 'directorymethod=truncated' >> ~/.config/zsh/zsh-data/zsh-vars ;;
+  n) export directorymethod=normal && echo 'directorymethod=normal' >> ~/.config/zsh/zsh-data/zsh-vars ;; 
+  *) asktruncation ;;
+esac
+}
+
+askfetch() {
+printf "Would you like to enable a fetch displaying system info? [y/n]: "
+read -r fetchtoggle
+case $fetchtoggle in
+  y) export FETCH=true && echo 'FETCH=true' >> ~/.config/zsh/zsh-data/zsh-vars ;;
+  n) export FETCH=false && echo 'FETCH=true' >> ~/.config/zsh/zsh-data/zsh-vars ;; 
+  *) askfetch ;;
+esac
+}
+
+asktransient() {
+printf "Would you like to enable transient prompt? [y/n]: "
+read -r fetchtoggle
+case $fetchtoggle in
+  y) export transientprompt=true && echo 'transientprompt=true' >> ~/.config/zsh/zsh-data/zsh-vars ;;
+  n) export transientprompt=false && echo 'transientprompt=false' >> ~/.config/zsh/zsh-data/zsh-vars ;;
+  *) asktransient ;;
+esac
+}
+
+askpromptcolor
+asktruncation
+asktransient
+askfetch
+touch ~/.config/zsh/zsh-data/zsh-lockfile
+clear
 
 trap 2
-
 fi

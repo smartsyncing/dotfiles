@@ -39,7 +39,12 @@ function _transient_prompt_widget-zle-line-finish {
         sysopen -r -o cloexec -u _transient_prompt_fd /dev/null
         zle -F $_transient_prompt_fd _transient_prompt_restore_prompt
     }
+    if [ "$transientprompt" = true ]; then
     zle && PROMPT=$TRANSIENT_PROMPT RPROMPT= zle reset-prompt && zle -R
+    else
+    PROMPT='%(?.%F{$PCOLOR}.%F{1})$(getdir)%f%f$(gitprompt) ${NEWLINE}%B%(?.%F{$PCOLOR}.%F{1})$PROMPTCHAR%b%f '
+    RPROMPT='%{$(echotc UP 1)%}%(?..%F{1}$X%?%f $SEP )${prompt_elapsed_time}%T%{$(echotc DO 1)%}'
+    fi
 }
 
 function _transient_prompt_restore_prompt {
@@ -69,3 +74,5 @@ function _transient_prompt_precmd {
 }
 
 # vim: sw=0 ts=4 sts=4 et
+
+  

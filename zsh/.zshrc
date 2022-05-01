@@ -83,7 +83,7 @@ source ~/.config/zsh/zsh-data/zsh-vars
 source ~/.config/zsh/zsh-functions/options
 source ~/.config/zsh/zsh-functions/fetch
 source ~/.config/zsh/zsh-functions/transientprompt
-
+ 
 command-not-found
 fzf-git
 gitprompt

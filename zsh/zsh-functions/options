@@ -30,3 +30,10 @@ getdir() {
     print -P %~
   fi
 }
+
+transient() {
+case $1 in
+  true) export transientprompt=true && echo 'export transientprompt=true' >> ~/.config/zsh/zsh-data/zsh-vars ;;
+  false) export transientprompt=false && echo 'export transientprompt=false' >> ~/.config/zsh/zsh-data/zsh-vars ;;
+esac
+}
