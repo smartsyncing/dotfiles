@@ -86,12 +86,14 @@ zstyle ':fzf-tab:complete:(kill|ps):argument-rest' fzf-preview \
  ' [[ $group == "[process ID]" ]] && ps --pid=$word -o cmd --no-headers -w -w'
 zstyle ':fzf-tab:complete:(kill|ps):argument-rest' fzf-flags --preview-window=down:3:wrap	
 
+export zshconfig=smartsyncing
 source ~/.config/zsh/zsh-functions/ttyfriendlyprompt
 source ~/.config/zsh/zsh-functions/startup
 source ~/.config/zsh/zsh-functions/shrinkpath
 source ~/.config/zsh/zsh-data/zsh-vars
 source ~/.config/zsh/zsh-functions/options
 source ~/.config/zsh/zsh-functions/fetch
+PCOLOR=$(echo $PCOLOR |  grep -o '[[:digit:]]*' | cut -c 4)
 source ~/.config/zsh/zsh-functions/transientprompt
  
 command-not-found
