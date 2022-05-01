@@ -1,0 +1,32 @@
+#!/bin/bash
+
+pcolor() {
+export PGREEN="2"
+export PBLUE="4"
+case $1 in
+  green) export PCOLOR=$PGREEN && echo 'export PCOLOR="$GREEN"' >> ~/.config/zsh/zsh-data/zsh-vars ;;
+  blue) export PCOLOR=$PBLUE && echo 'export PCOLOR="$BLUE"' >> ~/.config/zsh/zsh-data/zsh-vars ;;
+esac
+}
+
+fetch() {
+case $1 in
+  true) echo 'export FETCH=true' >> ~/.config/zsh/zsh-data/zsh-vars ;;
+  false) echo 'export FETCH=false' >> ~/.config/zsh/zsh-data/zsh-vars ;;
+esac
+}
+
+truncation() {
+case $1 in
+  true) export directorymethod=truncated && echo 'export directorymethod=truncated' >> ~/.config/zsh/zsh-data/zsh-vars ;;
+  false) export directorymethod=normal && echo 'export directorymethod=normal' >> ~/.config/zsh/zsh-data/zsh-vars ;;
+esac
+}
+
+getdir() {
+  if [ "$directorymethod" = "truncated" ]; then
+    directory_display
+  elif [ "$directorymethod" = "normal" ]; then
+    print -P %~
+  fi
+}

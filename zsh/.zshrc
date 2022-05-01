@@ -78,11 +78,12 @@ unsetopt nomatch notify beep
 source ~/.config/zsh/zsh-plugins/fzf-tab/fzf-tab.plugin.zsh
 source ~/.config/zsh/zsh-functions/ttyfriendlyprompt
 source ~/.config/zsh/zsh-functions/startup
-source ~/.config/zsh/zsh-data/zsh-colors
+source ~/.config/zsh/zsh-functions/shrinkpath
+source ~/.config/zsh/zsh-data/zsh-vars
+source ~/.config/zsh/zsh-functions/options
 source ~/.config/zsh/zsh-functions/fetch
 source ~/.config/zsh/zsh-functions/transientprompt
 
-shrinkpath
 command-not-found
 fzf-git
 gitprompt
