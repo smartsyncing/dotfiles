@@ -25,6 +25,8 @@ else
   pkgs=$(ls /bin/ | wc -l)
 fi
 
+hostname=""${HOST:-${HOSTNAME:-$(hostname 2>/dev/null)}}""
+
 tty=$(tty)
 
 user=$(whoami)
@@ -40,7 +42,7 @@ col=$(for i in 1 2 3 4 5 6 0; do printf "$(tput setaf $i)${colourblocks:-}  "
 
 case $(tty) in /dev/tty[0-9]*)
     printf "
-$PCOLOR $user$STOP@$PCOLOR$(hostname)
+$PCOLOR $user$STOP@$PCOLOR$hostname
 $PCOLOR ------------------ $STOP
 $PCOLOR distro $STOP $OS
 $PCOLOR kernel $STOP $kernel

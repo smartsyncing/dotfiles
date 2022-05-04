@@ -76,6 +76,14 @@ alias ai="sudo apt-get install"
 alias ar="sudo apt-get remove"
 
 
+# Dnf
+
+alias du="sudo dnf update -y"
+
+alias di="sudo dnf install -y"
+
+alias dr="sudo dnf remove"
+
 
 #  Git aliases
 
