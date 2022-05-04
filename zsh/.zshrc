@@ -86,7 +86,6 @@ zstyle ':fzf-tab:complete:(kill|ps):argument-rest' fzf-preview \
  ' [[ $group == "[process ID]" ]] && ps --pid=$word -o cmd --no-headers -w -w'
 zstyle ':fzf-tab:complete:(kill|ps):argument-rest' fzf-flags --preview-window=down:3:wrap	
 
-export zshconfig=smartsyncing
 source ~/.config/zsh/zsh-functions/ttyfriendlyprompt
 source ~/.config/zsh/zsh-functions/startup
 source ~/.config/zsh/zsh-functions/shrinkpath
