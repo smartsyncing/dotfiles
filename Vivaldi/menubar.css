@@ -1,0 +1,166 @@
+#header .vivaldi,
+#tabs-container .toggle-trash {
+  display: none;
+}
+#tabs-container.top {
+  padding-left: 0 !important;
+}
+
+div[class*=field] + .button-toolbar {
+    display: none;
+}
+
+.button-toolbar button[title="Go to homepage"] {display: none;}
+
+.button-toolbar button[title="Rewind by visited domain"] {display: none;}
+
+/* Top Tabs Under Address/Bookmarks Bar */
+:root{
+    /* Default Height of Bookmark Bar and Tab Bar */
+    --heightB: 30px;
+    /* Default Height of Address Bar */
+    --heightU: 34px;
+    /* Sum is 64px */
+    --heightC: calc(var(--heightU) + var(--heightB));
+}
+
+/* Header */
+/* The default height of the Header is ~22px */
+/* This is dependent on the Top Menu height */
+/* The Header consists of the Titlebar, Menu Bar/Button, And Tab Bar */
+#browser.tabs-top #header {
+    /* Unset Contain so that the Tab Bar can be moved */
+    contain: unset !important;
+    /* Set to 1 for compatibility with blurred themes */
+    z-index: 1 !important;
+}
+
+/* Horizontal Menu Only */
+#browser.tabs-top.horizontal-menu #header {
+    /* Setting height to 0 removes the space that the Tab Bar would normally occupy */
+    height: 0 !important;
+}
+
+/* Vivaldi Menu Only */
+#browser.tabs-top:not(.horizontal-menu) #header {
+    /* Removes the space that the Tab Bar would normally occupy */
+    margin-top: calc(0px - var(--heightB)) !important;
+    /* Sets top to 30px */
+    top: var(--heightB) !important;
+}
+
+/* Titlebar */
+/* The Titlebar consists of the Vivaldi Menu and the Windows Buttons */
+#browser.tabs-top:not(.horizontal-menu) #header #titlebar {
+    /* Sets top to 64px */
+    top: var(--heightC) !important;
+    /* z-index needs to be at least 2 for the menu to display */
+    z-index: 2 !important;
+}
+
+/* Without Address Bar Top */
+#browser.tabs-top:not(.horizontal-menu):not(.address-top) #header #titlebar,
+/* Without Bookmarks Bar Top */
+#browser.tabs-top:not(.horizontal-menu):not(.bookmark-bar-top) #header #titlebar {
+    /* Sets top to 30px */
+    top: var(--heightB) !important;
+}
+
+/* Without Address Bar or Bookmarks Bar Top */
+#browser.tabs-top:not(.horizontal-menu):not(.bookmark-bar-top):not(.address-top) #header #titlebar {
+    /* Unsets top */
+    top: unset !important;
+}
+
+/* Vivaldi Button */
+#browser.tabs-top.bookmark-bar-top:not(.horizontal-menu) #header #titlebar button.vivaldi {
+    /* Sets height to 30px */
+    height: var(--heightB) !important;
+}
+
+/* Top Menu */
+/* The default height of the Top Menu is ~21.59px */
+/* This is dependent on Font Family, Size, and Line Height */
+/* The Top Manu Contains the Menu Bar/Button */
+#browser.tabs-top #header .topmenu {
+    /* Sets height to the nearest whole number; 22px */
+    height: 22px !important;
+    /* Removes the 1px Margin Bottom to simplify Tab Bar Top Calculation */
+    margin-bottom: unset !important;
+}
+
+/* Main */
+/* Main consists of the Address Bar, Bookmarks Bar, and Inner Container */
+#browser.tabs-top #main {
+    /* Unset z-index so that the tabbar is below dropdowns */
+    z-index: unset !important;
+}
+
+/* Address Bar */
+/* The Address Bar Default Height is 34px */
+#browser.tabs-top .toolbar-mainbar {
+    /* Sets height to 34px */
+    height: var(--heightU) !important;
+}
+
+/* Bookmarks Bar */
+/* The Bookmarks Bar Default Height is 29px with a 1px bottom border */
+#browser.tabs-top .bookmark-bar {
+    /* Sets height to 30px */
+    height: var(--heightB) !important;
+}
+
+/* Tab Bar */
+/* The Tab Bar's default height is 30px */
+/* Tabbar Container */
+/* Horizontal Menu Only */
+#browser.tabs-top.horizontal-menu #tabs-tabbar-container,
+/* Vivaldi Menu Only */
+#browser.tabs-top.bookmark-bar-top:not(.horizontal-menu) #tabs-tabbar-container,
+/* Vivaldi Menu Only */
+#browser.tabs-top.address-top:not(.horizontal-menu) #tabs-tabbar-container {
+    /* Sets height to 30px */
+    height: var(--heightB) !important;
+    /* Makes sure that the padding remains consistant */
+    padding-top: unset !important;
+    /* Necessary for everything on the tabbar to be visible/accessable */
+    z-index: 1 !important;
+}
+
+/* Address Bar and Bookmarks Bar Top */
+#browser.tabs-top.address-top.bookmark-bar-top #tabs-tabbar-container {
+    /* Sets top to 64px */
+    top: var(--heightC) !important;
+}
+
+/* Only Address Bar Top */
+#browser.tabs-top.address-top:not(.bookmark-bar-top) #tabs-tabbar-container {
+    /* Sets top to 34px */
+    top: var(--heightU) !important;
+}
+
+/* Only Bookmarks Bar Top */
+#browser.tabs-top.bookmark-bar-top:not(.address-top) #tabs-tabbar-container {
+    /* Sets top to 30px */
+    top: var(--heightB) !important;
+}
+
+/* Inner Container */
+/* The Inner Container consists of the Panels and the Web-View Continer */
+#browser.tabs-top .inner {
+    /* [margintop] = [height(tabs-tabbar-container)] */
+    /* default height tabs-tabbar-container: 30px */
+    margin-top: var(--heightB) !important;
+}
+
+/* Horizontal Menu Only */
+#browser.tabs-top.horizontal-menu .inner {
+    /* Places 1px border below tabs */
+    border-top: 1px solid transparent !important;
+}
+
+.vivaldi {display: none}
+
+.UrlBar-AddressField .toolbar-insideinput:last-child {
+  display: none;
+}
