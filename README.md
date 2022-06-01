@@ -31,7 +31,7 @@
 
 * <b>GTK Theme:</b> Fantome
 
-* <b>Openbox Theme:</b> Edited OceanDark (by Stardust-kyuun)
+* <b>Openbox Theme:</b> Edited [OceanDark](https://github.com/stardust-kyun/dotfiles) (by Stardust-kyuun)
 
 * <b>Icons:</b> Tela Dark
 
