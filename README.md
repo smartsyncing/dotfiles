@@ -29,7 +29,9 @@
 
 * <b>WM:</b> Openbox
 
-* <b>GTK Theme:</b> Qogir Dark
+* <b>GTK Theme:</b> Fantome
+
+* <b>Openbox Theme:</b> Edited OceanDark (by Stardust-kyuun)
 
 * <b>Icons:</b> Tela Dark
 
