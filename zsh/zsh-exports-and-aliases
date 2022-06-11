@@ -159,8 +159,6 @@ alias cp="cp -Rv"
 
 alias expand="expand -t 4"
 
-alias figlet="~/.config/zsh/zsh-functions/figlet -f ~/.config/zsh/zsh-data/small.flf"
-
 alias sl="xdg-open https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 
 export ZSH_AUTOSUGGEST_USE_ASYNC=1       
@@ -174,3 +172,41 @@ export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 export user=$(whoami)
 
 export SUDO_PROMPT="password for $user: "
+
+if command -v doas &> /dev/null; then
+  alias sudo="doas"
+fi
+
+alias termcol='for i in {0..255}; do printf "\x1b[38;5;${i}mcolor${i}\n"; done'
+
+alias ':q'="exit"
+
+alias gerp='grep'
+
+alias grep-i='grep -i'
+
+alias grepi='grep -i'
+
+alias maek='make'
+
+alias mkdirp='mkdir -p'
+
+alias mkdir-p='mkdir -p'
+
+alias psax='ps ax'
+
+alias pswax='ps wax'
+
+alias psxa='ps ax'
+
+alias raek='rake'
+
+alias tartvf='tar tvf'
+
+alias tartvzf='tar tvzf'
+
+alias tarxvf='tar xvf'
+
+alias tarxvzf='tar xvzf'
+
+alias zz='exit'
