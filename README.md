@@ -1,10 +1,7 @@
 #
 <br />
 <p align="center">
-  <img alt="Dotfiles" src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/2023-01-15_19-33"/>
-  <img alt="Dotfiles" src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/2023-01-15_19-54"/>
-  <img alt="Dotfiles" src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/2023-01-15_19-17"/>
-  <img alt="Dotfiles" src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/2023-01-15_19-18"/>
+  <img alt="Dotfiles" src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/yes22222.png"/>
  </p>
  
 <p align="center">
@@ -20,7 +17,10 @@
 
 # Preview
 <p align="center">  
-  <img alt="Preview" src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/wt90urz8s6i81.png"/>
+  <img alt="Preview" src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/2023-01-15_19-33"/>
+  <img alt="Preview" src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/2023-01-15_19-54"/>
+  <img alt="Preview" src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/2023-01-15_19-17"/>
+  <img alt="Preview" src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/2023-01-15_19-18"/>
 </p>
 <br />
 
