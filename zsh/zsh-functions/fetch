@@ -7,7 +7,7 @@ else
   printf "OS not supported yet!" 
 fi
 
-ASCII="$(~/.config/zsh/zsh-functions/figlet -f ~/.config/zsh/zsh-data/small.flf $OS)"
+ASCII="$(figlet -f small $OS)"
 
 if [ -x "$(command -v pacman)" ]; then
   pkgs=$(pacman -Qq | wc -l)
