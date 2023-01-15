@@ -25,16 +25,16 @@
        mouse into it, also raise the window -->
   </focus>
   <placement>
-    <policy>UnderMouse</policy>
+    <policy>Smart</policy>
     <!-- 'Smart' or 'UnderMouse' -->
     <center>yes</center>
     <!-- whether to place windows in the center of the free area found or
        the top left corner -->
-    <monitor>Mouse</monitor>
+    <monitor>Primary</monitor>
     <!-- with Smart placement on a multi-monitor system, try to place new windows
        on: 'Any' - any monitor, 'Mouse' - where the mouse is, 'Active' - where
        the active window is, 'Primary' - only on the primary monitor -->
-    <primaryMonitor>Mouse</primaryMonitor>
+    <primaryMonitor>1</primaryMonitor>
     <!-- The monitor where Openbox should place popup dialogs such as the
        focus cycling popup, or the desktop switch popup.  It can be an index
        from 1, specifying a particular monitor.  Or it can be one of the
@@ -130,16 +130,16 @@
   </desktops>
   <resize>
     <drawContents>yes</drawContents>
-    <popupShow>Always</popupShow>
+    <popupShow>Nonpixel</popupShow>
     <!-- 'Always', 'Never', or 'Nonpixel' (xterms and such) -->
     <popupPosition>Center</popupPosition>
     <!-- 'Center', 'Top', or 'Fixed' -->
     <popupFixedPosition>
       <!-- these are used if popupPosition is set to 'Fixed' -->
-      <x>-80</x>
+      <x>10</x>
       <!-- positive number for distance from left edge, negative number for
          distance from right edge, or 'Center' -->
-      <y>0</y>
+      <y>10</y>
       <!-- positive number for distance from top edge, negative number for
          distance from bottom edge, or 'Center' -->
     </popupFixedPosition>
@@ -152,7 +152,7 @@
     <top>8</top>
     <bottom>8</bottom>
     <left>75</left>
-    <right>0</right>
+    <right>13</right>
   </margins>
   <dock>
     <position>TopLeft</position>
@@ -834,9 +834,8 @@
         <y>center</y>
       </position>
     </application>
-    <application name="kitty">
+    <application name="*">
       <skip_taskbar>yes</skip_taskbar>
-      <monitor>mouse</monitor>
     </application>
     <application class="Zathura">
       <decor>no</decor>
