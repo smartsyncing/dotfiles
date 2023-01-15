@@ -1,7 +1,10 @@
 #
 <br />
 <p align="center">
-  <img alt="Dotfiles" src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/yes22222.png"/>
+  <img alt="Dotfiles" src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/2023-01-15_19-33"/>
+  <img alt="Dotfiles" src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/2023-01-15_19-54"/>
+  <img alt="Dotfiles" src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/2023-01-15_19-17"/>
+  <img alt="Dotfiles" src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/2023-01-15_19-18"/>
  </p>
  
 <p align="center">
