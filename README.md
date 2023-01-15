@@ -35,7 +35,7 @@
 
 * <b>Openbox Theme:</b> Edited [OceanDark](https://github.com/stardust-kyun/dotfiles) (by Stardust-kyuun)
 
-* <b>Icons:</b> Tela Dark
+* <b>Icons:</b> Fluent Grey Dark
 
 * <b> Font:</b> Iosevka Nerd Font
 
@@ -68,6 +68,8 @@
 
 * <b>[Nerd Fonts](https://nerdfonts.com)</b> - icons in the terminal
 
+* <b>[Figlet](https://figlet.org)</b> - ASCII text for fetch
+
 
 
 
@@ -80,19 +82,35 @@
 
 * <b>[Dunst](https://github.com/dunst-project/dunst)</b> - notification daemon
 
-* <b>[Picom](https://github.com/ibhagwan/picom)</b> - effects
+* <b>[Picom](https://github.com/Arian8j2/picom)</b> - effects and animations
+
+* <b>[Pamixer](https://github.com/cdemoulins/pamixer)</b> - sound control
+
+* <b>[Playerctl](https://github.com/altdesktop/playerctl)</b> - audio control
+
+* <b>[Feh](https://feh.finalrewind.org)</b> - setting wallpaper
+
+* <b>[lxappearance](https://man.archlinux.org/man/community/lxappearance-gtk3/lxappearance.1.en)</b> - setting gtk theme
 <br />
 
 ## Installation
 
 ```
+cd ~/
+
 git clone --recursive https://github.com/smartsyncing/dotfiles
+
+cd Downloads
+
+wget https://cdna.artstation.com/p/assets/images/images/009/538/556/4k/inaki-andonegi-castle-in-the-sky.jpg
+
+cd ~/
 
 cd dotfiles
 
 mv * ~/.config &&
 
-mv ~/.config/local/ ~/
+mv ~/.config/.local/bin ~/.local
 
 mv ~/.config/.themes ~/
 
