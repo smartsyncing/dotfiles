@@ -17,10 +17,10 @@
 
 # Preview
 <p align="center">  
-  <img alt="Preview" src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/2023-01-15_19-33"/>
-  <img alt="Preview" src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/2023-01-15_19-54"/>
-  <img alt="Preview" src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/2023-01-15_19-17"/>
-  <img alt="Preview" src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/2023-01-15_19-18"/>
+  <img alt="Preview" src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/2023-01-15_19-33.png"/>
+  <img alt="Preview" src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/2023-01-15_19-54.png"/>
+  <img alt="Preview" src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/2023-01-15_19-17.png"/>
+  <img alt="Preview" src="https://raw.githubusercontent.com/smartsyncing/dotfiles/main/assets/2023-01-15_19-18.png"/>
 </p>
 <br />
 
