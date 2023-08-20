@@ -212,3 +212,5 @@ alias tarxvf='tar xvf'
 alias tarxvzf='tar xvzf'
 
 alias zz='exit'
+
+export YSU_MESSAGE_FORMAT="you can also run$(tput setaf 2) %alias$(tput sgr0)"

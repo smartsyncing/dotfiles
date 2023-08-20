@@ -1,0 +1,9 @@
+zsh-users/zsh-completions
+andrewferrier/fzf-z
+MichaelAquilina/zsh-you-should-use
+zsh-users/zsh-history-substring-search
+yoogottamk/zsh-manydots-magic
+zsh-users/zsh-autosuggestions
+zdharma/fast-syntax-highlighting
+hlissner/zsh-autopair 
+Aloxaf/fzf-tab

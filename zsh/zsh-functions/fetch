@@ -1,13 +1,10 @@
 ##!/bin/bash
 
+
 if [ -f /etc/os-release ]; then
   . /etc/os-release
   OS=$(printf $PRETTY_NAME | tr '[:upper:]' '[:lower:]' | awk '{print $1;}')
-else
-  printf "OS not supported yet!" 
 fi
-
-ASCII="$(figlet -f small $OS)"
 
 if [ -x "$(command -v pacman)" ]; then
   pkgs=$(pacman -Qq | wc -l)
@@ -40,27 +37,4 @@ uptime=`echo $(uptime | awk '{print $3}' | sed 's/,//g' | sed 's/\:/h /g')m`
 
 col=$(for i in 1 2 3 4 5 6 0; do printf "$(tput setaf $i)${colourblocks:-}  "; done; printf "$STOP";)
 
-case $(tty) in /dev/tty[0-9]*)
-    printf "
-$PCOLOR $user$STOP@$PCOLOR$hostname
-$PCOLOR ------------------ $STOP
-$PCOLOR distro $STOP $OS
-$PCOLOR kernel $STOP $kernel
-$PCOLOR shell $STOP  $shell
-$PCOLOR pkgs $STOP   $pkgs
-$PCOLOR uptime $STOP $uptime
-\n"
-  ;;
-  *)
 wm=${WAYLAND_DISPLAY:-$(xprop -id "$(xprop -root _NET_SUPPORTING_WM_CHECK | cut -d' ' -f5)" _NET_WM_NAME | cut -d'"' -f2 | tr '[:upper:]' '[:lower:]')}
-
-printf "$PCOLOR$ASCII$STOP
-$PCOLOR  $STOP   $user
-$PCOLOR  $STOP   $wm
-$PCOLOR  $STOP   $shell
-$PCOLOR  $STOP   $pkgs
-$PCOLOR  $STOP   $uptime
-\n$col\n\n"
-  ;;
-
-esac
