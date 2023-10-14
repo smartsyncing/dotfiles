@@ -6,7 +6,12 @@
 #  zsh
 #
 
-source ${ZDOTDIR:-~}/.antidote/antidote.zsh
+if [ -f ${ZDOTDIR:-~}/.antidote/antidote.zsh ]; then
+	source ${ZDOTDIR:-~}/.antidote/antidote.zsh
+else
+	rm -rf ${ZDOTDIR:-~}/.antidote
+	git clone --depth=1 https://github.com/mattmc3/antidote.git ${ZDOTDIR:-~}/.antidote
+fi
 
 
 #   _ _ ._ _ ._ | __|_o _ ._  _

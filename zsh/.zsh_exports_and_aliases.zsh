@@ -48,10 +48,8 @@ export FZF_ALT_C_OPTS="--preview 'file {}' --preview-window up,2,noborder"
 # XBPS
 
 alias xu="sudo xbps-install -Syu"
-
 alias xi="sudo xbps-install -S"
-
-alias xr="sudo xbps-remove -o"
+alias xr="sudo xbps-remove -oR"
 
 
 # AUR/Pacman
@@ -212,5 +210,7 @@ alias tarxvf='tar xvf'
 alias tarxvzf='tar xvzf'
 
 alias zz='exit'
+
+alias reanti='rm -rf ${ZDOTDIR:-~}/.antidote ${ZDOTDIR:-~}/.zsh_plugins.zsh ${HOME}/.cache/antidote'
 
 export YSU_MESSAGE_FORMAT="you can also run$(tput setaf 2) %alias$(tput sgr0)"

@@ -1,5 +1,5 @@
 
-zstyle ':completion:*' completer  _expand _complete _expansions _ignored _correct _approximate
+zstyle ':completion:*' completer  _expand _complete  _ignored _correct _approximate
 zstyle ':completion:*:*:cd:*' tag-order local-directories directory-stack path-directories
 zstyle ':completion:*' file-sort change
 zstyle ':completion:*' keep-prefix true
